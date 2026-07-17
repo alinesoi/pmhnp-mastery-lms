@@ -1,0 +1,53 @@
+/* Mom Mastery University global theme overrides.
+   Scoped under .mmu-app (set on the (withmenu) layout root) so the
+   dashboard/admin areas outside this layout are untouched. */
+
+.mmu-app {
+  background-color: #f7f3eb;
+  color: #4e4a42;
+}
+
+.mmu-serif {
+  font-family: var(--font-mmu-serif), 'Fraunces', Georgia, 'Times New Roman', serif;
+}
+
+/* Headings inside the app lean navy + serif */
+.mmu-app h1,
+.mmu-app h2 {
+  color: #16283f;
+}
+
+/* Soften Learnhouse stock cards / shadows into the warm cream look */
+.mmu-app .nice-shadow {
+  box-shadow: 0 1px 3px rgba(22, 40, 63, 0.06);
+  border: 1px solid #ece4d6;
+}
+
+.mmu-app .bg-gray-50,
+.mmu-app .bg-gray-50\/30,
+.mmu-app .bg-slate-50 {
+  background-color: #f7f3eb;
+}
+
+.mmu-app .bg-white {
+  border-radius: 16px;
+}
+
+/* Gold accent for primary black buttons. */
+.mmu-app .bg-black {
+  background-color: #b08442;
+}
+
+.mmu-app .bg-black:hover {
+  background-color: #9c7436;
+}
+
+/* Links in gold where Learnhouse uses its default blue accents */
+.mmu-app a.text-blue-600,
+.mmu-app .text-blue-600 {
+  color: #b08442;
+}
+
+.mmu-app ::selection {
+  background: rgba(176, 132, 66, 0.25);
+}

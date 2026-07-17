@@ -1,0 +1,55 @@
+/* Sleep to Thrive global theme overrides.
+   Scoped under .stt-app (set on the (withmenu) layout root) so the
+   dashboard/admin areas outside this layout are untouched. */
+
+.stt-app {
+  background-color: #faf7f0;
+  color: #5c5a52;
+}
+
+.stt-serif {
+  font-family: var(--font-stt-serif), 'Lora', Georgia, 'Times New Roman', serif;
+}
+
+/* Headings inside the app lean navy + serif */
+.stt-app h1,
+.stt-app h2 {
+  color: #1f3251;
+}
+
+/* Soften Learnhouse stock cards / shadows into the cream look */
+.stt-app .nice-shadow {
+  box-shadow: 0 1px 3px rgba(31, 50, 81, 0.06);
+  border: 1px solid #ede7da;
+}
+
+.stt-app .bg-gray-50,
+.stt-app .bg-gray-50\/30,
+.stt-app .bg-slate-50 {
+  background-color: #faf7f0;
+}
+
+.stt-app .bg-white {
+  border-radius: 16px;
+}
+
+/* Keep buttons/badges from turning into pills unintentionally is fine;
+   rounded corners suit the theme. Gold accent for primary black buttons. */
+.stt-app .bg-black {
+  background-color: #e3a63b;
+}
+
+.stt-app .bg-black:hover {
+  background-color: #d69a2e;
+}
+
+/* Links in gold where Learnhouse uses its default blue accents */
+.stt-app a.text-blue-600,
+.stt-app .text-blue-600 {
+  color: #e3a63b;
+}
+
+/* Scrollbar-adjacent niceties */
+.stt-app ::selection {
+  background: rgba(227, 166, 59, 0.25);
+}

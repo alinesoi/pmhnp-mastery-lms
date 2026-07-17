@@ -1,0 +1,72 @@
+/* SmartOps Academy global theme overrides.
+   Scoped under .soa-app (set on the (withmenu) layout root) so the
+   dashboard/admin areas outside this layout are untouched. */
+
+.soa-app {
+  background-color: #eef6fc;
+  color: #243b4a;
+}
+
+.soa-serif {
+  font-family: var(--font-soa-head), 'Space Grotesk', 'Inter', system-ui, sans-serif;
+}
+
+/* Headings inside the app lean deep navy */
+.soa-app h1,
+.soa-app h2 {
+  color: #0b2a4a;
+}
+
+/* Soften Learnhouse stock cards / shadows into the clean water look */
+.soa-app .nice-shadow {
+  box-shadow: 0 1px 3px rgba(11, 42, 74, 0.07);
+  border: 1px solid #d7e6f2;
+}
+
+.soa-app .bg-gray-50,
+.soa-app .bg-gray-50\/30,
+.soa-app .bg-slate-50 {
+  background-color: #eef6fc;
+}
+
+.soa-app .bg-white {
+  border-radius: 16px;
+}
+
+/* Primary blue for stock black buttons. */
+.soa-app .bg-black {
+  background-color: #1763a6;
+}
+
+.soa-app .bg-black:hover {
+  background-color: #12598c;
+}
+
+/* Links in primary blue where Learnhouse uses its default blue accents */
+.soa-app a.text-blue-600,
+.soa-app .text-blue-600 {
+  color: #1763a6;
+}
+
+.soa-app ::selection {
+  background: rgba(46, 155, 214, 0.25);
+}
+
+/* Follow-the-Drop: the drop animating toward the next locked node */
+@keyframes soa-drop-fall {
+  0% { transform: translateY(-6px); opacity: 0.2; }
+  50% { opacity: 1; }
+  100% { transform: translateY(6px); opacity: 0.2; }
+}
+.soa-drop {
+  animation: soa-drop-fall 1.8s ease-in-out infinite;
+}
+
+@keyframes soa-pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(46, 155, 214, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(46, 155, 214, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(46, 155, 214, 0); }
+}
+.soa-pulse {
+  animation: soa-pulse-ring 2s ease-out infinite;
+}

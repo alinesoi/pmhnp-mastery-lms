@@ -1,0 +1,3428 @@
+{
+  "courses": [
+    {
+      "slug": "diagnostic-accuracy-blueprint",
+      "code": "DAB",
+      "title": "The Diagnostic Accuracy Blueprint",
+      "ce_total": 15,
+      "total_modules": 10,
+      "modules": [
+        {
+          "index": 1,
+          "id": "dab0",
+          "slug": "introduction-course-orientation",
+          "tag": "DAB · Intro",
+          "title": "Introduction & Course Orientation",
+          "note": "The Diagnostic Accuracy Blueprint opening: brand the course, establish the diagnostic-accuracy problem, and introduce the CLARITY Method.",
+          "chapters": [
+            {
+              "num": 1,
+              "title": "Course title & promise: The Diagnostic Accuracy Blueprint — get the diagnosis right the first time.",
+              "purpose": "Course title & promise: The Diagnostic Accuracy Blueprint — get the diagnosis right the first time.",
+              "visual": "Branded title animation with the DAB / CLARITY mark; calm clinical palette.",
+              "interaction": "Title reveal + \"what you'll be able to do\" promise cards",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 2,
+              "title": "Who I am: LuAnn's credentials and clinical vantage point as a PMHNP.",
+              "purpose": "Who I am: LuAnn's credentials and clinical vantage point as a PMHNP.",
+              "visual": "Presenter intro card with credentials (RN, MSN, CNL-BC, PMHNP-BC) and a warm on-camera / AI-voice hero.",
+              "interaction": "Presenter bio card",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 3,
+              "title": "Why this course exists: diagnostic error is common, costly, and compounding.",
+              "purpose": "Why this course exists: diagnostic error is common, costly, and compounding.",
+              "visual": "\"One wrong diagnosis cascades\" animation — a single mislabel branching into wrong meds, wrong plan.",
+              "interaction": "Click the cascade to expand each downstream harm",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 4,
+              "title": "The \"TikTok diagnosis\" problem: patients arriving self-labeled from social media.",
+              "purpose": "The \"TikTok diagnosis\" problem: patients arriving self-labeled from social media.",
+              "visual": "Phone-feed montage of self-diagnosis trends vs a clinician's structured assessment.",
+              "interaction": "Compare: social-media label vs clinical formulation",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 5,
+              "title": "What this course will do: build a repeatable diagnostic system, not memorized criteria.",
+              "purpose": "What this course will do: build a repeatable diagnostic system, not memorized criteria.",
+              "visual": "Before/after operator: overwhelmed clinician vs one working a clear framework.",
+              "interaction": "Toggle overwhelmed vs systematic",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 6,
+              "title": "Course structure & modules: the 8-module arc from intake to documentation.",
+              "purpose": "Course structure & modules: the 8-module arc from intake to documentation.",
+              "visual": "Interactive course map showing Modules 1 through 8 and where each sits.",
+              "interaction": "Course-map walkthrough (8 modules)",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 7,
+              "title": "Introducing the CLARITY Method — the spine of the whole course.",
+              "purpose": "Introducing the CLARITY Method — the spine of the whole course.",
+              "visual": "CLARITY acronym build: Clarify, Locate, Assess, Rule out, Integrate, Translate, Yield.",
+              "interaction": "Click each CLARITY letter to preview it",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 8,
+              "title": "Quick win in the first 10 minutes: one technique they can use today.",
+              "purpose": "Quick win in the first 10 minutes: one technique they can use today.",
+              "visual": "\"Use this today\" spotlight on a single high-yield intake move.",
+              "interaction": "Reveal the quick-win technique",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 9,
+              "title": "Free download: the CLARITY cheat sheet.",
+              "purpose": "Free download: the CLARITY cheat sheet.",
+              "visual": "Downloadable one-page CLARITY reference preview.",
+              "interaction": "Download cheat-sheet CTA",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 10,
+              "title": "How to get the most from the course: pacing, applying to real patients.",
+              "purpose": "How to get the most from the course: pacing, applying to real patients.",
+              "visual": "Simple \"how to learn this\" checklist graphic.",
+              "interaction": "Click the study-approach steps",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 11,
+              "title": "CTA: start Module 1.",
+              "purpose": "CTA: start Module 1.",
+              "visual": "Module 1 unlock animation.",
+              "interaction": "Start Module 1 button",
+              "ai": null,
+              "in_production": true
+            }
+          ],
+          "knowledge_check": {
+            "pass_mark": 70,
+            "in_production": true,
+            "questions": [
+              "CLARITY Method — History-Taking A 27-year-old says, \"I cannot focus at work,\" but reports worsening symptoms after a new stressful job and no childhood history of attention problems. Which next step best reflects the CLARITY method?",
+              "ADHD vs. Anxiety — Differential Which pattern most strongly suggests ADHD rather than anxiety?"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "index": 2,
+          "id": "dab1",
+          "slug": "the-pmhnp-clarity-intake",
+          "tag": "DAB · M1",
+          "title": "The PMHNP CLARITY Intake",
+          "note": "The structured 45-minute psychiatric intake, organized as a 4-block flow that maps onto the CLARITY Method.",
+          "chapters": [
+            {
+              "num": 1,
+              "title": "Why the intake decides everything: the diagnosis is mostly made here.",
+              "purpose": "Why the intake decides everything: the diagnosis is mostly made here.",
+              "visual": "Intake-room scene with a timer; \"the first visit sets the trajectory.\"",
+              "interaction": "Click why-it-matters points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 2,
+              "title": "The 45-minute intake as four blocks, not a random interview.",
+              "purpose": "The 45-minute intake as four blocks, not a random interview.",
+              "visual": "Four-block timeline dividing the 45 minutes.",
+              "interaction": "Hover each block to see its minutes and goal",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 3,
+              "title": "Block 1 — Clarify the context (the presenting story in the patient's words).",
+              "purpose": "Block 1 — Clarify the context (the presenting story in the patient's words).",
+              "visual": "Open-question prompt cards for the opening block.",
+              "interaction": "Reveal opening-question prompts",
+              "ai": {
+                "kind": "Roleplay",
+                "desc": "The AI plays the patient; you practice opening the visit and eliciting the story in their words, then it flags whether you captured the real context or chased the label."
+              },
+              "in_production": true
+            },
+            {
+              "num": 4,
+              "title": "Block 2 — Locate the timeline (onset, course, episodes).",
+              "purpose": "Block 2 — Locate the timeline (onset, course, episodes).",
+              "visual": "Interactive timeline the clinician builds as the patient talks.",
+              "interaction": "Drag events onto a symptom timeline",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 5,
+              "title": "Block 3 — Assess the anchors (the diagnostic anchors that pin a picture down).",
+              "purpose": "Block 3 — Assess the anchors (the diagnostic anchors that pin a picture down).",
+              "visual": "\"Anchor\" symptom cards that distinguish diagnoses.",
+              "interaction": "Match symptoms to their diagnostic anchor",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 6,
+              "title": "Rule out red flags early: safety, medical mimics, substances.",
+              "purpose": "Rule out red flags early: safety, medical mimics, substances.",
+              "visual": "Red-flag checklist that surfaces during the intake.",
+              "interaction": "Click each red-flag category",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 7,
+              "title": "Integrate the patterns: moving from data to a working formulation.",
+              "purpose": "Integrate the patterns: moving from data to a working formulation.",
+              "visual": "Data points converging into a single formulation node.",
+              "interaction": "Watch scattered findings integrate",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 8,
+              "title": "Translate to a plan: the formulation drives the next step.",
+              "purpose": "Translate to a plan: the formulation drives the next step.",
+              "visual": "Formulation-to-plan arrow with branching options.",
+              "interaction": "Follow formulation into plan options",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 9,
+              "title": "Yield defensible documentation: what the note must show.",
+              "purpose": "Yield defensible documentation: what the note must show.",
+              "visual": "Annotated sample note highlighting the elements that make it defensible.",
+              "interaction": "Click the parts of a defensible note",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 10,
+              "title": "Putting it together: one patient run through the full CLARITY intake.",
+              "purpose": "Putting it together: one patient run through the full CLARITY intake.",
+              "visual": "Single case walked end-to-end through the four blocks.",
+              "interaction": "Step through the worked intake",
+              "ai": {
+                "kind": "Roleplay",
+                "desc": "Run a full simulated intake with an AI patient end to end, then get feedback scored against each CLARITY step."
+              },
+              "in_production": true
+            },
+            {
+              "num": 11,
+              "title": "Module 1 wrap + the CLARITY intake as your default.",
+              "purpose": "Module 1 wrap + the CLARITY intake as your default.",
+              "visual": "Recap card; \"make this your default intake.\"",
+              "interaction": "Knowledge check + continue",
+              "ai": null,
+              "in_production": true
+            }
+          ],
+          "knowledge_check": {
+            "pass_mark": 70,
+            "in_production": true,
+            "questions": [
+              "CLARITY Method — History-Taking A 27-year-old says, \"I cannot focus at work,\" but reports worsening symptoms after a new stressful job and no childhood history of attention problems. Which next step best reflects the CLARITY method?",
+              "ADHD vs. Anxiety — Differential Which pattern most strongly suggests ADHD rather than anxiety?",
+              "Mixed Features — Recognition A depressed patient says, \"I am exhausted but I cannot stop my brain,\" sleeps 4 hours nightly, and is unusually irritable and impulsive. What should you suspect?"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "index": 3,
+          "id": "dab2",
+          "slug": "untangling-the-overlap-adhd-anxiety-trauma-bipolar",
+          "tag": "DAB · M2",
+          "title": "Untangling the Overlap (ADHD / Anxiety / Trauma / Bipolar)",
+          "note": "The four great imitators: how ADHD, anxiety, trauma, and bipolar overlap and how CLARITY separates them.",
+          "chapters": [
+            {
+              "num": 1,
+              "title": "The overlap problem: four conditions that share surface symptoms.",
+              "purpose": "The overlap problem: four conditions that share surface symptoms.",
+              "visual": "Venn-style overlap of ADHD, anxiety, trauma, bipolar.",
+              "interaction": "Explore the overlapping region",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 2,
+              "title": "Why they get confused: same symptoms, different mechanisms.",
+              "purpose": "Why they get confused: same symptoms, different mechanisms.",
+              "visual": "Same-symptom / different-cause comparison grid.",
+              "interaction": "Flip cards: symptom vs underlying mechanism",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 3,
+              "title": "ADHD core picture: lifelong, pervasive, context-independent.",
+              "purpose": "ADHD core picture: lifelong, pervasive, context-independent.",
+              "visual": "ADHD timeline: childhood onset, cross-setting.",
+              "interaction": "Click ADHD anchor features",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 4,
+              "title": "Anxiety core picture: apprehension-driven, avoidance, physiological.",
+              "purpose": "Anxiety core picture: apprehension-driven, avoidance, physiological.",
+              "visual": "Anxiety loop: worry → physical symptoms → avoidance.",
+              "interaction": "Trace the anxiety loop",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 5,
+              "title": "Trauma core picture: event-linked, hypervigilance, reexperiencing.",
+              "purpose": "Trauma core picture: event-linked, hypervigilance, reexperiencing.",
+              "visual": "Trauma triggers/hypervigilance illustration.",
+              "interaction": "Click trauma anchor features",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 6,
+              "title": "Bipolar core picture: episodic, sustained mood/energy shifts.",
+              "purpose": "Bipolar core picture: episodic, sustained mood/energy shifts.",
+              "visual": "Bipolar mood-episode timeline with distinct up/down periods.",
+              "interaction": "Scrub the mood-episode timeline",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 7,
+              "title": "Timeline as the great separator.",
+              "purpose": "Timeline as the great separator.",
+              "visual": "Four timelines side by side (lifelong vs episodic vs event-linked).",
+              "interaction": "Compare the four timelines",
+              "ai": {
+                "kind": "Rapid-fire",
+                "desc": "The AI reads short vignettes; you call each one lifelong, episodic, or event-triggered, and it explains every miss."
+              },
+              "in_production": true
+            },
+            {
+              "num": 8,
+              "title": "Distinguishing ADHD from bipolar specifically.",
+              "purpose": "Distinguishing ADHD from bipolar specifically.",
+              "visual": "ADHD-vs-bipolar decision comparison.",
+              "interaction": "Sort features into ADHD vs bipolar",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 9,
+              "title": "Distinguishing anxiety from ADHD inattention.",
+              "purpose": "Distinguishing anxiety from ADHD inattention.",
+              "visual": "Two \"can't focus\" scenes with different causes.",
+              "interaction": "Identify the driver of inattention",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 10,
+              "title": "Distinguishing trauma from bipolar reactivity.",
+              "purpose": "Distinguishing trauma from bipolar reactivity.",
+              "visual": "Trigger-linked vs episode-linked mood comparison.",
+              "interaction": "Match mood shifts to trigger vs episode",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 11,
+              "title": "When more than one is truly present (genuine comorbidity).",
+              "purpose": "When more than one is truly present (genuine comorbidity).",
+              "visual": "Legitimate comorbidity diagram.",
+              "interaction": "Identify true comorbidity vs one driver",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 12,
+              "title": "Applying CLARITY to the overlap: a worked case.",
+              "purpose": "Applying CLARITY to the overlap: a worked case.",
+              "visual": "Overlap case run through CLARITY.",
+              "interaction": "Step through the case",
+              "ai": {
+                "kind": "Case walk-through",
+                "desc": "Work the ambiguous case back and forth with the AI, which asks what you'd Locate and Assess next and reacts to your reasoning."
+              },
+              "in_production": true
+            },
+            {
+              "num": 13,
+              "title": "Common traps in this cluster.",
+              "purpose": "Common traps in this cluster.",
+              "visual": "\"Watch out for\" trap cards.",
+              "interaction": "Click each trap",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 14,
+              "title": "Medication implications of getting the distinction right.",
+              "purpose": "Medication implications of getting the distinction right.",
+              "visual": "How the diagnosis changes the treatment lane.",
+              "interaction": "Map each diagnosis to its treatment lane",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 15,
+              "title": "Module 2 wrap + bridge to depression that isn't just depression.",
+              "purpose": "Module 2 wrap + bridge to depression that isn't just depression.",
+              "visual": "Recap; next-module teaser.",
+              "interaction": "Knowledge check + continue",
+              "ai": null,
+              "in_production": true
+            }
+          ],
+          "knowledge_check": {
+            "pass_mark": 70,
+            "in_production": true,
+            "questions": [
+              "ADHD vs. Anxiety — Differential Which pattern most strongly suggests ADHD rather than anxiety?",
+              "Mixed Features — Recognition A depressed patient says, \"I am exhausted but I cannot stop my brain,\" sleeps 4 hours nightly, and is unusually irritable and impulsive. What should you suspect?",
+              "Mixed Features — Distinguishing Criteria Which feature is most consistent with mixed features rather than unipolar depression?"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "index": 4,
+          "id": "dab3",
+          "slug": "when-depression-isn-t-just-depression",
+          "tag": "DAB · M3",
+          "title": "When Depression Isn't Just Depression",
+          "note": "Depression as a final common pathway: mixed features, OCD, and early psychosis hiding under a depressive presentation.",
+          "chapters": [
+            {
+              "num": 1,
+              "title": "Depression as a final common pathway, not always a standalone diagnosis.",
+              "purpose": "Depression as a final common pathway, not always a standalone diagnosis.",
+              "visual": "Many roads leading into one \"depression\" door.",
+              "interaction": "Click the roads into depression",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 2,
+              "title": "The cost of missing what's underneath.",
+              "purpose": "The cost of missing what's underneath.",
+              "visual": "\"Treated the surface, missed the driver\" illustration.",
+              "interaction": "Reveal the missed-driver consequences",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 3,
+              "title": "Mixed features: depression with hidden activation.",
+              "purpose": "Mixed features: depression with hidden activation.",
+              "visual": "Depressed mood with underlying agitation/energy overlay.",
+              "interaction": "Spot the mixed-feature signs",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 4,
+              "title": "Why mixed features change the medication plan.",
+              "purpose": "Why mixed features change the medication plan.",
+              "visual": "Antidepressant-alone risk vs mood-aware approach.",
+              "interaction": "Compare treatment approaches",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 5,
+              "title": "Screening for bipolarity inside a depressive visit.",
+              "purpose": "Screening for bipolarity inside a depressive visit.",
+              "visual": "Embedded bipolar-spectrum screen.",
+              "interaction": "Work through the screening questions",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 6,
+              "title": "OCD masquerading as depression.",
+              "purpose": "OCD masquerading as depression.",
+              "visual": "Intrusive-thought / compulsion cycle behind a flat presentation.",
+              "interaction": "Click to reveal the hidden OCD cycle",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 7,
+              "title": "Why OCD gets missed and how to surface it.",
+              "purpose": "Why OCD gets missed and how to surface it.",
+              "visual": "Shame/underreporting barrier; targeted questions.",
+              "interaction": "Reveal the OCD-surfacing questions",
+              "ai": {
+                "kind": "Roleplay",
+                "desc": "Practice asking about intrusive thoughts and compulsions with an AI patient who underreports out of shame."
+              },
+              "in_production": true
+            },
+            {
+              "num": 8,
+              "title": "Early psychosis hiding under depression.",
+              "purpose": "Early psychosis hiding under depression.",
+              "visual": "Subtle prodromal signs beneath depressive presentation.",
+              "interaction": "Spot the prodromal signs",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 9,
+              "title": "The prodrome: recognizing the earliest signals.",
+              "purpose": "The prodrome: recognizing the earliest signals.",
+              "visual": "Prodromal timeline of subtle changes.",
+              "interaction": "Trace the prodrome timeline",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 10,
+              "title": "Distinguishing severe depression from psychotic depression.",
+              "purpose": "Distinguishing severe depression from psychotic depression.",
+              "visual": "Severe-vs-psychotic depression comparison.",
+              "interaction": "Sort features: severe vs psychotic",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 11,
+              "title": "Anxiety and depression coexisting vs one driving the other.",
+              "purpose": "Anxiety and depression coexisting vs one driving the other.",
+              "visual": "Which-is-primary diagram.",
+              "interaction": "Identify primary vs secondary",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 12,
+              "title": "Substance-induced depressive pictures.",
+              "purpose": "Substance-induced depressive pictures.",
+              "visual": "Substances and their depressive effects.",
+              "interaction": "Match substance to its mood effect",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 13,
+              "title": "Medical mimics of depression.",
+              "purpose": "Medical mimics of depression.",
+              "visual": "Thyroid, anemia, sleep, and other medical mimics.",
+              "interaction": "Click each medical mimic",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 14,
+              "title": "Applying CLARITY to a \"simple\" depression that isn't.",
+              "purpose": "Applying CLARITY to a \"simple\" depression that isn't.",
+              "visual": "Depressive case run through CLARITY.",
+              "interaction": "Step through the case",
+              "ai": {
+                "kind": "Case walk-through",
+                "desc": "Talk a 'textbook depression' case through with the AI until the real driver surfaces."
+              },
+              "in_production": true
+            },
+            {
+              "num": 15,
+              "title": "Building the differential instead of defaulting to unipolar depression.",
+              "purpose": "Building the differential instead of defaulting to unipolar depression.",
+              "visual": "Differential-list builder.",
+              "interaction": "Build the depression differential",
+              "ai": {
+                "kind": "Differential coach",
+                "desc": "You propose a differential; the AI pushes back and asks what would rule each item in or out."
+              },
+              "in_production": true
+            },
+            {
+              "num": 16,
+              "title": "Common traps in depressive presentations.",
+              "purpose": "Common traps in depressive presentations.",
+              "visual": "Trap cards for this module.",
+              "interaction": "Click each trap",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 17,
+              "title": "Module 3 wrap + bridge to hidden presentations.",
+              "purpose": "Module 3 wrap + bridge to hidden presentations.",
+              "visual": "Recap; next-module teaser.",
+              "interaction": "Knowledge check + continue",
+              "ai": null,
+              "in_production": true
+            }
+          ],
+          "knowledge_check": {
+            "pass_mark": 70,
+            "in_production": true,
+            "questions": [
+              "Mixed Features — Recognition A depressed patient says, \"I am exhausted but I cannot stop my brain,\" sleeps 4 hours nightly, and is unusually irritable and impulsive. What should you suspect?",
+              "Mixed Features — Distinguishing Criteria Which feature is most consistent with mixed features rather than unipolar depression?",
+              "OCD vs. Psychosis — Differential Which statement best distinguishes OCD obsessions from delusions?"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "index": 5,
+          "id": "dab4",
+          "slug": "hidden-in-plain-sight-personality-adult-autism-gender-identi",
+          "tag": "DAB · M4",
+          "title": "Hidden in Plain Sight (Personality / Adult Autism / Gender Identity)",
+          "note": "Presentations that are routinely missed or mislabeled in adults: personality structure, adult autism, and gender identity.",
+          "chapters": [
+            {
+              "num": 1,
+              "title": "Why these get missed in adult psychiatry.",
+              "purpose": "Why these get missed in adult psychiatry.",
+              "visual": "\"Hidden in plain sight\" motif over an adult intake.",
+              "interaction": "Click why-missed reasons",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 2,
+              "title": "Personality structure vs episodic disorder.",
+              "purpose": "Personality structure vs episodic disorder.",
+              "visual": "Trait-vs-state comparison.",
+              "interaction": "Sort trait vs state features",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 3,
+              "title": "Borderline presentation and its common mislabels.",
+              "purpose": "Borderline presentation and its common mislabels.",
+              "visual": "Borderline features often called \"bipolar.\"",
+              "interaction": "Distinguish borderline from bipolar",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 4,
+              "title": "Reactivity in personality vs mood episodes.",
+              "purpose": "Reactivity in personality vs mood episodes.",
+              "visual": "Interpersonal-trigger vs autonomous-episode comparison.",
+              "interaction": "Match reactivity to its source",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 5,
+              "title": "Adult autism: the presentation that was never caught in childhood.",
+              "purpose": "Adult autism: the presentation that was never caught in childhood.",
+              "visual": "Adult-autism profile without childhood diagnosis.",
+              "interaction": "Click adult-autism features",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 6,
+              "title": "Masking and why women and high-maskers are missed.",
+              "purpose": "Masking and why women and high-maskers are missed.",
+              "visual": "Masking illustration; the cost of camouflage.",
+              "interaction": "Reveal what masking hides",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 7,
+              "title": "Autism vs social anxiety vs avoidant personality.",
+              "purpose": "Autism vs social anxiety vs avoidant personality.",
+              "visual": "Three-way differential of social difficulty.",
+              "interaction": "Sort features across the three",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 8,
+              "title": "Sensory, routine, and communication anchors of autism.",
+              "purpose": "Sensory, routine, and communication anchors of autism.",
+              "visual": "Sensory/routine/communication anchor cards.",
+              "interaction": "Click the autism anchors",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 9,
+              "title": "Gender identity: recognizing it in the psychiatric visit.",
+              "purpose": "Gender identity: recognizing it in the psychiatric visit.",
+              "visual": "Gender-identity considerations in assessment.",
+              "interaction": "Reveal what to ask and how",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 10,
+              "title": "Distinguishing gender dysphoria distress from a mood/anxiety disorder.",
+              "purpose": "Distinguishing gender dysphoria distress from a mood/anxiety disorder.",
+              "visual": "Source-of-distress comparison.",
+              "interaction": "Identify the source of distress",
+              "ai": {
+                "kind": "Roleplay",
+                "desc": "Practice an affirming, non-pathologizing conversation with an AI patient about gender-related distress."
+              },
+              "in_production": true
+            },
+            {
+              "num": 11,
+              "title": "Affirming, non-pathologizing stance while still diagnosing accurately.",
+              "purpose": "Affirming, non-pathologizing stance while still diagnosing accurately.",
+              "visual": "Balance of affirmation and clinical rigor.",
+              "interaction": "Balance affirmation with assessment",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 12,
+              "title": "How these hidden presentations reshape treatment.",
+              "purpose": "How these hidden presentations reshape treatment.",
+              "visual": "Reframed treatment plans for each.",
+              "interaction": "Map each to its treatment shift",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 13,
+              "title": "Applying CLARITY to a hidden presentation.",
+              "purpose": "Applying CLARITY to a hidden presentation.",
+              "visual": "Hidden-presentation case run through CLARITY.",
+              "interaction": "Step through the case",
+              "ai": {
+                "kind": "Case walk-through",
+                "desc": "Run a patient who's cycled through diagnoses for years through CLARITY with the AI."
+              },
+              "in_production": true
+            },
+            {
+              "num": 14,
+              "title": "Common traps: over-pathologizing and under-recognizing.",
+              "purpose": "Common traps: over-pathologizing and under-recognizing.",
+              "visual": "Trap cards for this module.",
+              "interaction": "Click each trap",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 15,
+              "title": "Documentation and language for these presentations.",
+              "purpose": "Documentation and language for these presentations.",
+              "visual": "Respectful, defensible documentation examples.",
+              "interaction": "Click the documentation examples",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 16,
+              "title": "Module 4 wrap + bridge to advanced scenarios.",
+              "purpose": "Module 4 wrap + bridge to advanced scenarios.",
+              "visual": "Recap; next-module teaser.",
+              "interaction": "Knowledge check + continue",
+              "ai": null,
+              "in_production": true
+            }
+          ],
+          "knowledge_check": {
+            "pass_mark": 70,
+            "in_production": true,
+            "questions": [
+              "Mixed Features — Distinguishing Criteria Which feature is most consistent with mixed features rather than unipolar depression?",
+              "OCD vs. Psychosis — Differential Which statement best distinguishes OCD obsessions from delusions?",
+              "OCD — Clinical Interpretation A patient says, \"The thoughts say I am a monster, so I have to wash and pray for hours,\" and describes the thoughts as unwanted and terrifying. What is the best interpretation?"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "index": 6,
+          "id": "dab5",
+          "slug": "advanced-scenarios-substance-use-adhd-anxiety",
+          "tag": "DAB · M5",
+          "title": "Advanced Scenarios (Substance Use / ADHD / Anxiety)",
+          "note": "Complex, overlapping presentations where substance use, ADHD, and anxiety collide and complicate the diagnosis.",
+          "chapters": [
+            {
+              "num": 1,
+              "title": "Advanced scenarios: when multiple drivers stack up.",
+              "purpose": "Advanced scenarios: when multiple drivers stack up.",
+              "visual": "Layered presentation with several interacting drivers.",
+              "interaction": "Peel back the stacked layers",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 2,
+              "title": "Substance use as cause, consequence, and confound.",
+              "purpose": "Substance use as cause, consequence, and confound.",
+              "visual": "Three-way role of substances in the picture.",
+              "interaction": "Sort substance role: cause / consequence / confound",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 3,
+              "title": "Self-medication patterns and what they reveal.",
+              "purpose": "Self-medication patterns and what they reveal.",
+              "visual": "Which substance for which underlying symptom.",
+              "interaction": "Match substance to the symptom it's masking",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 4,
+              "title": "ADHD and substance use: the bidirectional relationship.",
+              "purpose": "ADHD and substance use: the bidirectional relationship.",
+              "visual": "ADHD ↔ substance-use loop.",
+              "interaction": "Trace the bidirectional loop",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 5,
+              "title": "Diagnosing ADHD in the presence of active substance use.",
+              "purpose": "Diagnosing ADHD in the presence of active substance use.",
+              "visual": "Assessment approach with active use in the picture.",
+              "interaction": "Work the assessment sequence",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 6,
+              "title": "Anxiety, substances, and the withdrawal overlap.",
+              "purpose": "Anxiety, substances, and the withdrawal overlap.",
+              "visual": "Withdrawal-vs-anxiety symptom overlap.",
+              "interaction": "Distinguish withdrawal from anxiety",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 7,
+              "title": "Stimulant treatment decisions when substance use is present.",
+              "purpose": "Stimulant treatment decisions when substance use is present.",
+              "visual": "Risk/benefit of stimulants with a use history.",
+              "interaction": "Weigh the stimulant decision",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 8,
+              "title": "Sequencing: what to stabilize first.",
+              "purpose": "Sequencing: what to stabilize first.",
+              "visual": "Treatment-sequencing flow.",
+              "interaction": "Order the stabilization steps",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 9,
+              "title": "When to involve addiction or specialty care.",
+              "purpose": "When to involve addiction or specialty care.",
+              "visual": "Referral decision points.",
+              "interaction": "Identify the referral triggers",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 10,
+              "title": "A fully worked advanced case through CLARITY.",
+              "purpose": "A fully worked advanced case through CLARITY.",
+              "visual": "Complex case run end-to-end through CLARITY.",
+              "interaction": "Step through the complex case",
+              "ai": {
+                "kind": "Case walk-through",
+                "desc": "Work a messy substance-use / ADHD / anxiety case with the AI, sequencing what to stabilize first."
+              },
+              "in_production": true
+            },
+            {
+              "num": 11,
+              "title": "Common traps in complex cases.",
+              "purpose": "Common traps in complex cases.",
+              "visual": "Trap cards for advanced scenarios.",
+              "interaction": "Click each trap",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 12,
+              "title": "Holding uncertainty and using provisional diagnoses.",
+              "purpose": "Holding uncertainty and using provisional diagnoses.",
+              "visual": "Provisional-diagnosis and reassessment loop.",
+              "interaction": "Set a provisional diagnosis + reassessment plan",
+              "ai": {
+                "kind": "Decision coach",
+                "desc": "Set a provisional diagnosis and reassessment plan; the AI probes your reasoning for holding uncertainty."
+              },
+              "in_production": true
+            },
+            {
+              "num": 13,
+              "title": "Module 5 wrap + bridge to iatrogenesis vs pathology.",
+              "purpose": "Module 5 wrap + bridge to iatrogenesis vs pathology.",
+              "visual": "Recap; next-module teaser.",
+              "interaction": "Knowledge check + continue",
+              "ai": null,
+              "in_production": true
+            }
+          ],
+          "knowledge_check": {
+            "pass_mark": 70,
+            "in_production": true,
+            "questions": [
+              "OCD vs. Psychosis — Differential Which statement best distinguishes OCD obsessions from delusions?",
+              "OCD — Clinical Interpretation A patient says, \"The thoughts say I am a monster, so I have to wash and pray for hours,\" and describes the thoughts as unwanted and terrifying. What is the best interpretation?",
+              "Trauma vs. ADHD — Differential Which pattern most strongly supports trauma-related symptoms over primary ADHD?"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "index": 7,
+          "id": "dab6",
+          "slug": "iatrogenesis-vs-pathology",
+          "tag": "DAB · M6",
+          "title": "Iatrogenesis vs. Pathology",
+          "note": "Telling the difference between the patient's underlying illness and symptoms created or worsened by prior treatment.",
+          "chapters": [
+            {
+              "num": 1,
+              "title": "The iatrogenesis question: did treatment cause this?",
+              "purpose": "The iatrogenesis question: did treatment cause this?",
+              "visual": "\"Illness vs treatment effect\" fork.",
+              "interaction": "Split symptoms: pathology vs iatrogenic",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 2,
+              "title": "Why iatrogenesis is so easy to miss.",
+              "purpose": "Why iatrogenesis is so easy to miss.",
+              "visual": "Symptom attributed to illness that's actually a med effect.",
+              "interaction": "Reveal the misattribution",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 3,
+              "title": "Medication-induced symptoms that mimic illness.",
+              "purpose": "Medication-induced symptoms that mimic illness.",
+              "visual": "Common drug effects that look like psychiatric symptoms.",
+              "interaction": "Match med effect to the symptom it mimics",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 4,
+              "title": "Antidepressant-induced activation and mood destabilization.",
+              "purpose": "Antidepressant-induced activation and mood destabilization.",
+              "visual": "Antidepressant unmasking/activation illustration.",
+              "interaction": "Trace activation to its cause",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 5,
+              "title": "Polypharmacy effects and interactions.",
+              "purpose": "Polypharmacy effects and interactions.",
+              "visual": "Stacked-medication interaction web.",
+              "interaction": "Explore the interaction web",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 6,
+              "title": "Withdrawal and discontinuation effects mislabeled as relapse.",
+              "purpose": "Withdrawal and discontinuation effects mislabeled as relapse.",
+              "visual": "Withdrawal-vs-relapse comparison.",
+              "interaction": "Distinguish withdrawal from relapse",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 7,
+              "title": "The diagnostic overshadowing trap.",
+              "purpose": "The diagnostic overshadowing trap.",
+              "visual": "Existing label obscuring a new cause.",
+              "interaction": "Reveal what the label is hiding",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 8,
+              "title": "Reconstructing the medication history/timeline.",
+              "purpose": "Reconstructing the medication history/timeline.",
+              "visual": "Medication timeline aligned against symptom onset.",
+              "interaction": "Align meds against symptom timeline",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 9,
+              "title": "When to suspect iatrogenesis over new pathology.",
+              "purpose": "When to suspect iatrogenesis over new pathology.",
+              "visual": "Suspicion checklist.",
+              "interaction": "Click the suspicion triggers",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 10,
+              "title": "Applying CLARITY to separate pathology from treatment effect.",
+              "purpose": "Applying CLARITY to separate pathology from treatment effect.",
+              "visual": "Case run through CLARITY with the iatrogenesis lens.",
+              "interaction": "Step through the case",
+              "ai": {
+                "kind": "Case walk-through",
+                "desc": "Work a 'treatment-resistant' case with the AI, using the medication timeline to separate illness from drug effect."
+              },
+              "in_production": true
+            },
+            {
+              "num": 11,
+              "title": "Module 6 wrap + bridge to referrals, red flags, boundaries.",
+              "purpose": "Module 6 wrap + bridge to referrals, red flags, boundaries.",
+              "visual": "Recap; next-module teaser.",
+              "interaction": "Knowledge check + continue",
+              "ai": null,
+              "in_production": true
+            }
+          ],
+          "knowledge_check": {
+            "pass_mark": 70,
+            "in_production": true,
+            "questions": [
+              "OCD — Clinical Interpretation A patient says, \"The thoughts say I am a monster, so I have to wash and pray for hours,\" and describes the thoughts as unwanted and terrifying. What is the best interpretation?",
+              "Trauma vs. ADHD — Differential Which pattern most strongly supports trauma-related symptoms over primary ADHD?",
+              "CLARITY Method — Diagnostic Discipline What is the best next step when a patient arrives self-diagnosed with ADHD and requests stimulants?"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "index": 8,
+          "id": "dab7",
+          "slug": "referrals-red-flags-boundaries",
+          "tag": "DAB · M7",
+          "title": "Referrals, Red Flags & Boundaries",
+          "note": "Knowing the edges of your scope: when to refer, which red flags demand action, and how to hold clinical boundaries.",
+          "chapters": [
+            {
+              "num": 1,
+              "title": "Knowing the edges of your role.",
+              "purpose": "Knowing the edges of your role.",
+              "visual": "Scope-of-practice boundary map.",
+              "interaction": "Click the edges of scope",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 2,
+              "title": "Safety red flags that change the visit immediately.",
+              "purpose": "Safety red flags that change the visit immediately.",
+              "visual": "Acute-safety red-flag panel.",
+              "interaction": "Click each safety red flag",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 3,
+              "title": "Medical red flags requiring workup or transfer.",
+              "purpose": "Medical red flags requiring workup or transfer.",
+              "visual": "Medical-mimic and emergency red flags.",
+              "interaction": "Identify medical red flags",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 4,
+              "title": "When a case exceeds your scope or setting.",
+              "purpose": "When a case exceeds your scope or setting.",
+              "visual": "\"This is beyond this setting\" decision points.",
+              "interaction": "Judge in-scope vs refer",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 5,
+              "title": "Choosing the right referral: who does what.",
+              "purpose": "Choosing the right referral: who does what.",
+              "visual": "Map of referral destinations and their roles.",
+              "interaction": "Match need to the right referral",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 6,
+              "title": "Making referrals that actually get followed through.",
+              "purpose": "Making referrals that actually get followed through.",
+              "visual": "Warm-handoff vs cold-referral comparison.",
+              "interaction": "Build an effective handoff",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 7,
+              "title": "Boundaries with patients: holding the frame.",
+              "purpose": "Boundaries with patients: holding the frame.",
+              "visual": "Clinical-frame boundary illustration.",
+              "interaction": "Identify healthy boundaries",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 8,
+              "title": "Boundaries around prescribing pressure.",
+              "purpose": "Boundaries around prescribing pressure.",
+              "visual": "Requests for controlled substances / specific drugs.",
+              "interaction": "Work the prescribing-pressure scenarios",
+              "ai": {
+                "kind": "Roleplay",
+                "desc": "An AI patient pushes hard for a controlled substance; practice holding the boundary while keeping the alliance."
+              },
+              "in_production": true
+            },
+            {
+              "num": 9,
+              "title": "Documenting risk, referrals, and decisions.",
+              "purpose": "Documenting risk, referrals, and decisions.",
+              "visual": "Defensible risk-and-referral documentation.",
+              "interaction": "Click the documentation must-haves",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 10,
+              "title": "Collaboration and the treatment team.",
+              "purpose": "Collaboration and the treatment team.",
+              "visual": "Team-based-care map around the patient.",
+              "interaction": "Assemble the collaborating team",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 11,
+              "title": "Applying CLARITY with a red-flag lens.",
+              "purpose": "Applying CLARITY with a red-flag lens.",
+              "visual": "Case with embedded red flags run through CLARITY.",
+              "interaction": "Step through the case",
+              "ai": {
+                "kind": "Case walk-through",
+                "desc": "Work a case that hides a red flag with the AI and watch CLARITY surface it."
+              },
+              "in_production": true
+            },
+            {
+              "num": 12,
+              "title": "Common boundary and referral traps.",
+              "purpose": "Common boundary and referral traps.",
+              "visual": "Trap cards for this module.",
+              "interaction": "Click each trap",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 13,
+              "title": "Module 7 wrap + bridge to documentation and workflow.",
+              "purpose": "Module 7 wrap + bridge to documentation and workflow.",
+              "visual": "Recap; next-module teaser.",
+              "interaction": "Knowledge check + continue",
+              "ai": null,
+              "in_production": true
+            }
+          ],
+          "knowledge_check": {
+            "pass_mark": 70,
+            "in_production": true,
+            "questions": [
+              "Trauma vs. ADHD — Differential Which pattern most strongly supports trauma-related symptoms over primary ADHD?",
+              "CLARITY Method — Diagnostic Discipline What is the best next step when a patient arrives self-diagnosed with ADHD and requests stimulants?",
+              "Bipolar Spectrum — Red Flags Which red flag should increase suspicion for bipolar-spectrum illness?"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "index": 9,
+          "id": "dab8",
+          "slug": "documentation-workflow-implementation",
+          "tag": "DAB · M8",
+          "title": "Documentation, Workflow & Implementation",
+          "note": "Turning the CLARITY method into defensible documentation and a repeatable, sustainable clinical workflow.",
+          "chapters": [
+            {
+              "num": 1,
+              "title": "Documentation as the yield of the whole method.",
+              "purpose": "Documentation as the yield of the whole method.",
+              "visual": "CLARITY funnel ending in the note.",
+              "interaction": "Trace CLARITY into the note",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 2,
+              "title": "What a defensible psychiatric note contains.",
+              "purpose": "What a defensible psychiatric note contains.",
+              "visual": "Annotated model note.",
+              "interaction": "Click the elements of a defensible note",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 3,
+              "title": "Documenting the differential and your reasoning.",
+              "purpose": "Documenting the differential and your reasoning.",
+              "visual": "Differential-and-rationale note section.",
+              "interaction": "Build the reasoning section",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 4,
+              "title": "Writing the formulation, not just a label.",
+              "purpose": "Writing the formulation, not just a label.",
+              "visual": "Formulation paragraph vs bare diagnosis.",
+              "interaction": "Compare formulation vs label",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 5,
+              "title": "Documenting risk and safety clearly.",
+              "purpose": "Documenting risk and safety clearly.",
+              "visual": "Risk-documentation template.",
+              "interaction": "Complete the risk section",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 6,
+              "title": "Efficient documentation: templates without box-checking.",
+              "purpose": "Efficient documentation: templates without box-checking.",
+              "visual": "Smart template vs mindless checkbox.",
+              "interaction": "Toggle template vs checkbox",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 7,
+              "title": "Building CLARITY into your everyday workflow.",
+              "purpose": "Building CLARITY into your everyday workflow.",
+              "visual": "Visit-flow diagram with CLARITY embedded.",
+              "interaction": "Map CLARITY onto your visit flow",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 8,
+              "title": "Managing time: the framework in a real schedule.",
+              "purpose": "Managing time: the framework in a real schedule.",
+              "visual": "Time-boxed visit schedule.",
+              "interaction": "Fit CLARITY into the schedule",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 9,
+              "title": "Follow-up visits and tracking the diagnosis over time.",
+              "purpose": "Follow-up visits and tracking the diagnosis over time.",
+              "visual": "Longitudinal follow-up tracking.",
+              "interaction": "Track diagnosis across visits",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 10,
+              "title": "Sustaining accuracy: avoiding drift and burnout.",
+              "purpose": "Sustaining accuracy: avoiding drift and burnout.",
+              "visual": "Anti-drift / sustainability habits.",
+              "interaction": "Click the sustaining habits",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 11,
+              "title": "Course implementation wrap: making CLARITY your default.",
+              "purpose": "Course implementation wrap: making CLARITY your default.",
+              "visual": "\"You now run CLARITY\" closing graphic.",
+              "interaction": "Final knowledge check + continue",
+              "ai": null,
+              "in_production": true
+            }
+          ],
+          "knowledge_check": {
+            "pass_mark": 70,
+            "in_production": true,
+            "questions": [
+              "CLARITY Method — Diagnostic Discipline What is the best next step when a patient arrives self-diagnosed with ADHD and requests stimulants?",
+              "Bipolar Spectrum — Red Flags Which red flag should increase suspicion for bipolar-spectrum illness?",
+              "Documentation — Defensible Reasoning Which documentation statement best reflects defensible psychiatric reasoning?"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "index": 10,
+          "id": "dabc",
+          "slug": "course-completion-framework-summary",
+          "tag": "DAB · Wrap",
+          "title": "Course Completion & Framework Summary",
+          "note": "Closing the Diagnostic Accuracy Blueprint: consolidating CLARITY and sending the clinician back to practice.",
+          "chapters": [
+            {
+              "num": 1,
+              "title": "Course completion: what you've built.",
+              "purpose": "Course completion: what you've built.",
+              "visual": "Completion screen recapping the 8-module arc.",
+              "interaction": "Review the completed journey",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 2,
+              "title": "CLARITY consolidated in one view.",
+              "purpose": "CLARITY consolidated in one view.",
+              "visual": "Full CLARITY method on a single summary screen.",
+              "interaction": "Click any CLARITY step to review",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 3,
+              "title": "Applying CLARITY starting tomorrow.",
+              "purpose": "Applying CLARITY starting tomorrow.",
+              "visual": "\"Use it on your next patient\" call to action.",
+              "interaction": "Commit to first application",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 4,
+              "title": "Certificate, next steps, and continued growth.",
+              "purpose": "Certificate, next steps, and continued growth.",
+              "visual": "Certificate + next-course / resources preview.",
+              "interaction": "Claim certificate + explore next steps",
+              "ai": null,
+              "in_production": true
+            }
+          ],
+          "knowledge_check": {
+            "pass_mark": 70,
+            "in_production": true,
+            "questions": [],
+            "note": "Course wrap — final assessment lives on the Progress & Certificate page."
+          }
+        }
+      ]
+    },
+    {
+      "slug": "edit-protocol",
+      "code": "E.D.I.T.",
+      "title": "The E.D.I.T. Protocol",
+      "ce_total": 3,
+      "total_modules": 2,
+      "modules": [
+        {
+          "index": 1,
+          "id": "editp",
+          "slug": "deprescribing-polypharmacy-algorithm",
+          "tag": "E.D.I.T. · Protocol",
+          "title": "Deprescribing & Polypharmacy Algorithm",
+          "note": "The E.D.I.T. mini-course: a structured protocol for safely simplifying complex medication regimens (Evaluate, Discuss, Initiate, Track).",
+          "chapters": [
+            {
+              "num": 1,
+              "title": "The polypharmacy problem and the E.D.I.T. promise.",
+              "purpose": "The polypharmacy problem and the E.D.I.T. promise.",
+              "visual": "Overloaded medication list vs a simplified, rational regimen.",
+              "interaction": "Compare bloated vs optimized regimen",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 2,
+              "title": "E — Evaluate: the diagnostic audit of the regimen.",
+              "purpose": "E — Evaluate: the diagnostic audit of the regimen.",
+              "visual": "Four-part audit lens over the medication list.",
+              "interaction": "Run the four audit checks",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 3,
+              "title": "Spotting legacy prescribing, duplication, and cascades.",
+              "purpose": "Spotting legacy prescribing, duplication, and cascades.",
+              "visual": "Examples of legacy meds, duplicate mechanisms, and cascade chains.",
+              "interaction": "Tag each problem type on the list",
+              "ai": {
+                "kind": "Drill",
+                "desc": "Tag legacy prescribing, duplication, and cascades on a sample regimen; the AI checks your audit."
+              },
+              "in_production": true
+            },
+            {
+              "num": 4,
+              "title": "D — Discuss: reframing deprescribing as an optimization trial.",
+              "purpose": "D — Discuss: reframing deprescribing as an optimization trial.",
+              "visual": "Conversation card reframing \"stopping meds\" as \"optimizing.\"",
+              "interaction": "Practice the reframe",
+              "ai": {
+                "kind": "Roleplay",
+                "desc": "Practice reframing deprescribing as an optimization trial with a worried AI patient."
+              },
+              "in_production": true
+            },
+            {
+              "num": 5,
+              "title": "The \"Pause and Reverse\" contract and pre-hab.",
+              "purpose": "The \"Pause and Reverse\" contract and pre-hab.",
+              "visual": "Pause-and-Reverse agreement + pre-hab preparation.",
+              "interaction": "Build the Pause-and-Reverse contract",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 6,
+              "title": "I — Initiate: starting the taper on the right curve.",
+              "purpose": "I — Initiate: starting the taper on the right curve.",
+              "visual": "Hyperbolic taper curve vs a naive linear taper.",
+              "interaction": "Compare hyperbolic vs linear tapering",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 7,
+              "title": "The 10-25% rule and practical taper mechanics.",
+              "purpose": "The 10-25% rule and practical taper mechanics.",
+              "visual": "Step-down schedule showing 10 to 25% reductions.",
+              "interaction": "Set a taper schedule",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 8,
+              "title": "Practical tapering tools: IR switch, Prozac bridge, bead counting.",
+              "purpose": "Practical tapering tools: IR switch, Prozac bridge, bead counting.",
+              "visual": "Toolkit of taper techniques.",
+              "interaction": "Match tool to the tapering problem",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 9,
+              "title": "T — Track: withdrawal vs relapse and the Push/Hold/Reverse call.",
+              "purpose": "T — Track: withdrawal vs relapse and the Push/Hold/Reverse call.",
+              "visual": "Withdrawal-vs-relapse differential + Push/Hold/Reverse flowchart.",
+              "interaction": "Work the Push/Hold/Reverse decision",
+              "ai": {
+                "kind": "Decision coach",
+                "desc": "The AI feeds follow-up scenarios; you call Push, Hold, or Reverse and defend the call."
+              },
+              "in_production": true
+            },
+            {
+              "num": 10,
+              "title": "Business & billing: coding the complexity (99215).",
+              "purpose": "Business & billing: coding the complexity (99215).",
+              "visual": "Billing/coding slide tying complexity to the right code.",
+              "interaction": "Map the visit to its billing level",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 11,
+              "title": "Closing + CTA: apply E.D.I.T. and continue.",
+              "purpose": "Closing + CTA: apply E.D.I.T. and continue.",
+              "visual": "Closing screen with the E.D.I.T. recap and next-step CTA.",
+              "interaction": "Recap + continue to case studies",
+              "ai": null,
+              "in_production": true
+            }
+          ],
+          "knowledge_check": {
+            "pass_mark": 70,
+            "in_production": true,
+            "questions": [
+              "Phase E — Evaluate During the Evaluate phase of the E.D.I.T. Protocol, you identify a medication that was started during a hospitalization two years ago and was never discontinued, despite the patient being clinically stable. What is the correct term for this finding?",
+              "Phase D — Discuss A patient expresses significant anxiety about reducing her antidepressant dose, stating, \"What if I fall apart?\" According to the E.D.I.T. Protocol's Discuss phase, which response best reflects the Pause and Reverse contract?",
+              "Phase I — Initiate A patient is tapering sertraline using the 10–25% rule. She is currently at 50mg. Which reduction schedule correctly applies the hyperbolic tapering principle?"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "index": 2,
+          "id": "editc",
+          "slug": "case-studies-the-fragmented-patient",
+          "tag": "E.D.I.T. · Cases",
+          "title": "Case Studies — The Fragmented Patient",
+          "note": "Four real-world patients walked phase-by-phase through E.D.I.T., each highlighting a different deprescribing challenge.",
+          "chapters": [
+            {
+              "num": 1,
+              "title": "Case-study overview: the fragmented patient.",
+              "purpose": "Case-study overview: the fragmented patient.",
+              "visual": "Four-patient lineup, each with a tangled regimen.",
+              "interaction": "Preview the four cases",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 2,
+              "title": "Case 1 — Mark, 28: the fragmented-care cascade.",
+              "purpose": "Case 1 — Mark, 28: the fragmented-care cascade.",
+              "visual": "Mark's regimen: Vyvanse, Quetiapine, Ropinirole, Lorazepam, with a cascade map.",
+              "interaction": "Trace Mark's prescribing cascade",
+              "ai": {
+                "kind": "Case walk-through",
+                "desc": "Talk Mark's cascade through E-D-I-T with the AI, deciding each move as it plays the patient."
+              },
+              "in_production": true
+            },
+            {
+              "num": 3,
+              "title": "Case 2 — Jessica, 32: diagnostic misalignment.",
+              "purpose": "Case 2 — Jessica, 32: diagnostic misalignment.",
+              "visual": "Jessica's regimen: Duloxetine, Bupropion, Lamotrigine, Clonazepam, Trazodone.",
+              "interaction": "Realign Jessica's meds to her diagnosis",
+              "ai": {
+                "kind": "Case walk-through",
+                "desc": "Work Jessica's diagnostic misalignment with the AI, one E-D-I-T phase at a time."
+              },
+              "in_production": true
+            },
+            {
+              "num": 4,
+              "title": "Case 3 — David, 55: the capsule dilemma and the blood-pressure trap.",
+              "purpose": "Case 3 — David, 55: the capsule dilemma and the blood-pressure trap.",
+              "visual": "David's regimen: Venlafaxine XR, Mirtazapine, Sildenafil, Amlodipine; Prozac bridge.",
+              "interaction": "Plan David's venlafaxine taper",
+              "ai": {
+                "kind": "Case walk-through",
+                "desc": "Plan David's venlafaxine taper with the AI, weighing the Prozac bridge against the blood-pressure interaction."
+              },
+              "in_production": true
+            },
+            {
+              "num": 5,
+              "title": "Case 4 — Sarah, 55: the 12-year benzodiazepine safety blanket.",
+              "purpose": "Case 4 — Sarah, 55: the 12-year benzodiazepine safety blanket.",
+              "visual": "Sarah's regimen: Clonazepam, Zolpidem, Escitalopram, Adderall; long-term benzo focus.",
+              "interaction": "Work Sarah's Track/Push-Hold-Reverse calls",
+              "ai": {
+                "kind": "Case walk-through",
+                "desc": "Coach Sarah off a 12-year benzodiazepine with the AI, distinguishing withdrawal from relapse as you go."
+              },
+              "in_production": true
+            },
+            {
+              "num": 6,
+              "title": "Case-study closing: patterns across all four.",
+              "purpose": "Case-study closing: patterns across all four.",
+              "visual": "Cross-case summary of the recurring lessons.",
+              "interaction": "Review the cross-case lessons",
+              "ai": null,
+              "in_production": true
+            }
+          ],
+          "knowledge_check": {
+            "pass_mark": 70,
+            "in_production": true,
+            "questions": [
+              "Phase E — Evaluate During the Evaluate phase of the E.D.I.T. Protocol, you identify a medication that was started during a hospitalization two years ago and was never discontinued, despite the patient being clinically stable. What is the correct term for this finding?",
+              "Phase D — Discuss A patient expresses significant anxiety about reducing her antidepressant dose, stating, \"What if I fall apart?\" According to the E.D.I.T. Protocol's Discuss phase, which response best reflects the Pause and Reverse contract?",
+              "Phase I — Initiate A patient is tapering sertraline using the 10–25% rule. She is currently at 50mg. Which reduction schedule correctly applies the hyperbolic tapering principle?"
+            ],
+            "note": ""
+          }
+        }
+      ]
+    },
+    {
+      "slug": "treatment-accuracy-blueprint",
+      "code": "TAB",
+      "title": "The Treatment Accuracy Blueprint",
+      "ce_total": 15,
+      "total_modules": 10,
+      "modules": [
+        {
+          "index": 1,
+          "id": "tab0",
+          "slug": "introduction-course-orientation",
+          "tag": "TAB · Intro",
+          "title": "Introduction & Course Orientation",
+          "note": "The Treatment Accuracy Blueprint opening: the sister course to DAB. Where DAB gets the diagnosis right, TAB turns an accurate diagnosis into a structured, defensible treatment plan.",
+          "chapters": [
+            {
+              "num": 1,
+              "title": "Course Title & Welcome",
+              "purpose": "Course Title & Welcome",
+              "visual": "Branded TAB title animation; DAB (diagnosis) handing off to TAB (treatment).",
+              "interaction": "Title reveal + \"what you'll be able to do\" promise cards",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 2,
+              "title": "Who This Course Is For",
+              "purpose": "Who This Course Is For",
+              "visual": "Clinician in a real outpatient visit, no specialist backup.",
+              "interaction": "Click who-this-is-for cards",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 3,
+              "title": "What This Course Is — and Isn't",
+              "purpose": "What This Course Is — and Isn't",
+              "visual": "Meds + supplements + labs woven into one clinical conversation.",
+              "interaction": "Toggle strong vs emerging evidence framing",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 4,
+              "title": "The Gap This Course Closes",
+              "purpose": "The Gap This Course Closes",
+              "visual": "Diagnosis-to-action gap illustration.",
+              "interaction": "Reveal where the gap shows up in practice",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 5,
+              "title": "How This Course Is Organized",
+              "purpose": "How This Course Is Organized",
+              "visual": "Interactive TAB course map, Modules 1 through 8.",
+              "interaction": "Course-map walkthrough (8 modules)",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 6,
+              "title": "How Medications, Supplements, and Labs Work in This Course",
+              "purpose": "How Medications, Supplements, and Labs Work in This Course",
+              "visual": "Three-question card: what am I treating / monitoring / what does success look like.",
+              "interaction": "Practice the three questions on a sample plan",
+              "ai": {
+                "kind": "Coach",
+                "desc": "You answer the three questions for a sample case; the AI flags any target, monitoring plan, or success marker that's too vague to act on."
+              },
+              "in_production": true
+            },
+            {
+              "num": 7,
+              "title": "Your Quick Win: One Question Before Every Prescription",
+              "purpose": "Your Quick Win: One Question Before Every Prescription",
+              "visual": "Clinical concept card: Your Quick Win: One Question Before Every Prescription.",
+              "interaction": "Review the key points",
+              "ai": {
+                "kind": "Coach",
+                "desc": "The AI prompts you with the one question before each prescribing scenario and checks whether your answer is anchored to the diagnosis."
+              },
+              "in_production": true
+            },
+            {
+              "num": 8,
+              "title": "A Note on Clinical Voice and Evidence",
+              "purpose": "A Note on Clinical Voice and Evidence",
+              "visual": "\"Practitioner to practitioner\" tone card.",
+              "interaction": "Reveal the teaching approach",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 9,
+              "title": "Let's Begin — Module 1",
+              "purpose": "Let's Begin — Module 1",
+              "visual": "Module 1 unlock animation.",
+              "interaction": "Start Module 1 button",
+              "ai": null,
+              "in_production": true
+            }
+          ],
+          "knowledge_check": {
+            "pass_mark": 70,
+            "in_production": true,
+            "questions": [
+              "Module 1 Before writing any new prescription, the Treatment Accuracy Blueprint recommends answering three questions. Which of the following correctly identifies all three?",
+              "Module 1 According to the Treatment Planning Hierarchy, which of the following should always be addressed first when building a psychiatric treatment plan?"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "index": 2,
+          "id": "tab1",
+          "slug": "from-diagnosis-to-treatment-building-the-plan",
+          "tag": "TAB · M1",
+          "title": "From Diagnosis to Treatment: Building the Plan",
+          "note": "The foundation module: turning a working diagnosis into a structured, prioritized, defensible plan with clear targets and a monitoring framework.",
+          "chapters": [
+            {
+              "num": 1,
+              "title": "Module Title & Promise",
+              "purpose": "Module Title & Promise",
+              "visual": "Diagnosis (category) vs treatment target (what will change).",
+              "interaction": "Turn a diagnosis into one to three functional targets",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 2,
+              "title": "The Moment Nobody Teaches",
+              "purpose": "The Moment Nobody Teaches",
+              "visual": "The \"now what?\" pause after the evaluation.",
+              "interaction": "Click the questions that surface in the pause",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 3,
+              "title": "Start With the Target, Not the Diagnosis",
+              "purpose": "Start With the Target, Not the Diagnosis",
+              "visual": "Hierarchy pyramid: safety, functional impairment, anchor diagnosis, deferred.",
+              "interaction": "Order the plan by the hierarchy",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 4,
+              "title": "The Treatment Planning Hierarchy",
+              "purpose": "The Treatment Planning Hierarchy",
+              "visual": "Recap; next-module teaser.",
+              "interaction": "Knowledge check + continue",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 5,
+              "title": "Sequencing: When to Start, When to Wait",
+              "purpose": "Sequencing: When to Start, When to Wait",
+              "visual": "Start-now vs watchful-waiting decision fork.",
+              "interaction": "Judge start vs structured wait",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 6,
+              "title": "Setting Expectations: The Conversation That Changes Everything",
+              "purpose": "Setting Expectations: The Conversation That Changes Everything",
+              "visual": "Pre-departure expectations conversation.",
+              "interaction": "Build the expectations script",
+              "ai": {
+                "kind": "Roleplay",
+                "desc": "The AI plays the patient in this conversation; you deliver the education and plan, and it flags overpromising, missed risks, or unaddressed concerns."
+              },
+              "in_production": true
+            },
+            {
+              "num": 7,
+              "title": "Integrating Complementary Supports From the Start",
+              "purpose": "Integrating Complementary Supports From the Start",
+              "visual": "Exercise / supplements framed as biological interventions, not afterthoughts.",
+              "interaction": "Reframe a lifestyle recommendation in clinical language",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 8,
+              "title": "Building the Monitoring Framework",
+              "purpose": "Building the Monitoring Framework",
+              "visual": "Three-part monitoring card per intervention.",
+              "interaction": "Set what you're watching for and when",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 9,
+              "title": "Writing the Treatment Note That Shows Your Thinking",
+              "purpose": "Writing the Treatment Note That Shows Your Thinking",
+              "visual": "Weak note vs one-paragraph note that tells the story.",
+              "interaction": "Build the five-to-seven-sentence note",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 10,
+              "title": "Case Study: Building the Plan From Scratch",
+              "purpose": "Case Study: Building the Plan From Scratch",
+              "visual": "Worked case from targets to note.",
+              "interaction": "Build the full plan alongside the case",
+              "ai": {
+                "kind": "Case walk-through",
+                "desc": "The AI plays the case; you work the treatment decisions step by step, and it probes your rationale at each turn."
+              },
+              "in_production": true
+            },
+            {
+              "num": 11,
+              "title": "Module Summary",
+              "purpose": "Module Summary",
+              "visual": "Recap of the M1 habits in order.",
+              "interaction": "Review the core habits",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 12,
+              "title": "Transition to Module 2",
+              "purpose": "Transition to Module 2",
+              "visual": "Bridge card to the next module.",
+              "interaction": "Continue",
+              "ai": null,
+              "in_production": true
+            }
+          ],
+          "knowledge_check": {
+            "pass_mark": 70,
+            "in_production": true,
+            "questions": [
+              "Module 1 Before writing any new prescription, the Treatment Accuracy Blueprint recommends answering three questions. Which of the following correctly identifies all three?",
+              "Module 1 According to the Treatment Planning Hierarchy, which of the following should always be addressed first when building a psychiatric treatment plan?",
+              "Module 2 A 28-year-old presents with confirmed ADHD and moderate generalized anxiety. Symptoms of both are present, but the patient's anxiety is severe enough to be destabilizing her daily functioning. According to the TAB sequencing framework, what is the most appropriate initia"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "index": 3,
+          "id": "tab2",
+          "slug": "treating-adhd-anxiety-their-overlap",
+          "tag": "TAB · M2",
+          "title": "Treating ADHD, Anxiety & Their Overlap",
+          "note": "From diagnostic clarity to treatment strategy: selecting and sequencing evidence-based treatment for ADHD, anxiety, and their very common overlap.",
+          "chapters": [
+            {
+              "num": 1,
+              "title": "Module Title",
+              "purpose": "Module Title",
+              "visual": "Diagnosis-to-strategy handoff for the ADHD/anxiety cluster.",
+              "interaction": "Preview the module's decisions",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 2,
+              "title": "Learning Objective",
+              "purpose": "Learning Objective",
+              "visual": "Anxiety-led treatment with early-activation watch.",
+              "interaction": "Plan the first few weeks",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 3,
+              "title": "Stimulant Pharmacotherapy",
+              "purpose": "Stimulant Pharmacotherapy",
+              "visual": "Amphetamine and methylphenidate classes; IR vs XR.",
+              "interaction": "Click the stimulant decision variables",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 4,
+              "title": "Amphetamine versus Methylphenidate",
+              "purpose": "Amphetamine versus Methylphenidate",
+              "visual": "Two-tool comparison rather than a ranking.",
+              "interaction": "Sort features across the two classes",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 5,
+              "title": "Release and Titration",
+              "purpose": "Release and Titration",
+              "visual": "IR flexibility vs XR adherence; titration curve.",
+              "interaction": "Set a titration plan",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 6,
+              "title": "Side Effects and Cardiovascular Care",
+              "purpose": "Side Effects and Cardiovascular Care",
+              "visual": "BP/HR and cardiac-history monitoring panel.",
+              "interaction": "Build the stimulant monitoring checklist",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 7,
+              "title": "The Stimulant Conversation",
+              "purpose": "The Stimulant Conversation",
+              "visual": "Two patient types, same skill set.",
+              "interaction": "Practice both versions of the conversation",
+              "ai": {
+                "kind": "Roleplay",
+                "desc": "The AI plays the patient in this conversation; you deliver the education and plan, and it flags overpromising, missed risks, or unaddressed concerns."
+              },
+              "in_production": true
+            },
+            {
+              "num": 8,
+              "title": "Non-Stimulant Options",
+              "purpose": "Non-Stimulant Options",
+              "visual": "Atomoxetine, viloxazine, guanfacine, clonidine.",
+              "interaction": "Match non-stimulant to the clinical situation",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 9,
+              "title": "How Non-Stimulants Differ",
+              "purpose": "How Non-Stimulants Differ",
+              "visual": "Onset timeline: stimulant vs non-stimulant.",
+              "interaction": "Set the right \"waiting for effect\" expectation",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 10,
+              "title": "Sequencing ADHD and Anxiety",
+              "purpose": "Sequencing ADHD and Anxiety",
+              "visual": "Which-is-primary decision map.",
+              "interaction": "Decide the sequencing for each scenario",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 11,
+              "title": "SSRIs and SNRIs",
+              "purpose": "SSRIs and SNRIs",
+              "visual": "Worked case: what to treat first, what to monitor, how to document.",
+              "interaction": "Work the sequencing and monitoring decisions",
+              "ai": {
+                "kind": "Case walk-through",
+                "desc": "The AI plays the case; you sequence ADHD vs anxiety, choose the agent, set monitoring, and it probes your rationale at each step."
+              },
+              "in_production": true
+            },
+            {
+              "num": 12,
+              "title": "Buspirone",
+              "purpose": "Buspirone",
+              "visual": "Buspirone niche card.",
+              "interaction": "Identify the buspirone-friendly patient",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 13,
+              "title": "Complementary Approaches",
+              "purpose": "Complementary Approaches",
+              "visual": "Integrative options with evidence framing.",
+              "interaction": "Choose adjuncts matched to labs and severity",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 14,
+              "title": "Omega-3s",
+              "purpose": "Omega-3s",
+              "visual": "Clinical concept card: Omega-3s.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 15,
+              "title": "Magnesium, Zinc, Ferritin, and L-theanine",
+              "purpose": "Magnesium, Zinc, Ferritin, and L-theanine",
+              "visual": "Clinical concept card: Magnesium, Zinc, Ferritin, and L-theanine.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 16,
+              "title": "Exercise",
+              "purpose": "Exercise",
+              "visual": "Clinical concept card: Exercise.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 17,
+              "title": "Labs and Monitoring",
+              "purpose": "Labs and Monitoring",
+              "visual": "Baseline BP/HR/weight; thyroid, ferritin, CBC when indicated.",
+              "interaction": "Order labs matched to the clinical question",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 18,
+              "title": "Follow-Up Monitoring",
+              "purpose": "Follow-Up Monitoring",
+              "visual": "Targeted lab/monitoring panel matched to the clinical question.",
+              "interaction": "Order labs matched to the clinical question",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 19,
+              "title": "Case Study",
+              "purpose": "Case Study",
+              "visual": "Worked clinical case, step by step.",
+              "interaction": "Work the treatment decisions",
+              "ai": {
+                "kind": "Case walk-through",
+                "desc": "The AI plays the case; you work the treatment decisions step by step, and it probes your rationale at each turn."
+              },
+              "in_production": true
+            },
+            {
+              "num": 20,
+              "title": "Summary",
+              "purpose": "Summary",
+              "visual": "Module recap card; next-module teaser.",
+              "interaction": "Knowledge check + continue",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 21,
+              "title": "Transition",
+              "purpose": "Transition",
+              "visual": "Recap; next-module teaser.",
+              "interaction": "Knowledge check + continue",
+              "ai": null,
+              "in_production": true
+            }
+          ],
+          "knowledge_check": {
+            "pass_mark": 70,
+            "in_production": true,
+            "questions": [
+              "Module 1 According to the Treatment Planning Hierarchy, which of the following should always be addressed first when building a psychiatric treatment plan?",
+              "Module 2 A 28-year-old presents with confirmed ADHD and moderate generalized anxiety. Symptoms of both are present, but the patient's anxiety is severe enough to be destabilizing her daily functioning. According to the TAB sequencing framework, what is the most appropriate initia",
+              "Module 2 Which of the following best describes the clinical role of buspirone in anxiety treatment, as presented in the TAB?"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "index": 4,
+          "id": "tab3",
+          "slug": "treating-depression-unipolar-mixed-features-bipolar",
+          "tag": "TAB · M3",
+          "title": "Treating Depression: Unipolar, Mixed Features & Bipolar",
+          "note": "Building a treatment approach flexible enough to match the patient: unipolar depression, depression with mixed features, and bipolar depression, including when to pause antidepressants and add a mood stabilizer.",
+          "chapters": [
+            {
+              "num": 1,
+              "title": "Module Title",
+              "purpose": "Module Title",
+              "visual": "Unipolar surface with a shifting spectrum underneath.",
+              "interaction": "Preview the treatment fork points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 2,
+              "title": "Learning Objective",
+              "purpose": "Learning Objective",
+              "visual": "Depressive episode with activation overlay.",
+              "interaction": "Spot the mixed-feature signs",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 3,
+              "title": "SSRI Selection",
+              "purpose": "SSRI Selection",
+              "visual": "Sertraline / escitalopram starting choices; symptom-match card.",
+              "interaction": "Match SSRI to the symptom and history",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 4,
+              "title": "Starting and Titrating SSRIs",
+              "purpose": "Starting and Titrating SSRIs",
+              "visual": "Two-week expectations timeline.",
+              "interaction": "Build the early-course counseling",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 5,
+              "title": "SNRI Selection",
+              "purpose": "SNRI Selection",
+              "visual": "Venlafaxine vs duloxetine profile comparison.",
+              "interaction": "Choose the SNRI by symptom profile",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 6,
+              "title": "Venlafaxine versus Duloxetine",
+              "purpose": "Venlafaxine versus Duloxetine",
+              "visual": "Clinical concept card: Venlafaxine versus Duloxetine.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 7,
+              "title": "Augmentation Strategies",
+              "purpose": "Augmentation Strategies",
+              "visual": "Adequate-trial checklist before augmenting.",
+              "interaction": "Audit the trial before augmenting",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 8,
+              "title": "Bupropion, Buspirone, Mirtazapine",
+              "purpose": "Bupropion, Buspirone, Mirtazapine",
+              "visual": "Each augment mapped to its clinical niche.",
+              "interaction": "Match augment to the symptom burden",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 9,
+              "title": "Lithium Augmentation",
+              "purpose": "Lithium Augmentation",
+              "visual": "Lithium role in augmentation and mood stabilization.",
+              "interaction": "Set the lithium monitoring plan",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 10,
+              "title": "When to Pause Antidepressants",
+              "purpose": "When to Pause Antidepressants",
+              "visual": "Increased energy with irritability as a warning sign.",
+              "interaction": "Decide hold, reduce, or stop",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 11,
+              "title": "Mixed Features",
+              "purpose": "Mixed Features",
+              "visual": "Worked case: revisiting the history with mixed features in mind.",
+              "interaction": "Shift the plan from a third antidepressant to mood stabilization",
+              "ai": {
+                "kind": "Case walk-through",
+                "desc": "The AI plays the case; you re-examine the history, recognize the mixed-features clue, and rebuild the plan while it challenges each move."
+              },
+              "in_production": true
+            },
+            {
+              "num": 12,
+              "title": "Mood Stabilizers in Bipolar Depression",
+              "purpose": "Mood Stabilizers in Bipolar Depression",
+              "visual": "Antidepressant-chasing vs mood-stabilizing strategy.",
+              "interaction": "Choose the mood-stabilizing strategy",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 13,
+              "title": "Lithium in Bipolar",
+              "purpose": "Lithium in Bipolar",
+              "visual": "Lithium monitoring: creatinine, thyroid, level.",
+              "interaction": "Build the longitudinal monitoring plan",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 14,
+              "title": "Lamotrigine",
+              "purpose": "Lamotrigine",
+              "visual": "Slow titration + rash education.",
+              "interaction": "Set the lamotrigine titration",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 15,
+              "title": "Quetiapine",
+              "purpose": "Quetiapine",
+              "visual": "Quetiapine benefits vs metabolic tradeoff.",
+              "interaction": "Weigh the quetiapine tradeoff",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 16,
+              "title": "Atypical Antipsychotic Adjuncts",
+              "purpose": "Atypical Antipsychotic Adjuncts",
+              "visual": "Adjuncts and rapid-acting options with referral pathways.",
+              "interaction": "Place each option in its clinical context",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 17,
+              "title": "Ketamine and Esketamine",
+              "purpose": "Ketamine and Esketamine",
+              "visual": "Clinical concept card: Ketamine and Esketamine.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 18,
+              "title": "Complementary Approaches",
+              "purpose": "Complementary Approaches",
+              "visual": "Integrative adjuncts + treatment-resistant lab panel.",
+              "interaction": "Build the adjunct and lab plan",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 19,
+              "title": "L-methylfolate",
+              "purpose": "L-methylfolate",
+              "visual": "Clinical concept card: L-methylfolate.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 20,
+              "title": "Exercise, Light, and Nutrition Support",
+              "purpose": "Exercise, Light, and Nutrition Support",
+              "visual": "Clinical concept card: Exercise, Light, and Nutrition Support.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 21,
+              "title": "Laboratory Considerations",
+              "purpose": "Laboratory Considerations",
+              "visual": "Targeted lab/monitoring panel matched to the clinical question.",
+              "interaction": "Order labs matched to the clinical question",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 22,
+              "title": "Pharmacogenomics",
+              "purpose": "Pharmacogenomics",
+              "visual": "Clinical concept card: Pharmacogenomics.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 23,
+              "title": "Case Study",
+              "purpose": "Case Study",
+              "visual": "Worked clinical case, step by step.",
+              "interaction": "Work the treatment decisions",
+              "ai": {
+                "kind": "Case walk-through",
+                "desc": "The AI plays the case; you work the treatment decisions step by step, and it probes your rationale at each turn."
+              },
+              "in_production": true
+            },
+            {
+              "num": 24,
+              "title": "Summary",
+              "purpose": "Summary",
+              "visual": "Module recap card; next-module teaser.",
+              "interaction": "Knowledge check + continue",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 25,
+              "title": "Transition",
+              "purpose": "Transition",
+              "visual": "Recap; next-module teaser.",
+              "interaction": "Knowledge check + continue",
+              "ai": null,
+              "in_production": true
+            }
+          ],
+          "knowledge_check": {
+            "pass_mark": 70,
+            "in_production": true,
+            "questions": [
+              "Module 2 A 28-year-old presents with confirmed ADHD and moderate generalized anxiety. Symptoms of both are present, but the patient's anxiety is severe enough to be destabilizing her daily functioning. According to the TAB sequencing framework, what is the most appropriate initia",
+              "Module 2 Which of the following best describes the clinical role of buspirone in anxiety treatment, as presented in the TAB?",
+              "Module 3 A 40-year-old patient with a diagnosis of major depressive disorder reports increased energy, decreased need for sleep, and irritability shortly after starting an antidepressant. What is the most appropriate clinical response according to the TAB?"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "index": 5,
+          "id": "tab4",
+          "slug": "treating-personality-patterns-trauma-autism-adjacent-present",
+          "tag": "TAB · M4",
+          "title": "Treating Personality Patterns, Trauma & Autism-Adjacent Presentations",
+          "note": "Prescribing with more precision and more humility: using medication where it can reduce symptom intensity and create stability for psychotherapy, without overpromising what it can do.",
+          "chapters": [
+            {
+              "num": 1,
+              "title": "Module Title",
+              "purpose": "Module Title",
+              "visual": "Personality, trauma, and autism-adjacent profiles.",
+              "interaction": "Preview the prescribing mindset shift",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 2,
+              "title": "Learning Objective",
+              "purpose": "Learning Objective",
+              "visual": "Symptom-cluster map: dysregulation, impulsivity, hyperarousal, sleep.",
+              "interaction": "Identify the most impairing cluster",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 3,
+              "title": "What Medications Can Do",
+              "purpose": "What Medications Can Do",
+              "visual": "Reduce-intensity vs resolve-the-disorder distinction.",
+              "interaction": "Sort what medication can vs can't change",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 4,
+              "title": "Symptom-Targeted Prescribing",
+              "purpose": "Symptom-Targeted Prescribing",
+              "visual": "Low-dose mood stabilizers / selective atypicals.",
+              "interaction": "Match medication to the dysregulation profile",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 5,
+              "title": "Emotional Dysregulation and Mood Lability",
+              "purpose": "Emotional Dysregulation and Mood Lability",
+              "visual": "Low-dose use + metabolic monitoring from the start.",
+              "interaction": "Set the rationale and monitoring",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 6,
+              "title": "Atypical Antipsychotics",
+              "purpose": "Atypical Antipsychotics",
+              "visual": "Low-and-slow dosing; concrete follow-up questions.",
+              "interaction": "Plan the autism-adjusted approach",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 7,
+              "title": "Trauma-Informed Prescribing",
+              "purpose": "Trauma-Informed Prescribing",
+              "visual": "Slow titration; calm explanation of side effects.",
+              "interaction": "Adjust the approach for trauma sensitivity",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 8,
+              "title": "Prazosin",
+              "purpose": "Prazosin",
+              "visual": "Prazosin for PTSD-related sleep disturbance.",
+              "interaction": "Set the prazosin start and BP monitoring",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 9,
+              "title": "Autism and Medication Sensitivity",
+              "purpose": "Autism and Medication Sensitivity",
+              "visual": "Clinical concept card: Autism and Medication Sensitivity.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 10,
+              "title": "The Medication Conversation",
+              "purpose": "The Medication Conversation",
+              "visual": "Explain exactly what it will and won't change.",
+              "interaction": "Practice the grounded medication conversation",
+              "ai": {
+                "kind": "Roleplay",
+                "desc": "The AI plays the patient in this conversation; you deliver the education and plan, and it flags overpromising, missed risks, or unaddressed concerns."
+              },
+              "in_production": true
+            },
+            {
+              "num": 11,
+              "title": "Psychotherapy as Primary Treatment",
+              "purpose": "Psychotherapy as Primary Treatment",
+              "visual": "DBT / EMDR / ACT / IFS / somatic matched to the problem.",
+              "interaction": "Match therapy type to the presentation",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 12,
+              "title": "How to Refer",
+              "purpose": "How to Refer",
+              "visual": "Clinical concept card: How to Refer.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 13,
+              "title": "Gender-Affirming Care",
+              "purpose": "Gender-Affirming Care",
+              "visual": "Affirming, non-pathologizing language; hormone-therapy considerations.",
+              "interaction": "Integrate identity into the medication thinking",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 14,
+              "title": "Complementary and Integrative Supports",
+              "purpose": "Complementary and Integrative Supports",
+              "visual": "Melatonin, magnesium, inositol, NAC, mind-body approaches.",
+              "interaction": "Discuss each adjunct with realistic framing",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 15,
+              "title": "Melatonin and Magnesium",
+              "purpose": "Melatonin and Magnesium",
+              "visual": "Worked case: limited-but-important medication role.",
+              "interaction": "Reframe and avoid over-medicalizing a layered presentation",
+              "ai": {
+                "kind": "Case walk-through",
+                "desc": "The AI plays the layered case; you reframe it, define medication's limited role, and it pushes back on any over-medicalizing move."
+              },
+              "in_production": true
+            },
+            {
+              "num": 16,
+              "title": "Inositol and NAC",
+              "purpose": "Inositol and NAC",
+              "visual": "Clinical concept card: Inositol and NAC.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 17,
+              "title": "Mind-Body Approaches",
+              "purpose": "Mind-Body Approaches",
+              "visual": "Clinical concept card: Mind-Body Approaches.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 18,
+              "title": "Laboratory Considerations",
+              "purpose": "Laboratory Considerations",
+              "visual": "Baseline metabolic panel; hormone-related labs when relevant.",
+              "interaction": "Build the monitoring plan",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 19,
+              "title": "Case Study",
+              "purpose": "Case Study",
+              "visual": "Worked clinical case, step by step.",
+              "interaction": "Work the treatment decisions",
+              "ai": {
+                "kind": "Case walk-through",
+                "desc": "The AI plays the case; you work the treatment decisions step by step, and it probes your rationale at each turn."
+              },
+              "in_production": true
+            },
+            {
+              "num": 20,
+              "title": "Summary",
+              "purpose": "Summary",
+              "visual": "Module recap card; next-module teaser.",
+              "interaction": "Knowledge check + continue",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 21,
+              "title": "Transition",
+              "purpose": "Transition",
+              "visual": "Recap; next-module teaser.",
+              "interaction": "Knowledge check + continue",
+              "ai": null,
+              "in_production": true
+            }
+          ],
+          "knowledge_check": {
+            "pass_mark": 70,
+            "in_production": true,
+            "questions": [
+              "Module 2 Which of the following best describes the clinical role of buspirone in anxiety treatment, as presented in the TAB?",
+              "Module 3 A 40-year-old patient with a diagnosis of major depressive disorder reports increased energy, decreased need for sleep, and irritability shortly after starting an antidepressant. What is the most appropriate clinical response according to the TAB?",
+              "Module 3 Which lab panel is specifically recommended in the TAB before initiating lithium therapy?"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "index": 6,
+          "id": "tab5",
+          "slug": "treating-sud-alongside-adhd-anxiety",
+          "tag": "TAB · M5",
+          "title": "Treating SUD Alongside ADHD & Anxiety",
+          "note": "Treating the whole patient without losing track of the risks that come with controlled substances and active use: evidence-based treatment for SUD co-occurring with ADHD and anxiety, plus safe prescribing boundaries.",
+          "chapters": [
+            {
+              "num": 1,
+              "title": "Module Title",
+              "purpose": "Module Title",
+              "visual": "SUD overlapping with ADHD and anxiety; every decision carries more weight.",
+              "interaction": "Preview the safety-conscious framework",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 2,
+              "title": "Learning Objective",
+              "purpose": "Learning Objective",
+              "visual": "SSRIs/SNRIs, buspirone, hydroxyzine as first-line.",
+              "interaction": "Choose the anxiety treatment that supports recovery",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 3,
+              "title": "MAT Overview",
+              "purpose": "MAT Overview",
+              "visual": "Buprenorphine, naltrexone, methadone.",
+              "interaction": "Match MAT option to the patient",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 4,
+              "title": "When to Manage MAT",
+              "purpose": "When to Manage MAT",
+              "visual": "Manage-directly vs refer decision points.",
+              "interaction": "Judge in-scope vs specialty referral",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 5,
+              "title": "Treating ADHD in Recovery",
+              "purpose": "Treating ADHD in Recovery",
+              "visual": "Untreated ADHD ↔ relapse risk.",
+              "interaction": "Sequence the ADHD conversation",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 6,
+              "title": "Stimulants in Recovery",
+              "purpose": "Stimulants in Recovery",
+              "visual": "Stable recovery + long-acting formulations + PMP.",
+              "interaction": "Build the boundaries and monitoring",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 7,
+              "title": "Non-Stimulant ADHD Options",
+              "purpose": "Non-Stimulant ADHD Options",
+              "visual": "Atomoxetine, viloxazine, guanfacine, clonidine.",
+              "interaction": "Match non-stimulant to the recovery context",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 8,
+              "title": "Managing Anxiety in SUD",
+              "purpose": "Managing Anxiety in SUD",
+              "visual": "Clinical concept card: Managing Anxiety in SUD.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 9,
+              "title": "The Benzodiazepine Question",
+              "purpose": "The Benzodiazepine Question",
+              "visual": "Validate distress, explain the risk, document the discussion.",
+              "interaction": "Practice the compassionate no",
+              "ai": {
+                "kind": "Roleplay",
+                "desc": "The AI plays the patient in this conversation; you deliver the education and plan, and it flags overpromising, missed risks, or unaddressed concerns."
+              },
+              "in_production": true
+            },
+            {
+              "num": 10,
+              "title": "Benzodiazepine Tapering",
+              "purpose": "Benzodiazepine Tapering",
+              "visual": "Assess dose, duration, dependence; gradual taper.",
+              "interaction": "Tailor the taper to withdrawal risk",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 11,
+              "title": "Alcohol Use Disorder",
+              "purpose": "Alcohol Use Disorder",
+              "visual": "Naltrexone, acamprosate, disulfiram roles.",
+              "interaction": "Match AUD medication to goals and liver status",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 12,
+              "title": "Naltrexone",
+              "purpose": "Naltrexone",
+              "visual": "Recovery-physiology supports.",
+              "interaction": "Integrate the evidence-based adjuncts",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 13,
+              "title": "Acamprosate and Disulfiram",
+              "purpose": "Acamprosate and Disulfiram",
+              "visual": "Clinical concept card: Acamprosate and Disulfiram.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 14,
+              "title": "Cannabis Conversation",
+              "purpose": "Cannabis Conversation",
+              "visual": "Nonjudgmental, function-and-risk framing.",
+              "interaction": "Frame the cannabis discussion",
+              "ai": {
+                "kind": "Roleplay",
+                "desc": "The AI plays the patient in this conversation; you deliver the education and plan, and it flags overpromising, missed risks, or unaddressed concerns."
+              },
+              "in_production": true
+            },
+            {
+              "num": 15,
+              "title": "Complementary Approaches",
+              "purpose": "Complementary Approaches",
+              "visual": "Clinical concept card: Complementary Approaches.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 16,
+              "title": "NAC and B Vitamins",
+              "purpose": "NAC and B Vitamins",
+              "visual": "Worked case: holding multiple truths at once.",
+              "interaction": "Honor the goals while protecting recovery stability",
+              "ai": {
+                "kind": "Case walk-through",
+                "desc": "The AI plays the case; you sequence anxiety, ADHD, and recovery, decide on stimulants, and it probes the risk-benefit reasoning behind each call."
+              },
+              "in_production": true
+            },
+            {
+              "num": 17,
+              "title": "Other Supportive Options",
+              "purpose": "Other Supportive Options",
+              "visual": "Clinical concept card: Other Supportive Options.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 18,
+              "title": "Laboratory Considerations",
+              "purpose": "Laboratory Considerations",
+              "visual": "Liver assessment before naltrexone; PMP before controlled substances.",
+              "interaction": "Order the safety-focused labs",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 19,
+              "title": "Case Study",
+              "purpose": "Case Study",
+              "visual": "Worked clinical case, step by step.",
+              "interaction": "Work the treatment decisions",
+              "ai": {
+                "kind": "Case walk-through",
+                "desc": "The AI plays the case; you work the treatment decisions step by step, and it probes your rationale at each turn."
+              },
+              "in_production": true
+            },
+            {
+              "num": 20,
+              "title": "Summary",
+              "purpose": "Summary",
+              "visual": "Module recap card; next-module teaser.",
+              "interaction": "Knowledge check + continue",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 21,
+              "title": "Transition",
+              "purpose": "Transition",
+              "visual": "Recap; next-module teaser.",
+              "interaction": "Knowledge check + continue",
+              "ai": null,
+              "in_production": true
+            }
+          ],
+          "knowledge_check": {
+            "pass_mark": 70,
+            "in_production": true,
+            "questions": [
+              "Module 3 A 40-year-old patient with a diagnosis of major depressive disorder reports increased energy, decreased need for sleep, and irritability shortly after starting an antidepressant. What is the most appropriate clinical response according to the TAB?",
+              "Module 3 Which lab panel is specifically recommended in the TAB before initiating lithium therapy?",
+              "Module 4 When prescribing for patients with trauma histories or autism-adjacent presentations, the TAB recommends which of the following prescribing modifications?"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "index": 7,
+          "id": "tab6",
+          "slug": "preventing-managing-iatrogenic-complications",
+          "tag": "TAB · M6",
+          "title": "Preventing & Managing Iatrogenic Complications",
+          "note": "Noticing when treatment itself may be causing the problem: recognizing, preventing, and managing common iatrogenic complications, and the skill of simplifying a regimen when complexity has become the core problem.",
+          "chapters": [
+            {
+              "num": 1,
+              "title": "Module Title",
+              "purpose": "Module Title",
+              "visual": "Cases that look like relapse but are iatrogenic.",
+              "interaction": "Preview the iatrogenic lens",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 2,
+              "title": "Learning Objective",
+              "purpose": "Learning Objective",
+              "visual": "Worked case: correcting the regimen, not adding to it.",
+              "interaction": "Recognize the iatrogenic pattern and revise",
+              "ai": {
+                "kind": "Case walk-through",
+                "desc": "The AI plays the case; you spot the akathisia and metabolic burden, correct the regimen, and it challenges any move to simply add medication."
+              },
+              "in_production": true
+            },
+            {
+              "num": 3,
+              "title": "Akathisia Recognition",
+              "purpose": "Akathisia Recognition",
+              "visual": "Inner restlessness misread as anxiety or agitation.",
+              "interaction": "Distinguish akathisia from worsening illness",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 4,
+              "title": "Akathisia Treatment",
+              "purpose": "Akathisia Treatment",
+              "visual": "Dose reduction; propranolol; benztropine in selected cases.",
+              "interaction": "Choose the akathisia intervention",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 5,
+              "title": "Antidepressant Discontinuation",
+              "purpose": "Antidepressant Discontinuation",
+              "visual": "Timeline: discontinuation begins shortly after a dose reduction.",
+              "interaction": "Distinguish discontinuation from relapse",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 6,
+              "title": "When Discontinuation is Severe",
+              "purpose": "When Discontinuation is Severe",
+              "visual": "Reinstate briefly, then taper more slowly.",
+              "interaction": "Adjust the taper plan",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 7,
+              "title": "Metabolic Monitoring",
+              "purpose": "Metabolic Monitoring",
+              "visual": "Baseline + 4/8/12-week metabolic checks.",
+              "interaction": "Set the antipsychotic monitoring schedule",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 8,
+              "title": "Responding to Metabolic Change",
+              "purpose": "Responding to Metabolic Change",
+              "visual": "Review dose/duration; consider reduction or switch.",
+              "interaction": "Decide the metabolic response",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 9,
+              "title": "Medication-Induced Mania",
+              "purpose": "Medication-Induced Mania",
+              "visual": "Mania emerging after an antidepressant or stimulant.",
+              "interaction": "Stabilize and document the iatrogenic call",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 10,
+              "title": "SSRI-Induced Emotional Blunting",
+              "purpose": "SSRI-Induced Emotional Blunting",
+              "visual": "Feeling flat or detached, often underreported.",
+              "interaction": "Ask directly and choose the response",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 11,
+              "title": "Sexual Side Effects",
+              "purpose": "Sexual Side Effects",
+              "visual": "Ask routinely; bupropion / PDE5 / mirtazapine options.",
+              "interaction": "Build the sexual-side-effect conversation",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 12,
+              "title": "Polypharmacy Review",
+              "purpose": "Polypharmacy Review",
+              "visual": "Every medication should have a job; planned simplification.",
+              "interaction": "Audit the regimen and plan a taper",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 13,
+              "title": "Deprescribing Conversation",
+              "purpose": "Deprescribing Conversation",
+              "visual": "Two patient types, same skill set.",
+              "interaction": "Practice the conversation",
+              "ai": {
+                "kind": "Roleplay",
+                "desc": "The AI plays the patient in this conversation; you deliver the education and plan, and it flags overpromising, missed risks, or unaddressed concerns."
+              },
+              "in_production": true
+            },
+            {
+              "num": 14,
+              "title": "Integrative Approaches",
+              "purpose": "Integrative Approaches",
+              "visual": "Side-effect-targeted supportive options.",
+              "interaction": "Match adjunct to the side-effect burden",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 15,
+              "title": "Probiotics and Gut Support",
+              "purpose": "Probiotics and Gut Support",
+              "visual": "Clinical concept card: Probiotics and Gut Support.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 16,
+              "title": "Melatonin, Magnesium, and Ginger",
+              "purpose": "Melatonin, Magnesium, and Ginger",
+              "visual": "Clinical concept card: Melatonin, Magnesium, and Ginger.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 17,
+              "title": "Laboratory Considerations",
+              "purpose": "Laboratory Considerations",
+              "visual": "Targeted lab/monitoring panel matched to the clinical question.",
+              "interaction": "Order labs matched to the clinical question",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 18,
+              "title": "Case Study",
+              "purpose": "Case Study",
+              "visual": "Worked clinical case, step by step.",
+              "interaction": "Work the treatment decisions",
+              "ai": {
+                "kind": "Case walk-through",
+                "desc": "The AI plays the case; you work the treatment decisions step by step, and it probes your rationale at each turn."
+              },
+              "in_production": true
+            },
+            {
+              "num": 19,
+              "title": "Module Summary",
+              "purpose": "Module Summary",
+              "visual": "Module recap card; next-module teaser.",
+              "interaction": "Knowledge check + continue",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 20,
+              "title": "Transition",
+              "purpose": "Transition",
+              "visual": "Recap; next-module teaser.",
+              "interaction": "Knowledge check + continue",
+              "ai": null,
+              "in_production": true
+            }
+          ],
+          "knowledge_check": {
+            "pass_mark": 70,
+            "in_production": true,
+            "questions": [
+              "Module 3 Which lab panel is specifically recommended in the TAB before initiating lithium therapy?",
+              "Module 4 When prescribing for patients with trauma histories or autism-adjacent presentations, the TAB recommends which of the following prescribing modifications?",
+              "Module 5 A patient in early recovery from alcohol use disorder presents with significant anxiety. Which medication class does the TAB identify as generally contraindicated in this setting?"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "index": 8,
+          "id": "tab7",
+          "slug": "complexity-supervision-collaboration-emerging-treatments",
+          "tag": "TAB · M7",
+          "title": "Complexity, Supervision, Collaboration & Emerging Treatments",
+          "note": "The edge of outpatient practice: when a case is too complex to manage alone, how to use consultation and collaboration well, and how to have grounded conversations about emerging treatments patients are already asking about.",
+          "chapters": [
+            {
+              "num": 1,
+              "title": "Module Title",
+              "purpose": "Module Title",
+              "visual": "When a case exceeds solo management.",
+              "interaction": "Preview the complexity questions",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 2,
+              "title": "Learning Objective",
+              "purpose": "Learning Objective",
+              "visual": "Patients are already asking; respond honestly.",
+              "interaction": "Set the informed-conversation frame",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 3,
+              "title": "PMHNPs as Psychiatric Providers",
+              "purpose": "PMHNPs as Psychiatric Providers",
+              "visual": "\"Would this case benefit from another perspective?\" reframe.",
+              "interaction": "Reframe the consultation question",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 4,
+              "title": "When to Consult",
+              "purpose": "When to Consult",
+              "visual": "Triggers: failed trials, uncertainty, high acuity, medicolegal complexity.",
+              "interaction": "Identify the consultation triggers",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 5,
+              "title": "Using Supervision Well",
+              "purpose": "Using Supervision Well",
+              "visual": "Specific clinical question + your reasoning.",
+              "interaction": "Frame a usable consultation request",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 6,
+              "title": "Consultation versus Collaborative Management",
+              "purpose": "Consultation versus Collaborative Management",
+              "visual": "Second opinion vs shared, ongoing responsibility.",
+              "interaction": "Define roles for each arrangement",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 7,
+              "title": "Treatment-Resistant Depression",
+              "purpose": "Treatment-Resistant Depression",
+              "visual": "TMS / ECT / esketamine referral map.",
+              "interaction": "Map the resistant-depression options",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 8,
+              "title": "TMS",
+              "purpose": "TMS",
+              "visual": "TMS as a legitimate pathway, not a last resort.",
+              "interaction": "Explain TMS to a patient",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 9,
+              "title": "ECT",
+              "purpose": "ECT",
+              "visual": "Severe, psychotic, catatonic, or urgent depression.",
+              "interaction": "Frame the ECT conversation",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 10,
+              "title": "Esketamine in Context",
+              "purpose": "Esketamine in Context",
+              "visual": "Esketamine (FDA-approved, REMS) vs racemic ketamine (off-label).",
+              "interaction": "Explain the difference and the logistics",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 11,
+              "title": "Collaborative Management in Bipolar Illness",
+              "purpose": "Collaborative Management in Bipolar Illness",
+              "visual": "Who-monitors-what map; concise cross-provider notes.",
+              "interaction": "Assign monitoring responsibilities",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 12,
+              "title": "Integrative Medicine Collaboration",
+              "purpose": "Integrative Medicine Collaboration",
+              "visual": "Clinical concept card: Integrative Medicine Collaboration.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 13,
+              "title": "Communicating with Primary Care",
+              "purpose": "Communicating with Primary Care",
+              "visual": "Clinical concept card: Communicating with Primary Care.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 14,
+              "title": "Emerging Treatments Overview",
+              "purpose": "Emerging Treatments Overview",
+              "visual": "Have the conversation, refer when appropriate, document.",
+              "interaction": "Document the informed discussion",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 15,
+              "title": "Psilocybin",
+              "purpose": "Psilocybin",
+              "visual": "Worked case: hope, honesty, and what's available now vs investigational.",
+              "interaction": "Respond with accurate information and clinical realism",
+              "ai": {
+                "kind": "Case walk-through",
+                "desc": "The AI plays the patient asking for hope; you give accurate, realistic information about emerging options and it flags anything overstated or dismissive."
+              },
+              "in_production": true
+            },
+            {
+              "num": 16,
+              "title": "MDMA-Assisted Psychotherapy",
+              "purpose": "MDMA-Assisted Psychotherapy",
+              "visual": "Clinical concept card: MDMA-Assisted Psychotherapy.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 17,
+              "title": "Ketamine and Esketamine",
+              "purpose": "Ketamine and Esketamine",
+              "visual": "Clinical concept card: Ketamine and Esketamine.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 18,
+              "title": "The PMHNP Role",
+              "purpose": "The PMHNP Role",
+              "visual": "Clinical concept card: The PMHNP Role.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 19,
+              "title": "Case Study",
+              "purpose": "Case Study",
+              "visual": "Worked clinical case, step by step.",
+              "interaction": "Work the treatment decisions",
+              "ai": {
+                "kind": "Case walk-through",
+                "desc": "The AI plays the case; you work the treatment decisions step by step, and it probes your rationale at each turn."
+              },
+              "in_production": true
+            },
+            {
+              "num": 20,
+              "title": "Module Summary",
+              "purpose": "Module Summary",
+              "visual": "Module recap card; next-module teaser.",
+              "interaction": "Knowledge check + continue",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 21,
+              "title": "Transition",
+              "purpose": "Transition",
+              "visual": "Bridge card to the next module.",
+              "interaction": "Continue",
+              "ai": null,
+              "in_production": true
+            }
+          ],
+          "knowledge_check": {
+            "pass_mark": 70,
+            "in_production": true,
+            "questions": [
+              "Module 4 When prescribing for patients with trauma histories or autism-adjacent presentations, the TAB recommends which of the following prescribing modifications?",
+              "Module 5 A patient in early recovery from alcohol use disorder presents with significant anxiety. Which medication class does the TAB identify as generally contraindicated in this setting?",
+              "Module 6 A patient on an antipsychotic reports an intensely uncomfortable inner restlessness and inability to sit still. Her provider initially attributed this to worsening anxiety. According to the TAB, what is the most likely iatrogenic diagnosis and what is the recommended fir"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "index": 9,
+          "id": "tab8",
+          "slug": "building-your-treatment-system-documentation-monitoring-impl",
+          "tag": "TAB · M8",
+          "title": "Building Your Treatment System: Documentation, Monitoring & Implementation",
+          "note": "Turning treatment decisions into practice systems: documentation, monitoring, and patient education efficient enough to use every day without losing clinical depth.",
+          "chapters": [
+            {
+              "num": 1,
+              "title": "Module Title",
+              "purpose": "Module Title",
+              "visual": "Framework becoming everyday workflow.",
+              "interaction": "Preview the implementation tools",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 2,
+              "title": "Learning Objective",
+              "purpose": "Learning Objective",
+              "visual": "Learning objectives card (accreditation-aligned).",
+              "interaction": "Review the learning objectives",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 3,
+              "title": "CLARITY Treatment Notes",
+              "purpose": "CLARITY Treatment Notes",
+              "visual": "Context, Labs, Anchor, Rationale, Integration, Timeline, Yield.",
+              "interaction": "Map a treatment note onto CLARITY",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 4,
+              "title": "One-Paragraph Formulation",
+              "purpose": "One-Paragraph Formulation",
+              "visual": "Single-paragraph treatment formulation.",
+              "interaction": "Write the one-paragraph formulation",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 5,
+              "title": "Informed Consent Documentation",
+              "purpose": "Informed Consent Documentation",
+              "visual": "Purpose, risks, alternatives, shared decision.",
+              "interaction": "Build the consent note",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 6,
+              "title": "Monitoring Schedules",
+              "purpose": "Monitoring Schedules",
+              "visual": "Per-class schedules: stimulants, SSRIs/SNRIs, mood stabilizers, antipsychotics, lithium, MAT.",
+              "interaction": "Build the monitoring schedule by class",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 7,
+              "title": "What to Document",
+              "purpose": "What to Document",
+              "visual": "Ordered / due / result / action / follow-up; PA smart phrases.",
+              "interaction": "Write a PA-ready failure note",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 8,
+              "title": "Supplements and Integrative Care",
+              "purpose": "Supplements and Integrative Care",
+              "visual": "Reason, expected benefit, limitations, reassessment plan.",
+              "interaction": "Document a supplement recommendation",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 9,
+              "title": "Psychoeducation Templates",
+              "purpose": "Psychoeducation Templates",
+              "visual": "Template handouts for SSRI, mood stabilizer, stimulant, taper.",
+              "interaction": "Assemble the handout library",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 10,
+              "title": "Starting Medication Handouts",
+              "purpose": "Starting Medication Handouts",
+              "visual": "Clinical concept card: Starting Medication Handouts.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 11,
+              "title": "Smart Phrases",
+              "purpose": "Smart Phrases",
+              "visual": "Reusable phrases for SUD prescribing, benzo refusal, resistance, integrative recs.",
+              "interaction": "Build audit-proof smart phrases",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 12,
+              "title": "Lab Tracking Workflow",
+              "purpose": "Lab Tracking Workflow",
+              "visual": "Ordered / returned / changed-because-of-it; reminders.",
+              "interaction": "Work an abnormal result to a decision",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 13,
+              "title": "Abnormal Results",
+              "purpose": "Abnormal Results",
+              "visual": "Initial visit, follow-up, complication visit notes.",
+              "interaction": "Document the plan as it evolves",
+              "ai": {
+                "kind": "Case walk-through",
+                "desc": "The AI plays the patient across three visits; you write the evolving note at each and it checks that continuity and reasoning carry through."
+              },
+              "in_production": true
+            },
+            {
+              "num": 14,
+              "title": "Integrating Both Courses",
+              "purpose": "Integrating Both Courses",
+              "visual": "DAB (diagnosis) and TAB (treatment) as one iterative loop.",
+              "interaction": "Trace the diagnosis-treatment loop",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 15,
+              "title": "System in Action",
+              "purpose": "System in Action",
+              "visual": "Identify target, select intervention, document rationale, monitor, adjust.",
+              "interaction": "Run a visit through the system",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 16,
+              "title": "Case Study",
+              "purpose": "Case Study",
+              "visual": "Worked clinical case, step by step.",
+              "interaction": "Work the treatment decisions",
+              "ai": {
+                "kind": "Case walk-through",
+                "desc": "The AI plays the case; you work the treatment decisions step by step, and it probes your rationale at each turn."
+              },
+              "in_production": true
+            },
+            {
+              "num": 17,
+              "title": "Initial Visit",
+              "purpose": "Initial Visit",
+              "visual": "Clinical concept card: Initial Visit.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 18,
+              "title": "Follow-Up Visit",
+              "purpose": "Follow-Up Visit",
+              "visual": "Clinical concept card: Follow-Up Visit.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 19,
+              "title": "Complication Visit",
+              "purpose": "Complication Visit",
+              "visual": "Clinical concept card: Complication Visit.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 20,
+              "title": "Module Summary",
+              "purpose": "Module Summary",
+              "visual": "Module recap card; next-module teaser.",
+              "interaction": "Knowledge check + continue",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 21,
+              "title": "Course Close",
+              "purpose": "Course Close",
+              "visual": "\"You now have a system for thinking\" closing graphic.",
+              "interaction": "Final knowledge check + continue",
+              "ai": null,
+              "in_production": true
+            }
+          ],
+          "knowledge_check": {
+            "pass_mark": 70,
+            "in_production": true,
+            "questions": [
+              "Module 5 A patient in early recovery from alcohol use disorder presents with significant anxiety. Which medication class does the TAB identify as generally contraindicated in this setting?",
+              "Module 6 A patient on an antipsychotic reports an intensely uncomfortable inner restlessness and inability to sit still. Her provider initially attributed this to worsening anxiety. According to the TAB, what is the most likely iatrogenic diagnosis and what is the recommended fir",
+              "Module 7 & 8 The TAB describes the CLARITY framework as applied to treatment documentation. In the context of a treatment note, which of the following correctly maps the CLARITY acronym?"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "index": 10,
+          "id": "tabc",
+          "slug": "course-completion-framework-summary",
+          "tag": "TAB · Wrap",
+          "title": "Course Completion & Framework Summary",
+          "note": "Closing the Treatment Accuracy Blueprint: consolidating the treatment framework and the evidence-tier reference, and sending the clinician back to practice.",
+          "chapters": [
+            {
+              "num": 1,
+              "title": "Course Completion",
+              "purpose": "Course Completion",
+              "visual": "Clinical concept card: Course Completion.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 2,
+              "title": "What You've Built",
+              "purpose": "What You've Built",
+              "visual": "Clinical concept card: What You've Built.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 3,
+              "title": "The Goal of This Framework",
+              "purpose": "The Goal of This Framework",
+              "visual": "Clinical concept card: The Goal of This Framework.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 4,
+              "title": "Thank You and Next Steps",
+              "purpose": "Thank You and Next Steps",
+              "visual": "Clinical concept card: Thank You and Next Steps.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            },
+            {
+              "num": 5,
+              "title": "Appendix and Supplements",
+              "purpose": "Appendix and Supplements",
+              "visual": "Clinical concept card: Appendix and Supplements.",
+              "interaction": "Review the key points",
+              "ai": null,
+              "in_production": true
+            }
+          ],
+          "knowledge_check": {
+            "pass_mark": 70,
+            "in_production": true,
+            "questions": [],
+            "note": "Course wrap — final assessment lives on the Progress & Certificate page."
+          }
+        }
+      ]
+    }
+  ]
+}

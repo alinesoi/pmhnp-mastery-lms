@@ -1,0 +1,63 @@
+/* PMHNP Mastery Academy global theme overrides.
+   Scoped under .pmhnp-app (set on the (withmenu) layout root) so the
+   dashboard/admin areas outside this layout are untouched. */
+
+.pmhnp-app {
+  background-color: #f6f3fb;
+  color: #1f1830;
+}
+
+.pmhnp-serif {
+  font-family: var(--font-pmhnp-head), 'Fraunces', 'Georgia', serif;
+}
+
+/* Headings inside the app lean deep plum */
+.pmhnp-app h1,
+.pmhnp-app h2 {
+  color: #2a1e4a;
+}
+
+/* Soften Learnhouse stock cards / shadows into the clean clinical look */
+.pmhnp-app .nice-shadow {
+  box-shadow: 0 1px 3px rgba(42, 30, 74, 0.08);
+  border: 1px solid #e5ddf1;
+}
+
+.pmhnp-app .bg-gray-50,
+.pmhnp-app .bg-gray-50\/30,
+.pmhnp-app .bg-slate-50 {
+  background-color: #f6f3fb;
+}
+
+.pmhnp-app .bg-white {
+  border-radius: 16px;
+}
+
+/* Primary purple for stock black buttons. */
+.pmhnp-app .bg-black {
+  background-color: #5b3d8c;
+}
+
+.pmhnp-app .bg-black:hover {
+  background-color: #4b3175;
+}
+
+/* Links in brand purple where Learnhouse uses its default blue accents */
+.pmhnp-app a.text-blue-600,
+.pmhnp-app .text-blue-600 {
+  color: #5b3d8c;
+}
+
+.pmhnp-app ::selection {
+  background: rgba(91, 61, 140, 0.22);
+}
+
+/* Gentle pulse for the current CLARITY node / next-locked node */
+@keyframes pmhnp-pulse {
+  0% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.06); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.9; }
+}
+.pmhnp-pulse {
+  animation: pmhnp-pulse 2.4s ease-in-out infinite;
+}

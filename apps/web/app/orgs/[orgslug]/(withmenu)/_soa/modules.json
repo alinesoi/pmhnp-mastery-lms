@@ -1,0 +1,1143 @@
+{
+  "course": {
+    "slug": "water-treatment-1",
+    "title": "Water Treatment Level 1 (Identify)",
+    "level": 1,
+    "ceu": 1.2,
+    "total_modules": 10
+  },
+  "levels": [
+    {
+      "level": 1,
+      "code": "L1",
+      "name": "Identify",
+      "slug": "water-treatment-1",
+      "title": "Water Treatment 1",
+      "status": "unlocked",
+      "blurb": "Recognize and identify every asset from source to tap. Name it, understand its basic purpose, and know when to notice and report a concern.",
+      "ceu": 1.2
+    },
+    {
+      "level": 2,
+      "code": "L2",
+      "name": "Operate",
+      "slug": "water-treatment-2",
+      "title": "Water Treatment 2",
+      "status": "locked",
+      "blurb": "Operate the assets you learned to identify: normal operation, monitoring, and routine tasks.",
+      "ceu": null
+    },
+    {
+      "level": 3,
+      "code": "L3",
+      "name": "Troubleshoot",
+      "slug": "water-treatment-3",
+      "title": "Water Treatment 3",
+      "status": "locked",
+      "blurb": "Diagnose and respond: recognize what is wrong and work through it safely.",
+      "ceu": null
+    },
+    {
+      "level": 4,
+      "code": "L4",
+      "name": "Optimize",
+      "slug": "water-treatment-4",
+      "title": "Water Treatment 4",
+      "status": "locked",
+      "blurb": "Optimize and decide: tune the system and make operating decisions.",
+      "ceu": null
+    }
+  ],
+  "modules": [
+    {
+      "index": 1,
+      "slug": "introduction-to-water-treatment",
+      "title": "Introduction to Water Treatment",
+      "note": "Course orientation",
+      "hero_video": "Phase 1 'Welcome to SmartOps Academy + How You'll Learn'",
+      "chapters": [
+        {
+          "num": 1,
+          "title": "Welcome to SmartOps Academy",
+          "purpose": "Brand the academy and the 'follow a drop of water from source to tap' promise; offer 3 intro popups.",
+          "interaction": "Branded title animation; a blue drop appears at the source; three clickable intro popups (What is SmartOps Academy / What is this course / How it works).",
+          "in_production": true
+        },
+        {
+          "num": 2,
+          "title": "Why This Course Exists",
+          "purpose": "Overwhelmed new operator vs a clear system map; why assets are taught in order; why public health comes first.",
+          "interaction": "Split-screen 'overwhelmed plant vs clear map' cutaway.",
+          "in_production": true
+        },
+        {
+          "num": 3,
+          "title": "What Is Water Treatment",
+          "purpose": "Raw source water to treatment to drinking water.",
+          "interaction": "Simple raw->treatment->drinking flow graphic with a raw/treated/potable ordering drag activity.",
+          "in_production": true
+        },
+        {
+          "num": 4,
+          "title": "Not All Plants Look the Same",
+          "purpose": "Six system types (surface plant, well system, chlorination-only, greensand, membrane, package plant).",
+          "interaction": "Six clickable plant-type tiles.",
+          "in_production": true
+        },
+        {
+          "num": 5,
+          "title": "Why Water Treatment Matters",
+          "purpose": "Public health, safe drinking water, community trust, regulatory responsibility.",
+          "interaction": "Public-health / community-trust imagery plus a knowledge check.",
+          "in_production": true
+        },
+        {
+          "num": 6,
+          "title": "The Operator's Role",
+          "purpose": "Monitor, Test, Record, Inspect, Respond, Protect Public Health. Respond = recognize, document, escalate, follow approved procedures.",
+          "interaction": "Six-icon operator-role graphic.",
+          "in_production": true
+        },
+        {
+          "num": 7,
+          "title": "Operator Professionalism",
+          "purpose": "Clean facility, organized tools, clear records, safe access, pride of ownership.",
+          "interaction": "Clean vs cluttered facility comparison.",
+          "in_production": true
+        },
+        {
+          "num": 8,
+          "title": "Level 1 Means Identify",
+          "purpose": "The four-level ladder (Identify, Operate, Troubleshoot, Optimize/Decide).",
+          "interaction": "Clickable four-level ladder with Levels 2-4 faded/locked.",
+          "in_production": true
+        },
+        {
+          "num": 9,
+          "title": "Same Asset, Different Depth",
+          "purpose": "One raw water pump shown across all four levels.",
+          "interaction": "'Same pump, four levels' card animation.",
+          "in_production": true
+        },
+        {
+          "num": 10,
+          "title": "Follow the Drop of Water",
+          "purpose": "The full eight-stage journey, source to customer tap.",
+          "interaction": "The master 'Follow the Drop' animation with every stage a clickable hotspot.",
+          "in_production": true
+        },
+        {
+          "num": 11,
+          "title": "The 10 Modules (Course Map)",
+          "purpose": "The course map overview.",
+          "interaction": "Interactive course-map walkthrough.",
+          "in_production": true
+        },
+        {
+          "num": 12,
+          "title": "The Course Interface & 'You Are Here'",
+          "purpose": "Breadcrumb orientation and the example pump drilldown.",
+          "interaction": "Labeled interface mockup; animated breadcrumb drilldown Course Map->Module->Asset->Cutaway with a persistent 'You Are Here' mini-map; raw water pump cutaway hotspots at ID depth.",
+          "in_production": true
+        },
+        {
+          "num": 13,
+          "title": "How the AI Tutor Works",
+          "purpose": "Level 1 boundary + redirect; how you'll learn (Read, See, Explore, Ask AI Tutor).",
+          "interaction": "Chat-window AI tutor demo showing a Level 1 answer then a Level 3 redirect; Read/See/Explore/Ask icons.",
+          "in_production": true
+        },
+        {
+          "num": 14,
+          "title": "Progress, Certificate & Review",
+          "purpose": "Progress, assessment, certificate, Personal Training Record; Module 1 review.",
+          "interaction": "Progress tracker + certificate preview; Module 2 unlock animation.",
+          "in_production": true
+        }
+      ],
+      "knowledge_check": {
+        "pass_mark": 70,
+        "questions": [
+          "The four Level 1 learning levels in order are Identify, Operate, Troubleshoot, and Optimize. (True/False)",
+          "At Level 1, an operator's job with an abnormal condition is to: (a) fix it, (b) notice and report it, (c) adjust the setpoint.",
+          "'Follow the Drop of Water' describes the journey from source to customer tap. (True/False)"
+        ],
+        "in_production": true
+      }
+    },
+    {
+      "index": 2,
+      "slug": "water-treatment-foundations",
+      "title": "Water Treatment Foundations",
+      "note": "Foundations",
+      "hero_video": "Phase 3 'Turbidity & the Multi-Barrier Approach'",
+      "chapters": [
+        {
+          "num": 1,
+          "title": "Welcome to Foundations",
+          "purpose": "A foundation layer under the journey (Terms, Water Quality, Barriers, Monitoring, Public Health).",
+          "interaction": "Foundation-layer graphic beneath the water journey with five labeled pillars.",
+          "in_production": true
+        },
+        {
+          "num": 2,
+          "title": "Basic Water Terms",
+          "purpose": "Raw, Treated, Finished, Potable.",
+          "interaction": "Four clickable water-term cards with water flowing card to card; term-to-meaning match.",
+          "in_production": true
+        },
+        {
+          "num": 3,
+          "title": "Safe, Not Perfect",
+          "purpose": "Safe, acceptable, compliant, not 'pure laboratory water'.",
+          "interaction": "Three-part safe/acceptable/compliant vs 'pure laboratory water' comparison.",
+          "in_production": true
+        },
+        {
+          "num": 4,
+          "title": "Raw Water Is Not Always the Same",
+          "purpose": "River, lake/reservoir, groundwater well, dugout.",
+          "interaction": "Clickable source-comparison graphic.",
+          "in_production": true
+        },
+        {
+          "num": 5,
+          "title": "Water Quality Can Change",
+          "purpose": "Rain/runoff, spring melt, algae, temperature, drought, wildfire, spills.",
+          "interaction": "Seasonal/source timeline animation.",
+          "in_production": true
+        },
+        {
+          "num": 6,
+          "title": "What Can Be in Raw Water",
+          "purpose": "Physical material, microorganisms, chemicals, minerals, organics, taste/odour/colour.",
+          "interaction": "Magnifying-glass-over-a-sample with six clickable concern categories.",
+          "in_production": true
+        },
+        {
+          "num": 7,
+          "title": "Health vs Aesthetic Concerns",
+          "purpose": "Distinguishing health from aesthetic concerns (recognition only).",
+          "interaction": "Health-vs-aesthetic drag-and-drop sorting activity.",
+          "in_production": true
+        },
+        {
+          "num": 8,
+          "title": "Turbidity & Microorganisms",
+          "purpose": "Turbidity as a key word (cloudiness from particles); microorganisms and public health.",
+          "interaction": "Three clarity glasses (clear/slightly cloudy/very cloudy) with particles appearing as turbidity rises; professional, non-scary microorganism graphic.",
+          "in_production": true
+        },
+        {
+          "num": 9,
+          "title": "Treatment Barriers & Multi-Barrier Approach",
+          "purpose": "The eight treatment barriers and the multi-barrier approach.",
+          "interaction": "Layered eight-barrier wall plus a source-to-tap shield animation where each shield activates as the drop passes.",
+          "in_production": true
+        },
+        {
+          "num": 10,
+          "title": "Basic Treatment Objectives",
+          "purpose": "Treatment objectives; processes chosen for the source.",
+          "interaction": "Five-segment treatment-objective wheel; source-to-treatment matching with connection lines.",
+          "in_production": true
+        },
+        {
+          "num": 11,
+          "title": "Monitoring Items & Units",
+          "purpose": "Flow, turbidity, chlorine residual, pH, temperature, levels/pressure, alarms and common units (labels only).",
+          "interaction": "System map with monitoring icons; clickable operator dashboard showing UNIT LABELS ONLY (mg/L, NTU, pH, C, L/s, kPa, %) - no values.",
+          "in_production": true
+        },
+        {
+          "num": 12,
+          "title": "Sampling & Clean Sampling Habits",
+          "purpose": "Recognize that operators collect samples (procedure deferred to later levels).",
+          "interaction": "20-30 second sampling clip.",
+          "in_production": true
+        },
+        {
+          "num": 13,
+          "title": "Records & Logbooks",
+          "purpose": "'Readings must be real' - never falsify.",
+          "interaction": "Records-desk good vs bad clickable scene.",
+          "in_production": true
+        },
+        {
+          "num": 14,
+          "title": "Regulations, Responsibility & Glossary",
+          "purpose": "Know your role and when to escalate; foundation glossary; review.",
+          "interaction": "Flip-card glossary wall; Module 2 knowledge check.",
+          "in_production": true
+        }
+      ],
+      "knowledge_check": {
+        "pass_mark": 70,
+        "questions": [
+          "Match the term to its meaning: Potable water is water that is safe and suitable for drinking. (True/False)",
+          "Turbidity refers to: (a) cloudiness from particles, (b) the correct chlorine dose, (c) water pressure.",
+          "The multi-barrier approach means no single step is the only protection. (True/False)"
+        ],
+        "in_production": true
+      }
+    },
+    {
+      "index": 3,
+      "slug": "source-water",
+      "title": "Source Water",
+      "note": "Source",
+      "hero_video": "Phase 2 'Source Water Explorer'",
+      "chapters": [
+        {
+          "num": 1,
+          "title": "Welcome to Source Water",
+          "purpose": "Highlight the Source Water stage; Modules 1-2 complete; Intake is next (locked).",
+          "interaction": "Journey map with the source stage lit and intake locked; drop waits at the source.",
+          "in_production": true
+        },
+        {
+          "num": 2,
+          "title": "Where the Journey Begins",
+          "purpose": "'The journey starts here.'",
+          "interaction": "Drop pauses/animates at the source.",
+          "in_production": true
+        },
+        {
+          "num": 3,
+          "title": "What Is Source Water",
+          "purpose": "Surface water, groundwater, other approved sources.",
+          "interaction": "Interactive source-to-tap map ('Source Water Explorer'), drop waiting at the source.",
+          "in_production": true
+        },
+        {
+          "num": 4,
+          "title": "Source Water Is Raw Water",
+          "purpose": "Source Water = supply before treatment; Raw Water = untreated.",
+          "interaction": "Label graphic distinguishing the two terms; mini-quiz.",
+          "in_production": true
+        },
+        {
+          "num": 5,
+          "title": "Surface Water vs Groundwater",
+          "purpose": "Surface vs groundwater; combination sources.",
+          "interaction": "Split-screen earth cross-section with a sort activity.",
+          "in_production": true
+        },
+        {
+          "num": 6,
+          "title": "Rivers",
+          "purpose": "Upstream activity, runoff, erosion/sediment, seasonal flow, intake location.",
+          "interaction": "Interactive river map: rain falls upstream, runoff arrows flow toward the intake.",
+          "in_production": true
+        },
+        {
+          "num": 7,
+          "title": "Lakes & Reservoirs",
+          "purpose": "Algae, temperature layers, seasonal turnover, runoff/shoreline, low water, intake depth (awareness only - do not pick 'best' depth).",
+          "interaction": "Lake/reservoir diagram cycling summer algae, fall turnover, winter ice; intake depth shown as awareness, not an operating decision.",
+          "in_production": true
+        },
+        {
+          "num": 8,
+          "title": "Dugouts, Wells & GUDI Awareness",
+          "purpose": "Dugouts and small supplies; groundwater and wells; 'groundwater under direct influence of surface water' awareness.",
+          "interaction": "Dugout 'click the risk' scene; well/aquifer cutaway animating groundwater rising through casing and screen.",
+          "in_production": true
+        },
+        {
+          "num": 9,
+          "title": "Source Water Quality Can Change",
+          "purpose": "Weather and seasonal impacts; land use and human activity.",
+          "interaction": "Timeline of one source changing (normal, rain, runoff, algae, drought, wildfire, ice); four-season panel; interactive watershed/land-use map.",
+          "in_production": true
+        },
+        {
+          "num": 10,
+          "title": "Source Water Concerns",
+          "purpose": "Natural, microbiological, mineral, and aesthetic concerns; turbidity and runoff.",
+          "interaction": "Clickable concern-icon set in the professional, non-scary style.",
+          "in_production": true
+        },
+        {
+          "num": 11,
+          "title": "Source, Watershed & Wellhead Protection",
+          "purpose": "What good operators notice; how source affects treatment; review.",
+          "interaction": "'Protected vs unprotected source' comparison; wellhead protection diagram; 'spot what the operator should notice' hotspot game.",
+          "in_production": true
+        }
+      ],
+      "knowledge_check": {
+        "pass_mark": 70,
+        "questions": [
+          "Source water at the source is raw (untreated) water. (True/False)",
+          "'Groundwater under direct influence of surface water' is a condition an operator should: (a) classify and assess, (b) recognize exists and know it affects treatment, (c) correct.",
+          "Which is a surface water source: (a) aquifer well, (b) river, (c) none."
+        ],
+        "in_production": true
+      }
+    },
+    {
+      "index": 4,
+      "slug": "intake-systems",
+      "title": "Intake Systems",
+      "note": "Intake",
+      "hero_video": "Phase 2 'Intake Systems Walk-Through'",
+      "chapters": [
+        {
+          "num": 1,
+          "title": "Welcome to Intake Systems",
+          "purpose": "Position Module 4 in the journey; intakes connect source water to the rest of the system.",
+          "interaction": "Journey map with Module 4 lit; drop advancing toward a locked Module 5.",
+          "in_production": true
+        },
+        {
+          "num": 2,
+          "title": "Where Intakes Fit",
+          "purpose": "The three-stage close-up and basic flow direction.",
+          "interaction": "Three-stage close-up (Source Water, Intake Systems, Raw Water Pump House) with flow arrows.",
+          "in_production": true
+        },
+        {
+          "num": 3,
+          "title": "What an Intake System Is",
+          "purpose": "The structure where source water enters; 'raw water' (untreated).",
+          "interaction": "Labeled intake-structure diagram.",
+          "in_production": true
+        },
+        {
+          "num": 4,
+          "title": "Basic Purpose of an Intake",
+          "purpose": "Collect raw water, direct flow, screen larger material, protect equipment, connect source to system, support reliable supply.",
+          "interaction": "Clickable six-spoke purpose wheel.",
+          "in_production": true
+        },
+        {
+          "num": 5,
+          "title": "Common Intake Types",
+          "purpose": "Type-to-source matching.",
+          "interaction": "Six-tile intake-type grid with drag-to-match interaction.",
+          "in_production": true
+        },
+        {
+          "num": 6,
+          "title": "Surface Water Intake Overview",
+          "purpose": "The labeled path.",
+          "interaction": "Walk-the-path graphic: source, opening, screen, pipe, wet well, valve/gate, pump house.",
+          "in_production": true
+        },
+        {
+          "num": 7,
+          "title": "Deep-Dives by Intake Type",
+          "purpose": "River, lake/reservoir, dugout/small supply, groundwater well (recognition + common concerns only).",
+          "interaction": "River intake (flow/debris/sediment/ice); lake intake (depth/algae/turnover); dugout scene; well cutaway.",
+          "in_production": true
+        },
+        {
+          "num": 8,
+          "title": "Screens, Pipes, Wet Wells, Valves & Gates",
+          "purpose": "Screens, pipes, wet wells (confined-space awareness), valves and gates (identify only).",
+          "interaction": "Screen close-up animation (water passes, debris blocked); wet well cutaway at awareness depth; labeled valves/gates, no operation.",
+          "in_production": true
+        },
+        {
+          "num": 9,
+          "title": "Flow Direction Through the System",
+          "purpose": "Flow direction through the intake system.",
+          "interaction": "Flow arrows plus an ordering activity (Source water, Screen, Intake pipe, Wet well, Pump house).",
+          "in_production": true
+        },
+        {
+          "num": 10,
+          "title": "Access Points, Hatches & Buildings",
+          "purpose": "Access points and hatches; intake buildings and structures.",
+          "interaction": "Labeled hatches/access points; intake building exterior.",
+          "in_production": true
+        },
+        {
+          "num": 11,
+          "title": "Concern Awareness, Security & Safety",
+          "purpose": "Concern awareness (ice/debris/vegetation/sediment), intake security, safety hazards.",
+          "interaction": "'Spot the concern' interactive covering all reportable items (notice-and-report framing).",
+          "in_production": true
+        },
+        {
+          "num": 12,
+          "title": "Source-to-Intake Water Quality Connection",
+          "purpose": "Source-to-intake water quality connection; transition to raw water pumping.",
+          "interaction": "Connection-line graphic linking source conditions to intake.",
+          "in_production": true
+        },
+        {
+          "num": 13,
+          "title": "Full Intake Drilldown & Review",
+          "purpose": "Full example intake drilldown; review map.",
+          "interaction": "Complete river/lake-to-pump-house schematic with every asset clickable.",
+          "in_production": true
+        }
+      ],
+      "knowledge_check": {
+        "pass_mark": 70,
+        "questions": [
+          "An intake screen's purpose is to keep larger material from entering the water system. (True/False)",
+          "Order the flow path: Source water -> Screen -> Intake pipe -> Wet well -> Pump house. (Ordering)",
+          "At Level 1, confined-space entry into a wet well is: (a) taught step by step, (b) hazard-awareness only, (c) an operating decision."
+        ],
+        "in_production": true
+      }
+    },
+    {
+      "index": 5,
+      "slug": "raw-water-pump-house",
+      "title": "Raw Water Pump House",
+      "note": "Pump house",
+      "hero_video": "Phase 1 'Raw Water Pump - Interactive Cutaway'",
+      "chapters": [
+        {
+          "num": 1,
+          "title": "Welcome & Placement",
+          "purpose": "The pump house bridges intake and pipeline.",
+          "interaction": "Journey map with Module 5 lit; drop animation.",
+          "in_production": true
+        },
+        {
+          "num": 2,
+          "title": "What a Raw Water Pump House Is",
+          "purpose": "A facility where pumps move untreated water toward the plant.",
+          "interaction": "Establishing exterior/interior graphic.",
+          "in_production": true
+        },
+        {
+          "num": 3,
+          "title": "Basic Purpose of Raw Water Pumping",
+          "purpose": "Move water, overcome distance/elevation, support flow, reliable supply, connect stages.",
+          "interaction": "Clickable six-spoke purpose wheel.",
+          "in_production": true
+        },
+        {
+          "num": 4,
+          "title": "Exterior Walk-Around",
+          "purpose": "Building, locked access, signage, drainage, ventilation, security, incoming/outgoing pipes.",
+          "interaction": "Clickable exterior walk-around scene.",
+          "in_production": true
+        },
+        {
+          "num": 5,
+          "title": "Interior Overview",
+          "purpose": "Identify every major asset.",
+          "interaction": "Fully labeled interior pump house diagram, every asset clickable, consistent raw water pipe colour, flow arrows.",
+          "in_production": true
+        },
+        {
+          "num": 6,
+          "title": "Basic Flow Path",
+          "purpose": "The internal flow path.",
+          "interaction": "Flow arrows plus ordering activity: Intake Pipe, Suction Header, Pump, Check Valve, Discharge Header, Flow Meter, Raw Water Pipeline.",
+          "in_production": true
+        },
+        {
+          "num": 7,
+          "title": "Pumps, Motors & Piping",
+          "purpose": "Pumps (casing/suction/discharge/base + type awareness), motors and coupling, suction and discharge sides.",
+          "interaction": "Suction-side and discharge-side close-ups with the active side colour-highlighted; pump-type awareness cards.",
+          "in_production": true
+        },
+        {
+          "num": 8,
+          "title": "Valves & Instruments",
+          "purpose": "Isolation valves, check valves, flow meters, pressure gauges/transmitters, air release. Instruments show UNIT LABELS ONLY (L/s, m3/day, kPa, psi).",
+          "interaction": "Animated check valve (forward flow passes, reverse blocked); instrument readouts with units only - no values, ranges, or setpoints.",
+          "in_production": true
+        },
+        {
+          "num": 9,
+          "title": "Controls & Electrical (SCADA Awareness)",
+          "purpose": "Control panels, MCC awareness, SCADA awareness, duty/standby redundancy (identify only - no start/stop/sequencing).",
+          "interaction": "Simplified SCADA mockup (pump status, flow, pressure, level, alarm, trend); multi-pump duty/standby layout.",
+          "in_production": true
+        },
+        {
+          "num": 10,
+          "title": "Building Systems, Drainage & Flooding",
+          "purpose": "Drainage, sumps, flooding awareness.",
+          "interaction": "Floor-level drainage/flooding awareness graphic.",
+          "in_production": true
+        },
+        {
+          "num": 11,
+          "title": "The Pump Cutaway & Part Identification",
+          "purpose": "The pump cutaway view and part-identification activity.",
+          "interaction": "Rotating exploded pump-and-motor 3D cutaway; click casing/impeller/shaft/suction inlet/discharge outlet/seal area/coupling/motor/base; drag-and-drop part ID.",
+          "in_production": true
+        },
+        {
+          "num": 12,
+          "title": "Flow Drilldown, Safety & Review",
+          "purpose": "Flow direction drilldown; pump house safety awareness; what good operators notice.",
+          "interaction": "Clickable flow-order drilldown; pump house 'spot the concern' scene (notice-and-report); knowledge check.",
+          "in_production": true
+        }
+      ],
+      "knowledge_check": {
+        "pass_mark": 70,
+        "questions": [
+          "The suction side of a pump is where water enters the pump. (True/False)",
+          "A flow meter reading should be shown at Level 1 as: (a) a normal value, (b) unit labels only, (c) an alarm setpoint.",
+          "A leak or unusual noise at the pump should be: (a) diagnosed and fixed, (b) recognized and reported, (c) ignored."
+        ],
+        "in_production": true
+      }
+    },
+    {
+      "index": 6,
+      "slug": "raw-water-pipeline",
+      "title": "Raw Water Pipeline",
+      "note": "Pipeline",
+      "hero_video": "Phase 2 'Raw Water Pipeline Route'",
+      "chapters": [
+        {
+          "num": 1,
+          "title": "Welcome & Placement",
+          "purpose": "The pipeline bridges pump house and plant.",
+          "interaction": "Journey map with Module 6 lit; drop animation.",
+          "in_production": true
+        },
+        {
+          "num": 2,
+          "title": "What a Raw Water Pipeline Is",
+          "purpose": "A pipe carrying untreated water toward the plant.",
+          "interaction": "Establishing pipeline graphic.",
+          "in_production": true
+        },
+        {
+          "num": 3,
+          "title": "Basic Purpose",
+          "purpose": "Carry raw water, connect stages, protect during transport, support supply, follow a route, allow access/monitoring.",
+          "interaction": "Clickable six-spoke purpose wheel.",
+          "in_production": true
+        },
+        {
+          "num": 4,
+          "title": "Route Overview Map",
+          "purpose": "The pipeline route (not raw GIS).",
+          "interaction": "Simplified clean route map with a legend and clickable symbols (valves, air release, drains, chambers, crossings).",
+          "in_production": true
+        },
+        {
+          "num": 5,
+          "title": "Raw Water Is Untreated",
+          "purpose": "Not finished, not potable yet, going to treatment.",
+          "interaction": "Raw vs finished/potable label reinforcement.",
+          "in_production": true
+        },
+        {
+          "num": 6,
+          "title": "Buried vs Exposed Pipeline Awareness",
+          "purpose": "Buried and exposed/above-ground pipeline awareness.",
+          "interaction": "Paired cross-sections: buried-pipe cutaway (surface, bedding, tracer wire, valve box) and exposed/pipe-gallery view.",
+          "in_production": true
+        },
+        {
+          "num": 7,
+          "title": "Pipe Makeup: Sections, Joints & Fittings",
+          "purpose": "Sections, joints, couplings, fittings, flange/gasket; bends, elbows, tees, reducers, restraint.",
+          "interaction": "Labeled pipe-component diagram.",
+          "in_production": true
+        },
+        {
+          "num": 8,
+          "title": "Valves & Access (Confined-Space Awareness)",
+          "purpose": "Isolation valves (do not operate); chambers, vaults, manholes (confined-space awareness only - no entry/isolation steps).",
+          "interaction": "Valve-chamber/vault cutaway with a confined-space caution, no entry steps.",
+          "in_production": true
+        },
+        {
+          "num": 9,
+          "title": "Appurtenances: Air Release, Blow-offs, Monitoring",
+          "purpose": "Air release at high points, blow-offs/drains at low points, flow meters/monitoring, pressure awareness (calculation-free).",
+          "interaction": "Pipeline elevation profile animating air collecting at high points and water settling at low points, calculation-free.",
+          "in_production": true
+        },
+        {
+          "num": 10,
+          "title": "Route & Land Context: Crossings & Locates",
+          "purpose": "Crossings, right-of-way/easement, route maps and records, locates and ground disturbance.",
+          "interaction": "Records map; locates/ground-disturbance scene with flags, paint, and a no-dig-without-locate warning.",
+          "in_production": true
+        },
+        {
+          "num": 11,
+          "title": "Protection, Concerns & Review",
+          "purpose": "What good operators notice; flow ordering and observation activities.",
+          "interaction": "Two 'spot the concern' hotspot scenes (surface-condition + route-patrol); flow ordering activity; knowledge check.",
+          "in_production": true
+        }
+      ],
+      "knowledge_check": {
+        "pass_mark": 70,
+        "questions": [
+          "Raw water in the pipeline is untreated and not yet potable. (True/False)",
+          "Air release valves are typically found at: (a) high points, (b) low points, (c) customer taps.",
+          "At Level 1, valve chambers and manholes are covered as: (a) entry procedures, (b) identification + hazard awareness, (c) isolation steps."
+        ],
+        "in_production": true
+      }
+    },
+    {
+      "index": 7,
+      "slug": "water-treatment-plant",
+      "title": "Water Treatment Plant",
+      "note": "Plant (largest, ~25% of exam)",
+      "hero_video": "Phase 1 'Water Treatment Plant - Process-Flow Walkthrough'",
+      "chapters": [
+        {
+          "num": 1,
+          "title": "Welcome & Orientation",
+          "purpose": "Where the plant sits in the journey; the largest, most important Level 1 module.",
+          "interaction": "Journey map with Module 7 lit; drop animation.",
+          "in_production": true
+        },
+        {
+          "num": 2,
+          "title": "What a Water Treatment Plant Is",
+          "purpose": "Raw water passes through barriers to help produce safe potable water.",
+          "interaction": "Establishing plant graphic.",
+          "in_production": true
+        },
+        {
+          "num": 3,
+          "title": "Raw Water In, Finished Water Out",
+          "purpose": "The water-quality terms and the potable goal.",
+          "interaction": "Raw->process->treated->finished label flow with the potable water goal.",
+          "in_production": true
+        },
+        {
+          "num": 4,
+          "title": "Not All Treatment Plants Look the Same",
+          "purpose": "Eight treatment types.",
+          "interaction": "Eight clickable treatment-type tiles, each revealing its process.",
+          "in_production": true
+        },
+        {
+          "num": 5,
+          "title": "Plant Site Overview",
+          "purpose": "The plant site.",
+          "interaction": "Clickable site plan: raw entry, treatment building, chemical delivery, finished connection, waste/backwash area, access road, security, backup power, drainage.",
+          "in_production": true
+        },
+        {
+          "num": 6,
+          "title": "Plant Interior & Basic Flow Path",
+          "purpose": "The interior process areas and flow.",
+          "interaction": "Interior cutaway master map: clickable labeled process areas with clear flow arrows.",
+          "in_production": true
+        },
+        {
+          "num": 7,
+          "title": "Treatment Barriers Concept",
+          "purpose": "Multiple barriers, no single one is the only protection.",
+          "interaction": "Multi-barrier graphic (chemical, clarification, filtration, disinfection, monitoring, records).",
+          "in_production": true
+        },
+        {
+          "num": 8,
+          "title": "Pre-Treatment, Chemical Feed & Storage",
+          "purpose": "Pre-treatment/screening; chemical feed overview; chemical storage and containment.",
+          "interaction": "Chemical feed schematic (tank, containment, feed pump, lines, injection point, mixer, label, eyewash).",
+          "in_production": true
+        },
+        {
+          "num": 9,
+          "title": "Conventional Process Train",
+          "purpose": "Rapid mix/coagulation, flocculation, sedimentation/clarification, DAF alternative (purpose + visual sequence only).",
+          "interaction": "Animations: coagulant injection + rapid mix; particles joining into floc; floc settling; DAF bubbles lifting particles.",
+          "in_production": true
+        },
+        {
+          "num": 10,
+          "title": "Filtration & Backwash Awareness",
+          "purpose": "Filtration awareness, filter anatomy, backwash awareness (no when/how to backwash).",
+          "interaction": "Filter cross-section flow animation; normal-vs-backwash two-panel.",
+          "in_production": true
+        },
+        {
+          "num": 11,
+          "title": "Alternative Processes",
+          "purpose": "Membrane, pressure filtration, greensand/iron-manganese, softening, activated carbon.",
+          "interaction": "Clickable cutaways: membrane skid, pressure filter, greensand bed, softening, carbon contactor.",
+          "in_production": true
+        },
+        {
+          "num": 12,
+          "title": "Disinfection: Chlorination, UV, Ozone",
+          "purpose": "Chlorination, UV, ozone; contact time/clearwell awareness (no CT calcs, no dose/residual targets).",
+          "interaction": "UV reactor and ozone system cutaways; clearwell contact path.",
+          "in_production": true
+        },
+        {
+          "num": 13,
+          "title": "Monitoring & Control",
+          "purpose": "Online analyzers, turbidity and chlorine points, dashboard, sampling/plant lab, SCADA (recognition only - no trend interpretation).",
+          "interaction": "Interactive instrument panel + SCADA mockup with clickable readings; turbidity/chlorine monitoring-point flow map.",
+          "in_production": true
+        },
+        {
+          "num": 14,
+          "title": "Process Waste, Drains & Pipe Colour Coding",
+          "purpose": "Process waste and drains (separate from finished water); plant piping, valves, flow with colour coding.",
+          "interaction": "Pipe-colour standard map (raw, process, finished, chemical, waste/backwash).",
+          "in_production": true
+        },
+        {
+          "num": 15,
+          "title": "Treatment Plant & Chemical Room Safety",
+          "purpose": "Treatment plant and chemical room safety awareness.",
+          "interaction": "Chemical room safety hotspot scene.",
+          "in_production": true
+        },
+        {
+          "num": 16,
+          "title": "Operator Rounds, Full Drilldown & Review",
+          "purpose": "Operator rounds; what good operators notice; full plant drilldown review.",
+          "interaction": "Drilldown master map; ~20-item 'what good operators notice' hotspot scene; knowledge check.",
+          "in_production": true
+        }
+      ],
+      "knowledge_check": {
+        "pass_mark": 70,
+        "questions": [
+          "Coagulation helps small particles begin to come together so they can be removed later. (True/False)",
+          "At Level 1, disinfection (chlorine/UV/ozone) is taught: (a) with CT calculations, (b) as calculation-free awareness, (c) with dose adjustment.",
+          "'Not all water treatment plants look the same' because treatment depends on: (a) the operator's mood, (b) the source water and quality concerns, (c) the day of week."
+        ],
+        "in_production": true
+      }
+    },
+    {
+      "index": 8,
+      "slug": "finished-water-storage",
+      "title": "Finished Water Storage",
+      "note": "Storage",
+      "hero_video": "Phase 2 'Finished Water Storage & Contact Time'",
+      "chapters": [
+        {
+          "num": 1,
+          "title": "Welcome & Where Storage Fits",
+          "purpose": "After the plant, before distribution; the bridge between treatment and distribution.",
+          "interaction": "Journey map with Module 8 lit; drop animation.",
+          "in_production": true
+        },
+        {
+          "num": 2,
+          "title": "What Finished Water Storage Is",
+          "purpose": "Where treated/finished water is held before distribution.",
+          "interaction": "Establishing storage graphic.",
+          "in_production": true
+        },
+        {
+          "num": 3,
+          "title": "Why Storage Matters",
+          "purpose": "Store treated water, support supply/pressure, operational flexibility, fire/emergency storage, contact time, connect plant to distribution.",
+          "interaction": "Clickable purpose wheel.",
+          "in_production": true
+        },
+        {
+          "num": 4,
+          "title": "Water Terms",
+          "purpose": "Treated, finished, potable, distribution water.",
+          "interaction": "Term cards.",
+          "in_production": true
+        },
+        {
+          "num": 5,
+          "title": "Common Storage Types",
+          "purpose": "Clearwell, underground reservoir, above-ground tank, elevated tank/tower, standpipe, storage cell.",
+          "interaction": "Six storage-type tiles with a matching activity.",
+          "in_production": true
+        },
+        {
+          "num": 6,
+          "title": "Detailed Storage Structures",
+          "purpose": "Clearwell, underground reservoir, above-ground tank, elevated vs standpipe, storage cell.",
+          "interaction": "Clickable cutaways for each; elevated-tank-vs-standpipe comparison; storage cell master diagram.",
+          "in_production": true
+        },
+        {
+          "num": 7,
+          "title": "Component Walk-Through",
+          "purpose": "Inlet, outlet, overflow piping, drains/low-level draw-off, vents and screens, hatches/ladders/access.",
+          "interaction": "Drilldown master labeled map, every component clickable.",
+          "in_production": true
+        },
+        {
+          "num": 8,
+          "title": "Monitoring & Water Quality",
+          "purpose": "Level measurement, mixing, chlorine residual and contact time, sample points (no CT calcs, no setpoints/targets).",
+          "interaction": "Level dashboard with high/low alarm and percent-full shown as awareness only.",
+          "in_production": true
+        },
+        {
+          "num": 9,
+          "title": "Protection & Professionalism",
+          "purpose": "Security, site maintenance, storage safety (confined space, fall, drowning).",
+          "interaction": "Before/after site-condition slider; protected-vs-unsecured site comparison; vent close-up showing protected vs damaged screen.",
+          "in_production": true
+        },
+        {
+          "num": 10,
+          "title": "Full Storage Drilldown & Review",
+          "purpose": "What good operators notice; full storage drilldown review.",
+          "interaction": "~18-item 'what good operators notice' hotspot scene; drop colour/state change leaving the plant into storage; knowledge check.",
+          "in_production": true
+        }
+      ],
+      "knowledge_check": {
+        "pass_mark": 70,
+        "questions": [
+          "A clearwell stores treated water and may provide contact time for disinfection. (True/False)",
+          "An open hatch or damaged vent screen on a storage tank should be: (a) fixed by the learner, (b) noticed and reported, (c) ignored.",
+          "At Level 1, storage monitoring covers: (a) CT and turnover calculations, (b) recognizing level, residual, and sample points, (c) setting level setpoints."
+        ],
+        "in_production": true
+      }
+    },
+    {
+      "index": 9,
+      "slug": "distribution-system",
+      "title": "Distribution System",
+      "note": "Distribution",
+      "hero_video": "Phase 2 'Distribution System - Living Map'",
+      "chapters": [
+        {
+          "num": 1,
+          "title": "Welcome",
+          "purpose": "Water leaves storage and enters distribution; Module 10 (Customer Tap) appears next.",
+          "interaction": "Journey map with Module 9 lit; drop animation.",
+          "in_production": true
+        },
+        {
+          "num": 2,
+          "title": "Where the Distribution System Fits",
+          "purpose": "Storage holds, distribution delivers, the tap uses.",
+          "interaction": "Three-stage relationship graphic.",
+          "in_production": true
+        },
+        {
+          "num": 3,
+          "title": "What a Distribution System Is",
+          "purpose": "The network that delivers potable water to customers.",
+          "interaction": "'Living Map': a clickable town map; hotspots light up on mains, valves, hydrants, zones, boosters, PRVs, sample points, services.",
+          "in_production": true
+        },
+        {
+          "num": 4,
+          "title": "Distribution Water Is Potable Water",
+          "purpose": "Protect it as it moves to customers.",
+          "interaction": "Potable-water protection emphasis graphic.",
+          "in_production": true
+        },
+        {
+          "num": 5,
+          "title": "Basic Purpose",
+          "purpose": "Deliver potable water, support pressure, support fire protection, allow isolation, support sampling, connect to customers.",
+          "interaction": "Purpose wheel.",
+          "in_production": true
+        },
+        {
+          "num": 6,
+          "title": "Distribution Overview Map",
+          "purpose": "The connected network and major assets.",
+          "interaction": "Simplified GIS-style overview map with a legend and flow-direction arrows (not a cluttered real screenshot).",
+          "in_production": true
+        },
+        {
+          "num": 7,
+          "title": "Transmission vs Distribution Mains",
+          "purpose": "Transmission vs distribution mains.",
+          "interaction": "Side-by-side comparison graphic.",
+          "in_production": true
+        },
+        {
+          "num": 8,
+          "title": "Water Mains",
+          "purpose": "Buried pipes connecting to visible assets; other-utility awareness.",
+          "interaction": "Buried street cross-section (main, valve, hydrant lead, service connection, other utilities).",
+          "in_production": true
+        },
+        {
+          "num": 9,
+          "title": "Valves, Valve Boxes & Chambers",
+          "purpose": "Isolate/control/direct; authorized operation only (identify + confined-space awareness).",
+          "interaction": "Valve-in-main and valve-box/chamber cutaways with confined-space warning icons.",
+          "in_production": true
+        },
+        {
+          "num": 10,
+          "title": "Fire Hydrants",
+          "purpose": "Barrel, nozzles/caps, operating nut, lead, isolation valve (identify only).",
+          "interaction": "Hydrant cutaway/exterior hybrid with fire-truck awareness.",
+          "in_production": true
+        },
+        {
+          "num": 11,
+          "title": "Service Connections & Curb Stops",
+          "purpose": "Service connections and curb stops.",
+          "interaction": "Service connection + curb stop graphic.",
+          "in_production": true
+        },
+        {
+          "num": 12,
+          "title": "Water Meters",
+          "purpose": "Measure use; do-not-tamper awareness.",
+          "interaction": "Meter diagram.",
+          "in_production": true
+        },
+        {
+          "num": 13,
+          "title": "Pressure Zones, Booster Stations & PRVs",
+          "purpose": "Serve different elevations (recognition only).",
+          "interaction": "Community elevation graphic with booster and PRV stations.",
+          "in_production": true
+        },
+        {
+          "num": 14,
+          "title": "Reservoirs, Air Release & Looped vs Dead-End Mains",
+          "purpose": "Distribution reservoirs/elevated tanks; air release, blow-offs, flushing points; dead ends vs looped mains.",
+          "interaction": "Dead-end vs looped-main network animation showing flow paths.",
+          "in_production": true
+        },
+        {
+          "num": 15,
+          "title": "Sampling Points & Chlorine Residual Awareness",
+          "purpose": "Sampling points and chlorine residual decreasing toward the far end (recognition only, no target numbers).",
+          "interaction": "Chlorine residual gradient animation labelled 'residual generally decreases as water moves farther through the system' - no target values.",
+          "in_production": true
+        },
+        {
+          "num": 16,
+          "title": "Pressure, Flow, Complaints & Backflow Awareness",
+          "purpose": "Pressure/flow/demand; water quality complaints; cross-connection and backflow awareness (recognize, not diagnose/test).",
+          "interaction": "Cross-connection awareness graphic.",
+          "in_production": true
+        },
+        {
+          "num": 17,
+          "title": "Maps, Locates, Safety & Review",
+          "purpose": "Maps/records/labels; locates; distribution safety; what good operators notice.",
+          "interaction": "Drag-to-order flow activity; asset-matching activity; 'what good operators notice' spot-the-concern scene; knowledge check.",
+          "in_production": true
+        }
+      ],
+      "knowledge_check": {
+        "pass_mark": 70,
+        "questions": [
+          "A curb stop is a valve used to control water service to a property. (True/False)",
+          "Chlorine residual in distribution: (a) has a fixed normal value operators must maintain, (b) generally decreases as water moves farther through the system, (c) is calculated by the learner.",
+          "A suspected cross-connection should be: (a) tested by the learner, (b) recognized and reported/escalated, (c) repaired on the spot."
+        ],
+        "in_production": true
+      }
+    },
+    {
+      "index": 10,
+      "slug": "customer-tap",
+      "title": "Customer Tap",
+      "note": "Customer tap",
+      "hero_video": "Phase 2 'Customer Tap & Backflow'",
+      "chapters": [
+        {
+          "num": 1,
+          "title": "Welcome to the Final Module",
+          "purpose": "The journey completes at the customer tap, where all upstream work becomes visible.",
+          "interaction": "Journey map with Module 10 lit; drop near the tap.",
+          "in_production": true
+        },
+        {
+          "num": 2,
+          "title": "Where the Customer Tap Fits",
+          "purpose": "Distribution main to customer tap to final review.",
+          "interaction": "Tap-as-final-point graphic.",
+          "in_production": true
+        },
+        {
+          "num": 3,
+          "title": "The Full Source-to-Tap Journey Replay",
+          "purpose": "Replay the whole path as a powerful visual moment.",
+          "interaction": "Replay the whole path (source, intake, pump house, pipeline, plant, storage, distribution, tap) using the recurring drop motif.",
+          "in_production": true
+        },
+        {
+          "num": 4,
+          "title": "What Is the Customer Tap",
+          "purpose": "The point where potable water reaches the user.",
+          "interaction": "Clean labeled customer-tap/sink cutaway (tap, potable water, plumbing, meter, service connection, main, flow arrows).",
+          "in_production": true
+        },
+        {
+          "num": 5,
+          "title": "Why the Customer Tap Matters",
+          "purpose": "Drinking, cooking, schools, health care, businesses, public trust, operator responsibility.",
+          "interaction": "Homes/schools/health care/business imagery; public trust.",
+          "in_production": true
+        },
+        {
+          "num": 6,
+          "title": "From Water Main to Customer Tap",
+          "purpose": "Flow ordering from main to glass.",
+          "interaction": "'Customer Tap & Backflow': full main-to-glass path with clickable hotspots; flow-ordering activity (Main, Service Line, Meter, Plumbing, Tap).",
+          "in_production": true
+        },
+        {
+          "num": 7,
+          "title": "Service Connections, Curb Stops & Meters",
+          "purpose": "Service connections, curb stops, water meters.",
+          "interaction": "Curb-stop and curb-box cutaway; water meter diagram (register + AMI awareness).",
+          "in_production": true
+        },
+        {
+          "num": 8,
+          "title": "Building Plumbing & Public/Private Awareness",
+          "purpose": "Building plumbing and public-side vs private-side awareness (neutral - responsibility varies by municipality/policy/code/bylaws).",
+          "interaction": "Simplified building plumbing interior; neutral public/private boundary graphic - no legal ownership claims.",
+          "in_production": true
+        },
+        {
+          "num": 9,
+          "title": "Cross-Connection & Backflow Awareness",
+          "purpose": "Potable water protection; cross-connection awareness; backflow awareness; backflow prevention (qualified personnel only; recognition + protection only).",
+          "interaction": "Two-panel normal-flow-vs-backflow animation, then a clickable risk scene where a backflow preventer restores protection.",
+          "in_production": true
+        },
+        {
+          "num": 10,
+          "title": "Customer Tap Sampling & Complaint Awareness",
+          "purpose": "Recognize why customer tap samples are taken and what concerns customers may report (awareness only, no procedure).",
+          "interaction": "Customer-concern tile grid (taste, odour, colour, cloudy, particles, low pressure, no water, unusual).",
+          "in_production": true
+        },
+        {
+          "num": 11,
+          "title": "Customer Trust & Public Health",
+          "purpose": "Customer trust and public health; what good operators notice; safety and access.",
+          "interaction": "Public-health 'shield over the connection' graphic; sixteen-item 'what good operators notice' scene.",
+          "in_production": true
+        },
+        {
+          "num": 12,
+          "title": "Full Journey Review & Completion",
+          "purpose": "Full water journey review; Module 10 review; completion.",
+          "interaction": "Signature culminating animation: the drop reaches the tap, a customer drinks safe water, the whole source-to-tap system lights up; Final Course Review unlocks.",
+          "in_production": true
+        }
+      ],
+      "knowledge_check": {
+        "pass_mark": 70,
+        "questions": [
+          "Cross-connection means a connection that could allow non-potable water or another substance to enter the potable water system. (True/False)",
+          "Order the path: Distribution Main -> Service Line -> Water Meter -> Building Plumbing -> Customer Tap. (Ordering)",
+          "Public-side vs private-side responsibility: (a) is fixed by law everywhere, (b) can vary by municipality, utility policy, plumbing code, and local bylaws, (c) is the learner's decision."
+        ],
+        "in_production": true
+      }
+    }
+  ]
+}
