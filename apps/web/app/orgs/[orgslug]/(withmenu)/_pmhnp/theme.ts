@@ -70,6 +70,9 @@ export type ModuleDef = {
   tag: string
   title: string
   note?: string
+  // Full play URL of the module's interactive video on app-video.nesoi.ai.
+  // Present only for modules whose video has been produced; embedded as an iframe.
+  video?: string
   chapters: Chapter[]
   knowledge_check: KnowledgeCheck
 }
@@ -96,6 +99,11 @@ export type CatalogMeta = {
   status: 'unlocked' | 'coming-soon'
   ce_total: number
   color: keyof typeof TILE
+  // UUID of the native LearnHouse course in Postgres (from seed_native_courses.py
+  // -> seed_map.json). The custom UI reads live content for this course via
+  // GET /courses/course_{uuid}/meta, so /dash edits sync to the member side.
+  // Stable across /dash renames (unlike name/slug), which is why we key on it.
+  course_uuid: string
 }
 
 export const CATALOG: CatalogMeta[] = [
@@ -109,6 +117,7 @@ export const CATALOG: CatalogMeta[] = [
     status: 'unlocked',
     ce_total: 15,
     color: 'purple',
+    course_uuid: '8bcfa06d-3829-4dd9-9980-45bf10177dee',
   },
   {
     slug: 'treatment-accuracy-blueprint',
@@ -120,6 +129,7 @@ export const CATALOG: CatalogMeta[] = [
     status: 'unlocked',
     ce_total: 15,
     color: 'peri',
+    course_uuid: 'fca88a0e-fc30-44dc-ae21-b74a1c79d74c',
   },
   {
     slug: 'edit-protocol',
@@ -131,8 +141,13 @@ export const CATALOG: CatalogMeta[] = [
     status: 'unlocked',
     ce_total: 3,
     color: 'magenta',
+    course_uuid: '11a0d510-e00a-4731-9b1e-87edb0c8cc29',
   },
 ]
+
+export function catalogByUuid(uuid: string): CatalogMeta | undefined {
+  return CATALOG.find((c) => c.course_uuid === uuid)
+}
 
 export const PASS_MARK = 70
 export const FINAL_PASS_MARK = 80

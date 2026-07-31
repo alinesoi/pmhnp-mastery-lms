@@ -13,6 +13,7 @@
           "slug": "introduction-course-orientation",
           "tag": "DAB · Intro",
           "title": "Introduction & Course Orientation",
+          "video": "https://app-video.nesoi.ai/videos/ee040b9b-35c4-47f1-8321-1a2e71d217d4",
           "note": "The Diagnostic Accuracy Blueprint opening: brand the course, establish the diagnostic-accuracy problem, and introduce the CLARITY Method.",
           "chapters": [
             {
@@ -131,6 +132,7 @@
           "slug": "the-pmhnp-clarity-intake",
           "tag": "DAB · M1",
           "title": "The PMHNP CLARITY Intake",
+          "video": "https://app-video.nesoi.ai/videos/dab3d25f-4205-41c2-9226-06162893580b",
           "note": "The structured 45-minute psychiatric intake, organized as a 4-block flow that maps onto the CLARITY Method.",
           "chapters": [
             {
@@ -409,7 +411,8 @@
               "Mixed Features — Distinguishing Criteria Which feature is most consistent with mixed features rather than unipolar depression?"
             ],
             "note": ""
-          }
+          },
+          "video": "https://app-video.nesoi.ai/videos/9aabcd7d-9765-43d4-b030-67e68b8a5326"
         },
         {
           "index": 4,
@@ -591,7 +594,8 @@
               "OCD vs. Psychosis — Differential Which statement best distinguishes OCD obsessions from delusions?"
             ],
             "note": ""
-          }
+          },
+          "video": "https://app-video.nesoi.ai/videos/425fb773-d9b3-4f2e-9f26-bc6f1306120e"
         },
         {
           "index": 5,
@@ -761,7 +765,8 @@
               "OCD — Clinical Interpretation A patient says, \"The thoughts say I am a monster, so I have to wash and pray for hours,\" and describes the thoughts as unwanted and terrifying. What is the best interpretation?"
             ],
             "note": ""
-          }
+          },
+          "video": "https://app-video.nesoi.ai/videos/19385d83-1500-4827-927b-5b02f836f76c"
         },
         {
           "index": 6,
@@ -904,7 +909,8 @@
               "Trauma vs. ADHD — Differential Which pattern most strongly supports trauma-related symptoms over primary ADHD?"
             ],
             "note": ""
-          }
+          },
+          "video": "https://app-video.nesoi.ai/videos/725d73b3-9539-449a-8add-9419cba7f5b5"
         },
         {
           "index": 7,
@@ -1026,7 +1032,8 @@
               "CLARITY Method — Diagnostic Discipline What is the best next step when a patient arrives self-diagnosed with ADHD and requests stimulants?"
             ],
             "note": ""
-          }
+          },
+          "video": "https://app-video.nesoi.ai/videos/11bbf5a1-b10a-4c62-8735-1281cfbe0bc5"
         },
         {
           "index": 8,
@@ -1169,7 +1176,8 @@
               "Bipolar Spectrum — Red Flags Which red flag should increase suspicion for bipolar-spectrum illness?"
             ],
             "note": ""
-          }
+          },
+          "video": "https://app-video.nesoi.ai/videos/b36c1dc3-8742-4bcb-aff4-c426019dafc3"
         },
         {
           "index": 9,
@@ -1288,7 +1296,8 @@
               "Documentation — Defensible Reasoning Which documentation statement best reflects defensible psychiatric reasoning?"
             ],
             "note": ""
-          }
+          },
+          "video": "https://app-video.nesoi.ai/videos/9f51abb1-2b61-4f4a-aecf-cd7c0fcd0bd1"
         },
         {
           "index": 10,
@@ -1340,7 +1349,8 @@
             "in_production": true,
             "questions": [],
             "note": "Course wrap — final assessment lives on the Progress & Certificate page."
-          }
+          },
+          "video": "https://app-video.nesoi.ai/videos/9ae3c746-faeb-442d-9863-370bf2d60f5b"
         }
       ]
     },
@@ -1357,6 +1367,7 @@
           "slug": "deprescribing-polypharmacy-algorithm",
           "tag": "E.D.I.T. · Protocol",
           "title": "Deprescribing & Polypharmacy Algorithm",
+          "video": "https://app-video.nesoi.ai/videos/489b3d97-eba1-40b9-85b1-11141b6471fe",
           "note": "The E.D.I.T. mini-course: a structured protocol for safely simplifying complex medication regimens (Evaluate, Discuss, Initiate, Track).",
           "chapters": [
             {
@@ -1485,6 +1496,7 @@
           "slug": "case-studies-the-fragmented-patient",
           "tag": "E.D.I.T. · Cases",
           "title": "Case Studies — The Fragmented Patient",
+          "video": "https://app-video.nesoi.ai/videos/4c0ca0ef-2ca9-48db-b741-dd3f9a1a3f5c",
           "note": "Four real-world patients walked phase-by-phase through E.D.I.T., each highlighting a different deprescribing challenge.",
           "chapters": [
             {
@@ -1580,6 +1592,7 @@
           "slug": "introduction-course-orientation",
           "tag": "TAB · Intro",
           "title": "Introduction & Course Orientation",
+          "video": "https://app-video.nesoi.ai/videos/afe62a5b-7f4d-4a31-b4a6-9c2718e91bb5",
           "note": "The Treatment Accuracy Blueprint opening: the sister course to DAB. Where DAB gets the diagnosis right, TAB turns an accurate diagnosis into a structured, defensible treatment plan.",
           "chapters": [
             {
@@ -1686,6 +1699,7 @@
           "slug": "from-diagnosis-to-treatment-building-the-plan",
           "tag": "TAB · M1",
           "title": "From Diagnosis to Treatment: Building the Plan",
+          "video": "https://app-video.nesoi.ai/videos/8520285f-9c70-49af-a641-6b21ab442441",
           "note": "The foundation module: turning a working diagnosis into a structured, prioritized, defensible plan with clear targets and a monitoring framework.",
           "chapters": [
             {
@@ -2030,7 +2044,8 @@
               "Module 2 Which of the following best describes the clinical role of buspirone in anxiety treatment, as presented in the TAB?"
             ],
             "note": ""
-          }
+          },
+          "video": "https://app-video.nesoi.ai/videos/0dd31f25-0b5b-4a2d-af7e-8a173ae85406"
         },
         {
           "index": 4,
@@ -2281,7 +2296,8 @@
               "Module 3 A 40-year-old patient with a diagnosis of major depressive disorder reports increased energy, decreased need for sleep, and irritability shortly after starting an antidepressant. What is the most appropriate clinical response according to the TAB?"
             ],
             "note": ""
-          }
+          },
+          "video": "https://app-video.nesoi.ai/videos/9ae5f8bc-4541-4899-b3bb-78bf92f89e59"
         },
         {
           "index": 5,
@@ -2499,7 +2515,8 @@
               "Module 3 Which lab panel is specifically recommended in the TAB before initiating lithium therapy?"
             ],
             "note": ""
-          }
+          },
+          "video": "https://app-video.nesoi.ai/videos/513a4345-5cc9-4d9f-aefc-c1e21f30fc10"
         },
         {
           "index": 6,
@@ -2720,7 +2737,8 @@
               "Module 4 When prescribing for patients with trauma histories or autism-adjacent presentations, the TAB recommends which of the following prescribing modifications?"
             ],
             "note": ""
-          }
+          },
+          "video": "https://app-video.nesoi.ai/videos/610018e8-b033-48dc-b6fd-65159b83a3df"
         },
         {
           "index": 7,
@@ -2929,7 +2947,8 @@
               "Module 5 A patient in early recovery from alcohol use disorder presents with significant anxiety. Which medication class does the TAB identify as generally contraindicated in this setting?"
             ],
             "note": ""
-          }
+          },
+          "video": "https://app-video.nesoi.ai/videos/15c5ca82-d8a7-4e13-8015-be6dbaa1cd70"
         },
         {
           "index": 8,
@@ -3144,7 +3163,8 @@
               "Module 6 A patient on an antipsychotic reports an intensely uncomfortable inner restlessness and inability to sit still. Her provider initially attributed this to worsening anxiety. According to the TAB, what is the most likely iatrogenic diagnosis and what is the recommended fir"
             ],
             "note": ""
-          }
+          },
+          "video": "https://app-video.nesoi.ai/videos/252a1c00-b038-43f8-b172-9581e57a8b77"
         },
         {
           "index": 9,
@@ -3359,7 +3379,8 @@
               "Module 7 & 8 The TAB describes the CLARITY framework as applied to treatment documentation. In the context of a treatment note, which of the following correctly maps the CLARITY acronym?"
             ],
             "note": ""
-          }
+          },
+          "video": "https://app-video.nesoi.ai/videos/1d04114c-319f-4523-a692-965307753edf"
         },
         {
           "index": 10,
@@ -3420,7 +3441,8 @@
             "in_production": true,
             "questions": [],
             "note": "Course wrap — final assessment lives on the Progress & Certificate page."
-          }
+          },
+          "video": "https://app-video.nesoi.ai/videos/f8021937-15c6-4977-91a9-1968b7670876"
         }
       ]
     }

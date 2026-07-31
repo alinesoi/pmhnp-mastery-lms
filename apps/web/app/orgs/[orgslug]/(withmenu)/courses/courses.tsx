@@ -5,10 +5,12 @@ import { getUriWithOrg } from '@services/config/config'
 import { ArrowRight, Award, BadgeCheck, BookOpen, Sparkles } from 'lucide-react'
 import {
   SERIF, PLUM, PURPLE, MAGENTA, GOLD, LILAC, CARD_BORDER, INK, MUTED,
-  CATALOG, courseBySlug, TILE, TAGLINE,
+  CATALOG, TILE, TAGLINE,
 } from '../_pmhnp/theme'
+import { useCourses } from '../_pmhnp/CoursesContext'
 
 export default function Courses({ orgslug }: { orgslug: string }) {
+  const { courseBySlug } = useCourses()
   return (
     <div className="min-h-[calc(100vh-56px)]" style={{ backgroundColor: LILAC }}>
       <div className="max-w-5xl mx-auto px-6 sm:px-10 py-10">

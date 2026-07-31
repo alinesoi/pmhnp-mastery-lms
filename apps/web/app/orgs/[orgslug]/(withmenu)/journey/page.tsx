@@ -7,12 +7,14 @@ import { getAllProgress, ProgressSummary, AllProgressResponse } from '@services/
 import { ArrowRight, Check, Lock, Waypoints, Award } from 'lucide-react'
 import {
   SERIF, PLUM, PURPLE, MAGENTA, GOLD, LILAC, CARD_BORDER, INK, MUTED,
-  CATALOG, courseBySlug, TILE,
+  CATALOG, TILE,
 } from '../_pmhnp/theme'
+import { useCourses } from '../_pmhnp/CoursesContext'
 
 export default function JourneyPage(props: { params: Promise<{ orgslug: string }> }) {
   const params = use(props.params)
   const orgslug = params.orgslug
+  const { courseBySlug } = useCourses()
   const session = useLHSession() as any
   const accessToken = session?.data?.tokens?.access_token
   const [all, setAll] = useState<AllProgressResponse | null>(null)

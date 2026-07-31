@@ -7,12 +7,14 @@ import { getAllProgress, getMyProgress, getCertificate, AllProgressResponse, Pro
 import { Award, Check, Lock, ArrowRight, GraduationCap, BadgeCheck, Download } from 'lucide-react'
 import {
   SERIF, PLUM, PLUM_DEEP, PURPLE, PERI, MAGENTA, GOLD, LILAC, CARD_BORDER, INK, MUTED,
-  CATALOG, courseBySlug, catalogBySlug, TILE, FINAL_PASS_MARK, TAGLINE,
+  CATALOG, catalogBySlug, TILE, FINAL_PASS_MARK, TAGLINE,
 } from '../_pmhnp/theme'
+import { useCourses } from '../_pmhnp/CoursesContext'
 
 export default function ProgressPage(props: { params: Promise<{ orgslug: string }> }) {
   const params = use(props.params)
   const orgslug = params.orgslug
+  const { courseBySlug } = useCourses()
   const session = useLHSession() as any
   const accessToken = session?.data?.tokens?.access_token
   const learnerName = `${session?.data?.user?.first_name || ''} ${session?.data?.user?.last_name || ''}`.trim() || 'PMHNP Learner'
@@ -120,10 +122,10 @@ export default function ProgressPage(props: { params: Promise<{ orgslug: string 
                   </div>
                 </div>
                 {eligible ? (
-                  <button type="button"
+                  <Link href={getUriWithOrg(orgslug, `/certificate/${cat.slug}`)}
                     className="mt-4 inline-flex items-center gap-1.5 rounded-full px-5 py-2.5 text-sm font-semibold" style={{ backgroundColor: PERI, color: PLUM_DEEP }}>
-                    <Download size={15} /> Download certificate (in production)
-                  </button>
+                    <Download size={15} /> Download certificate
+                  </Link>
                 ) : (
                   <Link href={getUriWithOrg(orgslug, `/course/${cat.slug}`)}
                     className="mt-4 inline-flex items-center gap-1.5 rounded-full px-5 py-2.5 text-sm font-semibold text-white" style={{ backgroundColor: PURPLE }}>

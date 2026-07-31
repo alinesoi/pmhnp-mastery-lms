@@ -3,10 +3,8 @@ import React from 'react'
 import Link from 'next/link'
 import {
   PlusCircle,
-  ChartBar,
   GearSix,
   Users,
-  BookOpen,
 } from '@phosphor-icons/react'
 import { useQuery } from '@tanstack/react-query'
 import { queryKeys } from '@/lib/query/keys'
@@ -17,10 +15,8 @@ import { getAPIUrl } from '@services/config/config'
 import { OrgUsageResponse, orgUsageFetcher } from '@services/orgs/usage'
 import AdminAuthorization from '@components/Security/AdminAuthorization'
 import { usePlan } from '@components/Hooks/usePlan'
-import QuickStats from './QuickStats'
 import RecentCourses from './RecentCourses'
 import RecentMembers from './RecentMembers'
-import ContentOverview from './ContentOverview'
 import UsageOverview from './UsageOverview'
 
 const PLAN_COLORS: Record<string, { bg: string; text: string }> = {
@@ -81,13 +77,6 @@ export default function DashboardHome() {
                 {t('dashboard.home.create_course')}
               </Link>
               <Link
-                href="/dash/analytics"
-                className="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-medium text-gray-600 bg-white rounded-lg nice-shadow hover:bg-gray-50 transition-colors"
-              >
-                <ChartBar size={14} weight="bold" />
-                {t('dashboard.home.analytics')}
-              </Link>
-              <Link
                 href="/dash/users/settings/users"
                 className="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-medium text-gray-600 bg-white rounded-lg nice-shadow hover:bg-gray-50 transition-colors"
               >
@@ -106,9 +95,6 @@ export default function DashboardHome() {
 
           <AdminAuthorization authorizationMode="component">
             <div className="space-y-6">
-              {/* Content counts row */}
-              <ContentOverview />
-
               {/* Main grid: courses + members + usage */}
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 <div className="lg:col-span-2 space-y-6">
@@ -117,7 +103,6 @@ export default function DashboardHome() {
                 </div>
                 <div className="space-y-6">
                   <UsageOverview />
-                  <QuickStats />
                 </div>
               </div>
             </div>

@@ -277,10 +277,10 @@ const LoginClient = (props: LoginClientProps) => {
         <div className="m-auto w-full max-w-sm px-6 py-8 sm:py-0">
           {/* Header */}
           <div className="mb-8">
-            <h1 className="stt-auth-serif text-3xl font-semibold" style={{ color: '#1F3251' }}>
+            <h1 className="pmhnp-auth-head text-3xl font-semibold" style={{ color: '#2a1e4a' }}>
               {t('auth.welcome_back')}
             </h1>
-            <p className="mt-1.5 text-[15px]" style={{ color: '#8B887D' }}>
+            <p className="mt-1.5 text-[15px]" style={{ color: '#6b6280' }}>
               {t('auth.enter_credentials')}
             </p>
           </div>
@@ -288,7 +288,7 @@ const LoginClient = (props: LoginClientProps) => {
           {/* Login Form Card */}
           <div
             className="bg-white rounded-2xl p-6"
-            style={{ border: '1px solid #EDE7DA', boxShadow: '0 1px 3px rgba(31,50,81,0.05)' }}
+            style={{ border: '1px solid #e5ddf1', boxShadow: '0 1px 3px rgba(42,30,74,0.06)' }}
           >
             <FormLayout onSubmit={formik.handleSubmit}>
               <FormField name="email">
@@ -335,9 +335,9 @@ const LoginClient = (props: LoginClientProps) => {
                 <Form.Submit asChild>
                   <button
                     className="w-full font-semibold text-center py-2.5 rounded-xl transition-colors"
-                    style={{ backgroundColor: '#E3A63B', color: '#3B2F13' }}
-                    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#D69A2E')}
-                    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#E3A63B')}
+                    style={{ backgroundColor: '#5b3d8c', color: '#ffffff' }}
+                    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#6d4aa6')}
+                    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#5b3d8c')}
                   >
                     {isSubmitting ? t('common.loading') : t('auth.login')}
                   </button>
@@ -361,9 +361,9 @@ const LoginClient = (props: LoginClientProps) => {
           </div>
 
           {/* Sign Up Link */}
-          <p className="text-center mt-6" style={{ color: '#8B887D' }}>
+          <p className="text-center mt-6" style={{ color: '#6b6280' }}>
             {t('auth.no_account')}{' '}
-            <Link href="/signup" className="font-semibold hover:underline" style={{ color: '#1F3251' }}>
+            <Link href="/signup" className="font-semibold hover:underline" style={{ color: '#5b3d8c' }}>
               {t('auth.sign_up')}
             </Link>
           </p>

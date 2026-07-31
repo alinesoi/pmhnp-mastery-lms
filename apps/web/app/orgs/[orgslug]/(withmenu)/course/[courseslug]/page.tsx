@@ -7,8 +7,9 @@ import { getMyProgress, ProgressResponse } from '@services/progress/progress'
 import { ArrowLeft, ArrowRight, Lock, Check, Award, BadgeCheck, BrainCircuit, Sparkles } from 'lucide-react'
 import {
   SERIF, PLUM, PLUM_DEEP, PURPLE, PERI, MAGENTA, GOLD, LILAC, CARD_BORDER, INK, MUTED,
-  courseBySlug, catalogBySlug, CLARITY, TILE,
+  catalogBySlug, CLARITY, TILE,
 } from '../../_pmhnp/theme'
+import { useCourses } from '../../_pmhnp/CoursesContext'
 
 type NodeState = 'passed' | 'current' | 'locked'
 
@@ -16,6 +17,7 @@ export default function CoursePage(props: { params: Promise<{ orgslug: string; c
   const params = use(props.params)
   const orgslug = params.orgslug
   const courseslug = params.courseslug
+  const { courseBySlug } = useCourses()
   const course = courseBySlug(courseslug)
   const catalog = catalogBySlug(courseslug)
 

@@ -10,7 +10,6 @@ import OrgEditBranding from '@components/Dashboard/Pages/Org/OrgEditBranding/Org
 import OrgEditLanding from '@components/Dashboard/Pages/Org/OrgEditLanding/OrgEditLanding'
 import OrgEditOther from '@components/Dashboard/Pages/Org/OrgEditOther/OrgEditOther'
 import OrgEditAPIAccess from '@components/Dashboard/Pages/Org/OrgEditAPIAccess/OrgEditAPIAccess'
-import OrgEditAI from '@components/Dashboard/Pages/Org/OrgEditAI/OrgEditAI'
 import OrgEditSSO from '@components/Dashboard/Pages/Org/OrgEditSSO/OrgEditSSO'
 import OrgEditDomains from '@components/Dashboard/Pages/Org/OrgEditDomains/OrgEditDomains'
 import OrgEditSEO from '@components/Dashboard/Pages/Org/OrgEditSEO/OrgEditSEO'
@@ -41,7 +40,6 @@ const getSettingTabs = (t: any): TabConfig[] => [
   { id: 'menu', label: t('dashboard.organization.settings.tabs.menu') || 'Menu', icon: MenuIcon },
   { id: 'landing', label: t('dashboard.organization.settings.tabs.landing'), icon: LayoutDashboardIcon },
   { id: 'seo', label: 'SEO', icon: Search },
-  { id: 'ai', label: t('dashboard.organization.settings.tabs.ai') || 'AI', customIcon: '/learnhouse_ai_simple_colored.png', requiredPlan: 'standard' },
   { id: 'domains', label: t('dashboard.organization.settings.tabs.domains') || 'Domains', icon: Globe, requiredPlan: 'standard' },
   { id: 'automations', label: t('dashboard.organization.settings.tabs.automations') || 'Automations', icon: Zap, requiredPlan: 'pro' },
   { id: 'api', label: t('dashboard.organization.settings.tabs.api') || 'API Access', icon: KeyIcon, requiredPlan: 'pro' },
@@ -74,9 +72,6 @@ function OrgPage(props: { params: Promise<OrgParams> }) {
     } else if (params.subpage == 'seo') {
       setH1Label('SEO')
       setH2Label('Manage search engine optimization settings')
-    } else if (params.subpage == 'ai') {
-      setH1Label(t('dashboard.organization.settings.pages.ai.title') || 'AI Features')
-      setH2Label(t('dashboard.organization.settings.pages.ai.subtitle') || 'Configure AI capabilities for your organization')
     } else if (params.subpage == 'domains') {
       setH1Label(t('dashboard.organization.settings.pages.domains.title') || 'Custom Domains')
       setH2Label(t('dashboard.organization.settings.pages.domains.subtitle') || 'Configure custom domains for your organization')
@@ -145,14 +140,13 @@ function OrgPage(props: { params: Promise<OrgParams> }) {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.1, type: 'spring', stiffness: 80 }}
-        className="flex-1 overflow-y-auto"
+        className="flex-1 overflow-y-auto overflow-x-hidden min-w-0"
       >
         {params.subpage == 'general' ? <OrgEditGeneral /> : ''}
         {params.subpage == 'branding' ? <OrgEditBranding /> : ''}
         {params.subpage == 'menu' ? <OrgEditMenu /> : ''}
         {params.subpage == 'landing' ? <OrgEditLanding /> : ''}
         {params.subpage == 'seo' ? <OrgEditSEO /> : ''}
-        {params.subpage == 'ai' ? <OrgEditAI /> : ''}
         {params.subpage == 'domains' ? <OrgEditDomains /> : ''}
         {params.subpage == 'automations' ? <OrgEditAutomations /> : ''}
         {params.subpage == 'api' ? <OrgEditAPIAccess /> : ''}

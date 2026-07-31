@@ -4,11 +4,12 @@ import Link from 'next/link'
 import { useLHSession } from '@components/Contexts/LHSessionContext'
 import { getUriWithOrg } from '@services/config/config'
 import { getAllProgress, ProgressSummary, AllProgressResponse } from '@services/progress/progress'
-import { ArrowRight, Bot, Award, Waypoints, LayoutGrid, Sparkles } from 'lucide-react'
+import { ArrowRight, Award, Waypoints, LayoutGrid, Sparkles } from 'lucide-react'
 import {
   SERIF, PLUM, PLUM_DEEP, PURPLE, PERI, MAGENTA, GOLD, LILAC, CARD_BORDER, INK, MUTED,
-  CATALOG, CATALOG as CAT, catalogBySlug, courseBySlug, moduleByIndex, TAGLINE, TILE,
+  CATALOG, CATALOG as CAT, catalogBySlug, TAGLINE, TILE,
 } from './_pmhnp/theme'
+import { useCourses } from './_pmhnp/CoursesContext'
 
 function greeting() {
   const h = new Date().getHours()
@@ -40,6 +41,7 @@ function ProgressRing({ percent, size = 96 }: { percent: number; size?: number }
 }
 
 export default function HomeClient({ orgslug }: { orgslug: string }) {
+  const { courseBySlug, moduleByIndex } = useCourses()
   const session = useLHSession() as any
   const firstName: string = session?.data?.user?.first_name || ''
   const accessToken = session?.data?.tokens?.access_token
@@ -163,10 +165,9 @@ export default function HomeClient({ orgslug }: { orgslug: string }) {
         </div>
 
         {/* Quick actions */}
-        <div className="mt-9 grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="mt-9 grid grid-cols-1 sm:grid-cols-2 gap-4">
           {[
             { label: 'Course Catalog', hint: 'DAB, TAB, and the E.D.I.T. mini course', href: '/courses', icon: LayoutGrid },
-            { label: 'AI Tutor', hint: 'Reason through CLARITY, Treatment Accuracy, E.D.I.T.', href: '/tutor', icon: Bot },
             { label: 'Progress & Certificate', hint: 'Training record and CE contact-hour tracker', href: '/progress', icon: Award },
           ].map((a) => {
             const Icon = a.icon

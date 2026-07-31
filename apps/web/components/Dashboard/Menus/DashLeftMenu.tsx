@@ -28,12 +28,10 @@ import {
   ClipboardText,
   Palette,
   Rocket,
-  Robot,
   LinkSimple,
   Key,
   Lock,
   Wrench,
-  ChartLine,
   MagnifyingGlass,
   ChalkboardSimple,
   Cube,
@@ -569,12 +567,6 @@ function DashLeftMenu() {
                     </Link>
                   </HoverMenuItem>
                   <HoverMenuItem asChild>
-                    <Link href="/dash/org/settings/ai" className="flex items-center gap-2 px-3 py-2 text-sm text-white/70 hover:text-white hover:bg-white/[0.08] cursor-pointer transition-colors">
-                      <Robot size={16} weight="fill" />
-                      <span className="flex items-center">{t('dashboard.organization.settings.tabs.ai')}<PlanBadge currentPlan={plan} requiredPlan="standard" variant="dark" /></span>
-                    </Link>
-                  </HoverMenuItem>
-                  <HoverMenuItem asChild>
                     <Link href="/dash/org/settings/domains" className="flex items-center gap-2 px-3 py-2 text-sm text-white/70 hover:text-white hover:bg-white/[0.08] cursor-pointer transition-colors">
                       <LinkSimple size={16} weight="fill" />
                       <span className="flex items-center">{t('dashboard.organization.settings.tabs.domains')}<PlanBadge currentPlan={plan} requiredPlan="standard" variant="dark" /></span>
@@ -637,65 +629,6 @@ function DashLeftMenu() {
                     {!isCollapsed && (
                       <>
                         <span className="text-sm font-medium flex-1 text-left">{t('common.organization')}</span>
-                        <CaretDown aria-hidden="true" size={14} weight="bold" className={active ? "text-white/70" : "text-white/40"} />
-                      </>
-                    )}
-                  </Link>
-                )
-              })()}
-            </HoverMenu>
-
-            {/* Analytics with hover menu */}
-            <HoverMenu
-              content={
-                <HoverMenuContent className="w-64">
-                  <HoverMenuLabel className="text-white/70 font-medium">Analytics</HoverMenuLabel>
-                  <HoverMenuSeparator />
-                  <HoverMenuItem asChild>
-                    <Link href="/dash/analytics" className="flex items-center gap-2 px-3 py-2 text-sm text-white/70 hover:text-white hover:bg-white/[0.08] cursor-pointer transition-colors">
-                      <ChartBar size={16} weight="fill" />
-                      <span>{t('analytics.tabs.overview')}</span>
-                    </Link>
-                  </HoverMenuItem>
-                  <HoverMenuItem asChild>
-                    <Link href="/dash/analytics" className="flex items-center gap-2 px-3 py-2 text-sm text-white/70 hover:text-white hover:bg-white/[0.08] cursor-pointer transition-colors">
-                      <ChartLine size={16} weight="fill" />
-                      <span className="flex items-center">{t('analytics.tabs.advanced')}<PlanBadge currentPlan={plan} requiredPlan="enterprise" variant="dark" /></span>
-                    </Link>
-                  </HoverMenuItem>
-                </HoverMenuContent>
-              }
-            >
-              {(() => {
-                const active = isActivePath('/dash/analytics')
-                return (
-                  <Link
-                    href="/dash/analytics"
-                    aria-label="Analytics"
-                    aria-current={active ? 'page' : undefined}
-                    className={cn(
-                      "relative flex items-center w-full rounded-lg transition-all",
-                      active
-                        ? "text-white bg-white/[0.08]"
-                        : "text-white/50 hover:text-white hover:bg-white/[0.08]",
-                      isCollapsed ? "justify-center h-10" : "px-3 py-2 gap-3"
-                    )}
-                  >
-                    {active && (
-                      <span
-                        aria-hidden="true"
-                        className="absolute left-0.5 top-1/2 -translate-y-1/2 h-5 w-[3px] bg-white rounded-full"
-                      />
-                    )}
-                    <span className="relative flex items-center justify-center">
-                      <ChartBar size={20} weight="fill" />
-                      {isCollapsed && (
-                        <CaretDown aria-hidden="true" size={8} weight="bold" className={cn("absolute -right-2.5", active ? "text-white/60" : "text-white/30")} />
-                      )}
-                    </span>
-                    {!isCollapsed && (
-                      <>
-                        <span className="text-sm font-medium flex-1 text-left">{t('common.analytics')}</span>
                         <CaretDown aria-hidden="true" size={14} weight="bold" className={active ? "text-white/70" : "text-white/40"} />
                       </>
                     )}

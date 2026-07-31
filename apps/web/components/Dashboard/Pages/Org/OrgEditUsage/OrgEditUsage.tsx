@@ -7,7 +7,6 @@ import {
   BookOpen,
   Users,
   ShieldCheck,
-  Lightning,
   Package,
   ArrowSquareOut,
 } from '@phosphor-icons/react'
@@ -19,16 +18,6 @@ import { apiFetch } from '@services/utils/ts/requests'
 import { usePlan } from '@components/Hooks/usePlan'
 import { OrgPacksResponse } from '@services/packs/packs'
 
-
-interface AICreditsSummary {
-  plan: string
-  base_credits: number | string
-  purchased_credits: number
-  total_credits: number | string
-  used_credits: number
-  remaining_credits: number | string
-  mode?: string | null
-}
 
 const PLAN_COLORS: Record<string, { bg: string; text: string }> = {
   free: { bg: 'bg-gray-100', text: 'text-gray-600' },
@@ -67,13 +56,6 @@ export default function OrgEditUsage() {
   const { data: usageData, isLoading } = useQuery<OrgUsageResponse>({
     queryKey: queryKeys.org.usage(orgId),
     queryFn: () => getOrgUsage(orgId, token),
-    enabled: !!(token && orgId),
-    staleTime: 60_000,
-  })
-
-  const { data: aiCredits } = useQuery<AICreditsSummary>({
-    queryKey: orgId ? ['org', orgId, 'ai-credits'] : ['ai-credits-disabled'],
-    queryFn: () => apiFetch(`${getAPIUrl()}orgs/${orgId}/ai-credits`, token),
     enabled: !!(token && orgId),
     staleTime: 60_000,
   })
@@ -206,18 +188,6 @@ export default function OrgEditUsage() {
         </div>
       </div>
 
-      {/* AI Credits */}
-      {aiCredits && aiCredits.mode !== 'disabled' && (
-        <div className="bg-white rounded-xl nice-shadow">
-          <div className="border-b px-6 py-4">
-            <h3 className="text-lg font-semibold text-gray-800">{t('dashboard.organization.usage.ai_credits')}</h3>
-          </div>
-          <div className="p-6">
-            <AICreditsDetail credits={aiCredits} />
-          </div>
-        </div>
-      )}
-
       {/* Active Packs */}
       {packsData && packsData.active_packs.length > 0 && (
         <div className="bg-white rounded-xl nice-shadow">
@@ -241,10 +211,7 @@ export default function OrgEditUsage() {
                         {catalogItem?.label ?? pack.pack_id}
                       </p>
                       <p className="text-xs text-gray-400">
-                        {pack.pack_type === 'ai_credits'
-                          ? 'AI Credits'
-                          : 'Member Seats'}{' '}
-                        &middot; {pack.quantity}
+                        Member Seats &middot; {pack.quantity}
                       </p>
                     </div>
                     <span className="text-xs font-medium px-2.5 py-1 rounded-full bg-green-100 text-green-700">
@@ -267,7 +234,7 @@ export default function OrgEditUsage() {
                 Need more capacity?
               </h3>
               <p className="text-xs text-gray-400 mt-0.5">
-                Purchase additional AI credits or member seats.
+                Purchase additional member seats.
               </p>
             </div>
             <a
@@ -283,99 +250,6 @@ export default function OrgEditUsage() {
         </div>
       )}
 
-    </div>
-  )
-}
-
-function AICreditsDetail({ credits }: { credits: AICreditsSummary }) {
-  const { t } = useTranslation()
-  const total =
-    typeof credits.total_credits === 'number' ? credits.total_credits : 0
-  const used = credits.used_credits ?? 0
-  const remaining =
-    typeof credits.remaining_credits === 'number'
-      ? credits.remaining_credits
-      : null
-  const isUnlimited =
-    credits.total_credits === 'unlimited' ||
-    credits.remaining_credits === 'unlimited'
-
-  const percent = isUnlimited
-    ? used > 0
-      ? 30
-      : 0
-    : total > 0
-      ? Math.min((used / total) * 100, 100)
-      : 0
-
-  const barColor = isUnlimited
-    ? 'bg-violet-500'
-    : percent > 90
-      ? 'bg-red-500'
-      : percent > 70
-        ? 'bg-amber-500'
-        : 'bg-violet-500'
-
-  return (
-    <div className="space-y-4">
-      <div>
-        <div className="flex items-center justify-between mb-2">
-          <div className="flex items-center gap-2.5">
-            <Lightning size={16} weight="duotone" className="text-violet-400" />
-            <span className="text-sm font-medium text-gray-700">
-              {t('dashboard.organization.usage.credit_usage')}
-            </span>
-          </div>
-          <span className="text-sm text-gray-500 tabular-nums font-medium">
-            {used} / {isUnlimited ? t('dashboard.organization.usage.unlimited') : total}
-          </span>
-        </div>
-        <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
-          <div
-            className={`h-full rounded-full transition-all duration-500 ${barColor}`}
-            style={{ width: `${percent}%` }}
-          />
-        </div>
-        {isUnlimited ? (
-          <p className="text-xs text-gray-400 mt-1.5">{used} {t('dashboard.organization.usage.used').toLowerCase()}</p>
-        ) : remaining !== null && remaining > 0 ? (
-          <p className="text-xs text-gray-400 mt-1.5">
-            {remaining} remaining
-          </p>
-        ) : remaining !== null && remaining <= 0 ? (
-          <p className="text-xs text-red-500 mt-1.5">No credits remaining</p>
-        ) : null}
-      </div>
-
-      {/* Breakdown */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
-        <div className="bg-gray-50 rounded-lg px-4 py-3">
-          <p className="text-xs text-gray-400 mb-1">{t('dashboard.organization.usage.base_credits')}</p>
-          <p className="text-lg font-semibold text-gray-700 tabular-nums">
-            {credits.base_credits === 'unlimited'
-              ? t('dashboard.organization.usage.unlimited')
-              : credits.base_credits}
-          </p>
-        </div>
-        <div className="bg-gray-50 rounded-lg px-4 py-3">
-          <p className="text-xs text-gray-400 mb-1">{t('dashboard.organization.usage.purchased')}</p>
-          <p className="text-lg font-semibold text-gray-700 tabular-nums">
-            {credits.purchased_credits}
-          </p>
-        </div>
-        <div className="bg-gray-50 rounded-lg px-4 py-3">
-          <p className="text-xs text-gray-400 mb-1">{t('dashboard.organization.usage.used')}</p>
-          <p className="text-lg font-semibold text-gray-700 tabular-nums">
-            {used}
-          </p>
-        </div>
-        <div className="bg-gray-50 rounded-lg px-4 py-3">
-          <p className="text-xs text-gray-400 mb-1">{t('dashboard.organization.usage.remaining')}</p>
-          <p className="text-lg font-semibold text-gray-700 tabular-nums">
-            {isUnlimited ? t('dashboard.organization.usage.unlimited') : remaining ?? 0}
-          </p>
-        </div>
-      </div>
     </div>
   )
 }

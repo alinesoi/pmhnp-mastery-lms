@@ -18,8 +18,8 @@ import {
   Home,
   LayoutGrid,
   Waypoints,
-  Bot,
   Award,
+  MessagesSquare,
   Settings,
   LogOut,
   Menu,
@@ -27,7 +27,9 @@ import {
   BrainCircuit,
 } from 'lucide-react'
 import { PLUM, PLUM_DEEP, PURPLE, PERI, LILAC, TAGLINE } from './_pmhnp/theme'
-import TutorDock from './_pmhnp/TutorDock'
+// import TutorDock from './_pmhnp/TutorDock' // gated off until real-LLM tutor ships
+import AdminButton from './_pmhnp/AdminButton'
+import { PmhnpCoursesProvider } from './_pmhnp/CoursesContext'
 
 const fraunces = Fraunces({
   subsets: ['latin'],
@@ -53,11 +55,13 @@ function PmhnpSidebar({ orgslug }: { orgslug: string }) {
   const pathname = usePathname()
   const [mobileOpen, setMobileOpen] = useState(false)
 
-  const NAV_ITEMS: { label: string; path: string; icon: any }[] = [
+  // `soon` items render as a disabled entry with a "Soon" pill and are not
+  // navigable. AI Tutor is gated off until the graded, real-LLM tutor ships.
+  const NAV_ITEMS: { label: string; path: string; icon: any; soon?: boolean }[] = [
     { label: 'Home', icon: Home, path: '/' },
     { label: 'Course Catalog', icon: LayoutGrid, path: '/courses' },
     { label: 'My Learning', icon: Waypoints, path: '/journey' },
-    { label: 'AI Tutor', icon: Bot, path: '/tutor' },
+    { label: 'Community', icon: MessagesSquare, path: '/community' },
     { label: 'Progress & Certificate', icon: Award, path: '/progress' },
   ]
 
@@ -80,6 +84,29 @@ function PmhnpSidebar({ orgslug }: { orgslug: string }) {
       {NAV_ITEMS.map((item) => {
         const active = isActive(item.path)
         const Icon = item.icon
+
+        if (item.soon) {
+          return (
+            <li key={item.path}>
+              <div
+                aria-disabled="true"
+                title="Coming soon"
+                className="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-[14px] font-medium cursor-not-allowed select-none"
+                style={{ color: 'rgba(246,243,251,0.4)' }}
+              >
+                <Icon size={18} strokeWidth={1.8} style={{ color: 'rgba(246,243,251,0.35)' }} />
+                <span>{item.label}</span>
+                <span
+                  className="ml-auto rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide"
+                  style={{ backgroundColor: 'rgba(124,159,214,0.22)', color: PERI }}
+                >
+                  Soon
+                </span>
+              </div>
+            </li>
+          )
+        }
+
         return (
           <li key={item.path}>
             <Link
@@ -281,6 +308,7 @@ function LayoutContent({ children, orgslug }: { children: React.ReactNode; orgsl
       style={{ backgroundColor: LILAC }}
     >
       <PageViewTracker />
+      <AdminButton />
       <PmhnpSidebar orgslug={orgslug} />
       <div className="md:ml-[236px] flex-1 flex flex-col">
         <div className="h-14 md:hidden" />
@@ -288,7 +316,8 @@ function LayoutContent({ children, orgslug }: { children: React.ReactNode; orgsl
           {children}
         </div>
       </div>
-      <TutorDock orgslug={orgslug} />
+      {/* AI Tutor gated off until the real-LLM tutor ships (currently placeholder). */}
+      {/* <TutorDock orgslug={orgslug} /> */}
     </div>
   )
 }
@@ -311,11 +340,13 @@ export default function RootLayout(
       <RequireAuth>
       <OrgJoinBannerProvider>
         <PodcastPlayerProvider>
-          <LayoutContent orgslug={params?.orgslug}>
-            <OnboardingGate orgslug={params?.orgslug}>
-              {children}
-            </OnboardingGate>
-          </LayoutContent>
+          <PmhnpCoursesProvider>
+            <LayoutContent orgslug={params?.orgslug}>
+              <OnboardingGate orgslug={params?.orgslug}>
+                {children}
+              </OnboardingGate>
+            </LayoutContent>
+          </PmhnpCoursesProvider>
           <PodcastPlayer />
         </PodcastPlayerProvider>
       </OrgJoinBannerProvider>
