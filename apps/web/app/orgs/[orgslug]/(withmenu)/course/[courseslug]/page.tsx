@@ -4,10 +4,10 @@ import Link from 'next/link'
 import { useLHSession } from '@components/Contexts/LHSessionContext'
 import { getUriWithOrg } from '@services/config/config'
 import { getMyProgress, ProgressResponse } from '@services/progress/progress'
-import { ArrowLeft, ArrowRight, Lock, Check, Award, BadgeCheck, BrainCircuit, Sparkles } from 'lucide-react'
+import { ArrowLeft, ArrowRight, Lock, Check, Award, BadgeCheck } from 'lucide-react'
 import {
-  SERIF, PLUM, PLUM_DEEP, PURPLE, PERI, MAGENTA, GOLD, LILAC, CARD_BORDER, INK, MUTED,
-  catalogBySlug, CLARITY, TILE, CARD_STYLE,
+  SERIF, PLUM, PURPLE, LILAC, INK, MUTED,
+  catalogBySlug, TILE, CARD_STYLE,
 } from '../../_pmhnp/theme'
 import { useCourses } from '../../_pmhnp/CoursesContext'
 
@@ -43,7 +43,6 @@ export default function CoursePage(props: { params: Promise<{ orgslug: string; c
   const unlocked: number[] = data?.summary?.unlocked_modules ?? [1]
   const passedIdx = new Set((data?.modules ?? []).filter((m) => m.passed).map((m) => m.module_index))
   const tile = TILE[catalog.color]
-  const isDAB = courseslug === 'diagnostic-accuracy-blueprint'
 
   const stateOf = (index: number): NodeState => {
     if (passedIdx.has(index)) return 'passed'
@@ -78,35 +77,6 @@ export default function CoursePage(props: { params: Promise<{ orgslug: string; c
         <p className="mt-3 text-base max-w-2xl leading-relaxed" style={{ color: INK }}>
           {catalog.blurb}
         </p>
-
-        {/* CLARITY spine — the signature DAB course map */}
-        {isDAB && (
-          <div className="mt-8 rounded-2xl px-7 py-7 relative overflow-hidden" style={{ backgroundColor: PLUM, boxShadow: '0 10px 30px rgba(31,24,48,0.14)' }}>
-            <div className="flex items-center gap-2 text-xs font-medium tracking-wide uppercase" style={{ color: PERI }}>
-              <BrainCircuit size={15} /> The CLARITY Method
-            </div>
-            <p className="pmhnp-serif mt-2 text-lg leading-relaxed font-semibold" style={{ ...SERIF, color: '#efe9fb' }}>
-              Seven steps from context to documentation — the spine of every diagnostic assessment.
-            </p>
-            <div className="mt-5 grid grid-cols-2 sm:grid-cols-4 gap-2.5">
-              {CLARITY.map((n) => (
-                <div key={n.letter} className="rounded-xl px-3 py-3" style={{ backgroundColor: PLUM_DEEP, border: '1px solid rgba(124,159,214,0.24)' }}>
-                  <div className="flex items-center gap-2">
-                    <span className="flex items-center justify-center w-7 h-7 rounded-lg text-[13px] font-bold text-white"
-                      style={{ background: `linear-gradient(140deg, ${PURPLE}, ${PERI})`, ...SERIF }}>
-                      {n.letter}
-                    </span>
-                    <span className="pmhnp-serif text-[13.5px] font-semibold" style={{ ...SERIF, color: '#efe9fb' }}>{n.word}</span>
-                  </div>
-                  <p className="mt-1.5 text-[11px]" style={{ color: 'rgba(239,233,251,0.65)' }}>{n.sub}</p>
-                </div>
-              ))}
-            </div>
-            <p className="mt-4 text-[11.5px] inline-flex items-center gap-1.5" style={{ color: 'rgba(239,233,251,0.6)' }}>
-              <Sparkles size={11} /> In production: each CLARITY step maps to the modules below with case walk-throughs and a differential builder.
-            </p>
-          </div>
-        )}
 
         {/* Module list with sequential unlock */}
         <h2 className="pmhnp-serif mt-11 text-[22px] font-semibold" style={{ ...SERIF, color: PLUM }}>Modules</h2>
