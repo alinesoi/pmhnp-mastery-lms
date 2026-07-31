@@ -12,7 +12,7 @@ import {
   MessagesSquare, ArrowBigUp, MessageCircle, Send, Pin, Loader2, Sparkles,
 } from 'lucide-react'
 import {
-  SERIF, PLUM, PURPLE, LILAC, CARD_BORDER, INK, MUTED, PERI, TAGLINE,
+  SERIF, PLUM, PURPLE, LILAC, CARD_BORDER, INK, MUTED, PERI, TAGLINE, CARD_STYLE, SHADOW,
 } from '../_pmhnp/theme'
 
 function authorName(d: { author: any }) {
@@ -123,15 +123,15 @@ export default function CommunityPage(props: { params: Promise<{ orgslug: string
 
   return (
     <div className="min-h-[calc(100vh-56px)]" style={{ backgroundColor: LILAC }}>
-      <div className="max-w-3xl mx-auto px-4 sm:px-8 py-8">
+      <div className="mx-auto px-6 sm:px-10 py-12" style={{ maxWidth: 780 }}>
         {/* header */}
         <div className="flex items-center gap-3">
-          <span className="flex items-center justify-center w-11 h-11 rounded-2xl"
+          <span className="flex items-center justify-center w-12 h-12 rounded-2xl"
             style={{ background: `linear-gradient(140deg, ${PURPLE}, ${PERI})` }}>
-            <MessagesSquare size={22} color="#fff" />
+            <MessagesSquare size={24} color="#fff" />
           </span>
           <div>
-            <h1 className="pmhnp-serif text-2xl sm:text-3xl font-semibold leading-tight" style={{ ...SERIF, color: PLUM }}>
+            <h1 className="pmhnp-serif text-3xl sm:text-[34px] font-semibold leading-tight" style={{ ...SERIF, color: PLUM }}>
               Community
             </h1>
             <p className="text-[13px]" style={{ color: MUTED }}>{communityName}</p>
@@ -142,8 +142,8 @@ export default function CommunityPage(props: { params: Promise<{ orgslug: string
           ask what you would ask a trusted colleague. Evidence-based, collegial, and no patient identifiers.
         </p>
 
-        {/* composer */}
-        <div className="mt-6 bg-white shadow-sm px-5 py-5" style={{ border: `1px solid ${CARD_BORDER}`, borderRadius: 18 }}>
+        {/* composer — visually distinct from the feed (tinted + elevated) */}
+        <div className="mt-8 px-6 py-6" style={{ background: '#f7f3fd', border: '1px solid #ddcff2', borderRadius: 20, boxShadow: SHADOW.card }}>
           <div className="flex items-center gap-2">
             <Sparkles size={16} style={{ color: PURPLE }} />
             <h2 className="pmhnp-serif text-[15px] font-semibold" style={{ ...SERIF, color: PLUM }}>Start a discussion</h2>
@@ -152,16 +152,16 @@ export default function CommunityPage(props: { params: Promise<{ orgslug: string
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             placeholder="What's on your mind? Give it a clear title."
-            className="mt-3 w-full rounded-xl px-3.5 py-2.5 text-sm outline-none"
-            style={{ border: `1px solid ${CARD_BORDER}`, color: INK, backgroundColor: '#faf8fe' }}
+            className="mt-3 w-full rounded-xl px-4 py-3 text-sm outline-none"
+            style={{ border: `1px solid ${CARD_BORDER}`, color: INK, backgroundColor: '#fff' }}
           />
           <textarea
             value={content}
             onChange={(e) => setContent(e.target.value)}
             placeholder="Add the details, the context, the question. (optional)"
             rows={3}
-            className="mt-2.5 w-full rounded-xl px-3.5 py-2.5 text-sm outline-none resize-y"
-            style={{ border: `1px solid ${CARD_BORDER}`, color: INK, backgroundColor: '#faf8fe' }}
+            className="mt-2.5 w-full rounded-xl px-4 py-3 text-sm outline-none resize-y"
+            style={{ border: `1px solid ${CARD_BORDER}`, color: INK, backgroundColor: '#fff' }}
           />
           <div className="mt-3 flex flex-wrap items-center justify-between gap-3">
             <div className="flex items-center gap-2">
@@ -188,7 +188,7 @@ export default function CommunityPage(props: { params: Promise<{ orgslug: string
         </div>
 
         {/* controls */}
-        <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
+        <div className="mt-8 flex flex-wrap items-center justify-between gap-3">
           <div className="inline-flex rounded-full p-1" style={{ backgroundColor: '#ece4f8' }}>
             {([['recent', 'Recent'], ['hot', 'Hot'], ['upvotes', 'Top']] as [DiscussionSortBy, string][]).map(([id, lbl]) => (
               <button key={id} onClick={() => setSort(id)}
@@ -215,7 +215,7 @@ export default function CommunityPage(props: { params: Promise<{ orgslug: string
         </div>
 
         {/* list */}
-        <div className="mt-4 space-y-3">
+        <div className="mt-5 space-y-3.5">
           {loading && (
             <div className="flex items-center justify-center py-14">
               <Loader2 size={22} className="animate-spin" style={{ color: PURPLE }} />
@@ -286,7 +286,9 @@ function DiscussionCard({ d, accessToken }: { d: DiscussionWithAuthor; accessTok
   }
 
   return (
-    <div className="bg-white shadow-sm px-5 py-4" style={{ border: `1px solid ${CARD_BORDER}`, borderRadius: 18 }}>
+    <div className="bg-white px-6 py-5 transition-all" style={{ ...CARD_STYLE }}
+      onMouseEnter={(e) => { e.currentTarget.style.boxShadow = SHADOW.cardHover }}
+      onMouseLeave={(e) => { e.currentTarget.style.boxShadow = SHADOW.card }}>
       <div className="flex gap-3.5">
         {/* vote rail */}
         <button onClick={toggleVote}

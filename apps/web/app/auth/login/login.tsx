@@ -274,21 +274,25 @@ const LoginClient = (props: LoginClientProps) => {
         )}
 
         <div className="flex-1 flex flex-row">
-        <div className="m-auto w-full max-w-sm px-6 py-8 sm:py-0">
+        <div className="pmhnp-login m-auto w-full max-w-[400px] px-6 py-10 sm:py-0">
+          <style>{`
+            .pmhnp-login input { border-radius: 12px !important; padding: 12px 14px !important; font-size: 15px !important; transition: border-color .15s, box-shadow .15s; }
+            .pmhnp-login input:focus, .pmhnp-login input:focus-visible { outline: none !important; border-color: #5b3d8c !important; box-shadow: 0 0 0 3px rgba(91,61,140,0.28) !important; }
+          `}</style>
           {/* Header */}
           <div className="mb-8">
-            <h1 className="pmhnp-auth-head text-3xl font-semibold" style={{ color: '#2a1e4a' }}>
+            <h1 className="pmhnp-auth-head text-[34px] leading-tight font-semibold" style={{ color: '#2a1e4a' }}>
               {t('auth.welcome_back')}
             </h1>
-            <p className="mt-1.5 text-[15px]" style={{ color: '#6b6280' }}>
+            <p className="mt-2 text-[15px]" style={{ color: '#585065' }}>
               {t('auth.enter_credentials')}
             </p>
           </div>
 
           {/* Login Form Card */}
           <div
-            className="bg-white rounded-2xl p-6"
-            style={{ border: '1px solid #e5ddf1', boxShadow: '0 1px 3px rgba(42,30,74,0.06)' }}
+            className="bg-white rounded-2xl p-8"
+            style={{ border: '1px solid #e5ddf1', boxShadow: '0 1px 2px rgba(31,24,48,0.04), 0 6px 20px rgba(31,24,48,0.06)' }}
           >
             <FormLayout onSubmit={formik.handleSubmit}>
               <FormField name="email">
@@ -334,8 +338,8 @@ const LoginClient = (props: LoginClientProps) => {
               <div className="pt-2">
                 <Form.Submit asChild>
                   <button
-                    className="w-full font-semibold text-center py-2.5 rounded-xl transition-colors"
-                    style={{ backgroundColor: '#5b3d8c', color: '#ffffff' }}
+                    className="w-full font-semibold text-center py-3 rounded-xl transition-colors"
+                    style={{ backgroundColor: '#5b3d8c', color: '#ffffff', fontSize: 15, boxShadow: '0 6px 16px rgba(91,61,140,0.28)' }}
                     onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#6d4aa6')}
                     onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#5b3d8c')}
                   >
@@ -361,7 +365,7 @@ const LoginClient = (props: LoginClientProps) => {
           </div>
 
           {/* Sign Up Link */}
-          <p className="text-center mt-6" style={{ color: '#6b6280' }}>
+          <p className="text-center mt-6" style={{ color: '#585065' }}>
             {t('auth.no_account')}{' '}
             <Link href="/signup" className="font-semibold hover:underline" style={{ color: '#5b3d8c' }}>
               {t('auth.sign_up')}

@@ -7,7 +7,7 @@ import { getAllProgress, ProgressSummary, AllProgressResponse } from '@services/
 import { ArrowRight, Award, Waypoints, LayoutGrid, Sparkles } from 'lucide-react'
 import {
   SERIF, PLUM, PLUM_DEEP, PURPLE, PERI, MAGENTA, GOLD, LILAC, CARD_BORDER, INK, MUTED,
-  CATALOG, CATALOG as CAT, catalogBySlug, TAGLINE, TILE,
+  CATALOG, CATALOG as CAT, catalogBySlug, TAGLINE, TILE, CARD_STYLE, SHADOW,
 } from './_pmhnp/theme'
 import { useCourses } from './_pmhnp/CoursesContext'
 
@@ -75,44 +75,47 @@ export default function HomeClient({ orgslug }: { orgslug: string }) {
 
   return (
     <div className="min-h-[calc(100vh-56px)]" style={{ backgroundColor: LILAC }}>
-      <div className="max-w-5xl mx-auto px-6 sm:px-10 py-10">
+      <div className="mx-auto px-6 sm:px-10 py-12" style={{ maxWidth: 1040 }}>
         {/* Greeting */}
-        <p className="text-sm font-medium" style={{ color: PURPLE }}>
+        <p className="text-[13px] font-semibold uppercase tracking-wide" style={{ color: PURPLE }}>
           {new Date().toLocaleDateString([], { weekday: 'long', month: 'long', day: 'numeric' })}
         </p>
-        <h1 className="pmhnp-serif mt-1 text-3xl sm:text-4xl leading-tight font-semibold" style={{ ...SERIF, color: PLUM }}>
+        <h1 className="pmhnp-serif mt-2 text-4xl sm:text-[42px] leading-[1.1] font-semibold" style={{ ...SERIF, color: PLUM }}>
           {greeting()}{firstName ? `, ${firstName}` : ''}.
         </h1>
-        <p className="pmhnp-serif mt-2 text-lg italic" style={{ ...SERIF, color: MAGENTA }}>
+        <p className="pmhnp-serif mt-3 text-lg italic" style={{ ...SERIF, color: MAGENTA }}>
           {TAGLINE}
         </p>
 
         {/* Continue + CE ring */}
-        <div className="mt-7 grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-4">
+        <div className="mt-9 grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-5">
           <Link href={continueHref}
-            className="block bg-white shadow-sm transition-all hover:shadow-md"
-            style={{ border: `1px solid ${CARD_BORDER}`, borderRadius: 18 }}>
+            className="block bg-white transition-all"
+            style={{ ...CARD_STYLE }}
+            onMouseEnter={(e) => { e.currentTarget.style.boxShadow = SHADOW.cardHover }}
+            onMouseLeave={(e) => { e.currentTarget.style.boxShadow = SHADOW.card }}>
             <div className="flex items-stretch">
-              <div className="w-2 rounded-l-[18px]" style={{ backgroundColor: PURPLE }} />
-              <div className="flex-1 px-6 py-5">
+              <div className="w-2 rounded-l-[20px]" style={{ backgroundColor: PURPLE }} />
+              <div className="flex-1 px-7 py-6">
                 <p className="text-xs font-semibold uppercase tracking-wide" style={{ color: PURPLE }}>
                   {started ? 'Continue where you left off' : 'Start with the flagship'} &middot; {nextCatalog.code}
                 </p>
-                <p className="pmhnp-serif mt-1.5 text-lg font-semibold" style={{ ...SERIF, color: PLUM }}>
+                <p className="pmhnp-serif mt-2 text-xl font-semibold" style={{ ...SERIF, color: PLUM }}>
                   {nextMod?.title || 'Introduction'}
                 </p>
-                <p className="mt-1 text-sm" style={{ color: INK }}>
+                <p className="mt-1.5 text-sm" style={{ color: INK }}>
                   {nextMod?.chapters.length ?? 0} lessons, then a knowledge check to unlock the next module.
                 </p>
-                <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium" style={{ color: PURPLE }}>
+                <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold rounded-xl px-4 py-2.5"
+                  style={{ background: PURPLE, color: '#fff', boxShadow: '0 6px 16px rgba(91,61,140,0.28)' }}>
                   {started ? 'Resume module' : 'Begin module'} <ArrowRight size={15} />
                 </span>
               </div>
             </div>
           </Link>
 
-          <div className="bg-white px-6 py-5 shadow-sm flex items-center gap-5"
-            style={{ border: `1px solid ${CARD_BORDER}`, borderRadius: 18 }}>
+          <div className="bg-white px-7 py-6 flex items-center gap-5"
+            style={{ ...CARD_STYLE }}>
             <ProgressRing percent={cePercent} />
             <div>
               <p className="text-sm font-semibold" style={{ color: PLUM }}>CE Contact Hours</p>
@@ -128,21 +131,23 @@ export default function HomeClient({ orgslug }: { orgslug: string }) {
         </div>
 
         {/* Your courses — next-up list (LuAnn's chosen home layout) */}
-        <div className="mt-9 flex items-center justify-between">
-          <h2 className="pmhnp-serif text-lg font-semibold" style={{ ...SERIF, color: PLUM }}>Your courses</h2>
+        <div className="mt-12 flex items-center justify-between">
+          <h2 className="pmhnp-serif text-[22px] font-semibold" style={{ ...SERIF, color: PLUM }}>Your courses</h2>
           <Link href={getUriWithOrg(orgslug, '/courses')} className="text-sm font-medium inline-flex items-center gap-1" style={{ color: PURPLE }}>
             Course catalog <ArrowRight size={14} />
           </Link>
         </div>
-        <div className="mt-4 space-y-3">
+        <div className="mt-5 space-y-3.5">
           {CAT.map((cat) => {
             const s = byCourse.get(cat.slug)
             const pct = s?.percent_complete ?? 0
             const tile = TILE[cat.color]
             return (
               <Link key={cat.slug} href={getUriWithOrg(orgslug, `/course/${cat.slug}`)}
-                className="block bg-white shadow-sm transition-all hover:shadow-md px-5 py-4"
-                style={{ border: `1px solid ${CARD_BORDER}`, borderRadius: 16 }}>
+                className="block bg-white transition-all px-6 py-5"
+                style={{ ...CARD_STYLE }}
+                onMouseEnter={(e) => { e.currentTarget.style.boxShadow = SHADOW.cardHover }}
+                onMouseLeave={(e) => { e.currentTarget.style.boxShadow = SHADOW.card }}>
                 <div className="flex items-center gap-4">
                   <div className="flex items-center justify-center w-11 h-11 rounded-2xl shrink-0 font-bold text-[13px]"
                     style={{ backgroundColor: tile.bg, color: tile.fg, ...SERIF }}>
@@ -165,7 +170,7 @@ export default function HomeClient({ orgslug }: { orgslug: string }) {
         </div>
 
         {/* Quick actions */}
-        <div className="mt-9 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4">
           {[
             { label: 'Course Catalog', hint: 'DAB, TAB, and the E.D.I.T. mini course', href: '/courses', icon: LayoutGrid },
             { label: 'Progress & Certificate', hint: 'Training record and CE contact-hour tracker', href: '/progress', icon: Award },
@@ -173,8 +178,10 @@ export default function HomeClient({ orgslug }: { orgslug: string }) {
             const Icon = a.icon
             return (
               <Link key={a.label} href={getUriWithOrg(orgslug, a.href)}
-                className="bg-white p-5 shadow-sm transition-all hover:shadow-md flex items-start gap-3"
-                style={{ border: `1px solid ${CARD_BORDER}`, borderRadius: 16 }}>
+                className="bg-white p-6 transition-all flex items-start gap-3"
+                style={{ ...CARD_STYLE }}
+                onMouseEnter={(e) => { e.currentTarget.style.boxShadow = SHADOW.cardHover }}
+                onMouseLeave={(e) => { e.currentTarget.style.boxShadow = SHADOW.card }}>
                 <div className="flex items-center justify-center w-10 h-10 rounded-full shrink-0" style={{ backgroundColor: '#ece3f8' }}>
                   <Icon size={18} style={{ color: PURPLE }} />
                 </div>

@@ -7,7 +7,7 @@ import { getAllProgress, getMyProgress, getCertificate, AllProgressResponse, Pro
 import { Award, Check, Lock, ArrowRight, GraduationCap, BadgeCheck, Download } from 'lucide-react'
 import {
   SERIF, PLUM, PLUM_DEEP, PURPLE, PERI, MAGENTA, GOLD, LILAC, CARD_BORDER, INK, MUTED,
-  CATALOG, catalogBySlug, TILE, FINAL_PASS_MARK, TAGLINE,
+  CATALOG, catalogBySlug, TILE, FINAL_PASS_MARK, TAGLINE, CARD_STYLE,
 } from '../_pmhnp/theme'
 import { useCourses } from '../_pmhnp/CoursesContext'
 
@@ -48,34 +48,34 @@ export default function ProgressPage(props: { params: Promise<{ orgslug: string 
 
   return (
     <div className="min-h-[calc(100vh-56px)]" style={{ backgroundColor: LILAC }}>
-      <div className="max-w-4xl mx-auto px-6 sm:px-10 py-10">
-        <p className="text-sm font-medium" style={{ color: PURPLE }}>Progress &amp; Certificate</p>
-        <h1 className="pmhnp-serif mt-1 text-3xl sm:text-4xl leading-tight font-semibold" style={{ ...SERIF, color: PLUM }}>
+      <div className="mx-auto px-6 sm:px-10 py-12" style={{ maxWidth: 900 }}>
+        <p className="text-[13px] font-semibold uppercase tracking-wide" style={{ color: PURPLE }}>Progress &amp; Certificate</p>
+        <h1 className="pmhnp-serif mt-2 text-4xl sm:text-[42px] leading-[1.1] font-semibold" style={{ ...SERIF, color: PLUM }}>
           Your Personal Training Record
         </h1>
-        <p className="mt-3 text-base max-w-2xl" style={{ color: INK }}>
+        <p className="mt-3 text-base max-w-2xl leading-relaxed" style={{ color: INK }}>
           Track module completion and CE contact hours across all three courses, and issue each
           certificate once its modules are passed.
         </p>
 
         {/* summary tiles */}
-        <div className="mt-7 grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div className="bg-white px-5 py-4 shadow-sm" style={{ border: `1px solid ${CARD_BORDER}`, borderRadius: 16 }}>
-            <p className="text-[12px]" style={{ color: MUTED }}>Overall completion</p>
-            <p className="pmhnp-serif mt-1 text-2xl font-semibold" style={{ ...SERIF, color: PLUM }}>{overallPct}%</p>
-            <p className="text-[12px]" style={{ color: MUTED }}>{totalPassed} of {totalModules} modules passed</p>
+        <div className="mt-9 grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="bg-white px-6 py-5" style={{ ...CARD_STYLE }}>
+            <p className="text-[12px] font-semibold uppercase tracking-wide" style={{ color: MUTED }}>Overall completion</p>
+            <p className="pmhnp-serif mt-1.5 text-[34px] leading-none font-semibold" style={{ ...SERIF, color: PLUM }}>{overallPct}%</p>
+            <p className="mt-1.5 text-[12px]" style={{ color: MUTED }}>{totalPassed} of {totalModules} modules passed</p>
           </div>
-          <div className="bg-white px-5 py-4 shadow-sm" style={{ border: `1px solid ${CARD_BORDER}`, borderRadius: 16 }}>
-            <p className="text-[12px]" style={{ color: MUTED }}>CE contact hours</p>
-            <p className="pmhnp-serif mt-1 text-2xl font-semibold inline-flex items-center gap-1.5" style={{ ...SERIF, color: GOLD }}>
-              <Award size={20} /> {ceEarned}
+          <div className="bg-white px-6 py-5" style={{ ...CARD_STYLE }}>
+            <p className="text-[12px] font-semibold uppercase tracking-wide" style={{ color: MUTED }}>CE contact hours</p>
+            <p className="pmhnp-serif mt-1.5 text-[34px] leading-none font-semibold inline-flex items-center gap-2" style={{ ...SERIF, color: GOLD }}>
+              <Award size={26} /> {ceEarned}
             </p>
-            <p className="text-[12px]" style={{ color: MUTED }}>of {ceAvailable} total hours</p>
+            <p className="mt-1.5 text-[12px]" style={{ color: MUTED }}>of {ceAvailable} total hours</p>
           </div>
-          <div className="bg-white px-5 py-4 shadow-sm" style={{ border: `1px solid ${CARD_BORDER}`, borderRadius: 16 }}>
-            <p className="text-[12px]" style={{ color: MUTED }}>Final assessment</p>
-            <p className="pmhnp-serif mt-1 text-2xl font-semibold" style={{ ...SERIF, color: PLUM }}>{FINAL_PASS_MARK}%</p>
-            <p className="text-[12px]" style={{ color: MUTED }}>target to certify (in production)</p>
+          <div className="bg-white px-6 py-5" style={{ ...CARD_STYLE }}>
+            <p className="text-[12px] font-semibold uppercase tracking-wide" style={{ color: MUTED }}>Final assessment</p>
+            <p className="pmhnp-serif mt-1.5 text-[34px] leading-none font-semibold" style={{ ...SERIF, color: PLUM }}>{FINAL_PASS_MARK}%</p>
+            <p className="mt-1.5 text-[12px]" style={{ color: MUTED }}>target to certify (in production)</p>
           </div>
         </div>
 
@@ -89,17 +89,17 @@ export default function ProgressPage(props: { params: Promise<{ orgslug: string 
           const byIndex = new Map(rows.map((r) => [r.module_index, r]))
           const tile = TILE[cat.color]
           return (
-            <div key={cat.slug} className="mt-8">
+            <div key={cat.slug} className="mt-12">
               <div className="flex items-center gap-3">
                 <div className="flex items-center justify-center w-9 h-9 rounded-xl shrink-0 font-bold text-[12px]"
                   style={{ backgroundColor: tile.bg, color: tile.fg, ...SERIF }}>
                   {cat.code === 'E.D.I.T.' ? 'EDIT' : cat.code}
                 </div>
-                <h2 className="pmhnp-serif text-lg font-semibold" style={{ ...SERIF, color: PLUM }}>{course.title}</h2>
+                <h2 className="pmhnp-serif text-[22px] font-semibold" style={{ ...SERIF, color: PLUM }}>{course.title}</h2>
               </div>
 
               {/* certificate card */}
-              <div className="mt-3 rounded-2xl px-6 py-5" style={{ backgroundColor: eligible ? PLUM : '#ffffff', border: eligible ? 'none' : `1px solid ${CARD_BORDER}` }}>
+              <div className="mt-4 rounded-2xl px-7 py-6" style={{ backgroundColor: eligible ? PLUM : '#ffffff', border: eligible ? 'none' : `1px solid ${CARD_BORDER}`, boxShadow: eligible ? '0 10px 30px rgba(31,24,48,0.16)' : '0 1px 2px rgba(31,24,48,0.04), 0 6px 20px rgba(31,24,48,0.06)' }}>
                 <div className="flex items-start justify-between gap-4 flex-wrap">
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-wide inline-flex items-center gap-1.5" style={{ color: eligible ? PERI : GOLD }}>
@@ -141,8 +141,8 @@ export default function ProgressPage(props: { params: Promise<{ orgslug: string 
                   const passed = !!row?.passed
                   const score = row?.check_score
                   return (
-                    <div key={m.slug} className="bg-white px-5 py-3 shadow-sm flex items-center gap-4"
-                      style={{ border: `1px solid ${CARD_BORDER}`, borderRadius: 14 }}>
+                    <div key={m.slug} className="bg-white px-5 py-3.5 flex items-center gap-4"
+                      style={{ border: `1px solid ${CARD_BORDER}`, borderRadius: 16, boxShadow: '0 1px 2px rgba(31,24,48,0.04)' }}>
                       <div className="flex items-center justify-center w-8 h-8 rounded-full shrink-0"
                         style={{ backgroundColor: passed ? TILE.green.bg : tile.bg }}>
                         {passed ? <Check size={15} style={{ color: TILE.green.fg }} strokeWidth={3} /> : <span className="text-[12px] font-bold" style={{ color: tile.fg }}>{m.index}</span>}
@@ -165,8 +165,8 @@ export default function ProgressPage(props: { params: Promise<{ orgslug: string 
         })}
 
         {/* CE transcript */}
-        <h2 className="pmhnp-serif mt-10 text-lg font-semibold" style={{ ...SERIF, color: PLUM }}>CE transcript</h2>
-        <div className="mt-3 bg-white shadow-sm overflow-hidden" style={{ border: `1px solid ${CARD_BORDER}`, borderRadius: 16 }}>
+        <h2 className="pmhnp-serif mt-14 text-[22px] font-semibold" style={{ ...SERIF, color: PLUM }}>CE transcript</h2>
+        <div className="mt-4 bg-white overflow-hidden" style={{ ...CARD_STYLE }}>
           <table className="w-full text-sm">
             <thead>
               <tr style={{ backgroundColor: '#f3eefb', color: MUTED }}>

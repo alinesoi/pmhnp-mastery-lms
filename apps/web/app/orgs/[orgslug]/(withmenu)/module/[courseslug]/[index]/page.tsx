@@ -9,7 +9,7 @@ import {
 } from 'lucide-react'
 import {
   SERIF, PLUM, PURPLE, GOLD, LILAC, CARD_BORDER, INK, MUTED,
-  catalogBySlug, aiKindMeta, TILE, PASS_MARK,
+  catalogBySlug, aiKindMeta, TILE, PASS_MARK, CARD_STYLE,
 } from '../../../_pmhnp/theme'
 import { useCourses } from '../../../_pmhnp/CoursesContext'
 
@@ -92,7 +92,7 @@ export default function ModulePage(props: { params: Promise<{ orgslug: string; c
 
   return (
     <div className="min-h-[calc(100vh-56px)]" style={{ backgroundColor: LILAC }}>
-      <div className="max-w-6xl mx-auto px-4 sm:px-8 py-8">
+      <div className="mx-auto px-6 sm:px-10 py-12" style={{ maxWidth: 900 }}>
         {/* header */}
         <div className="flex items-center justify-between gap-3">
           <Link href={getUriWithOrg(orgslug, `/course/${courseslug}`)} className="inline-flex items-center gap-1.5 text-sm" style={{ color: MUTED }}>
@@ -101,15 +101,15 @@ export default function ModulePage(props: { params: Promise<{ orgslug: string; c
           <span className="text-[12px] font-medium" style={{ color: MUTED }}>Module {mod.index} of {course.total_modules}</span>
         </div>
         <p className="mt-4 text-xs font-semibold uppercase tracking-wide" style={{ color: PURPLE }}>{mod.tag || `Module ${mod.index}`}</p>
-        <h1 className="pmhnp-serif mt-1 text-2xl sm:text-3xl leading-tight font-semibold" style={{ ...SERIF, color: PLUM }}>{mod.title}</h1>
+        <h1 className="pmhnp-serif mt-1.5 text-3xl sm:text-[34px] leading-tight font-semibold" style={{ ...SERIF, color: PLUM }}>{mod.title}</h1>
 
         {/* THE INTERACTIVE LESSON — the video IS the module: narration + in-video AI
             moments, hosted on app-video.nesoi.ai. Presented as the hero of the page. */}
         {mod.video ? (
-          <div className="mt-5">
+          <div className="mt-6">
             <div
-              className="relative w-full overflow-hidden shadow-md"
-              style={{ border: `1px solid ${CARD_BORDER}`, borderRadius: 18, aspectRatio: '16 / 9', backgroundColor: '#1f1638' }}
+              className="relative w-full overflow-hidden"
+              style={{ border: `1px solid ${CARD_BORDER}`, borderRadius: 20, aspectRatio: '16 / 9', backgroundColor: '#1f1638', boxShadow: '0 10px 30px rgba(31,24,48,0.16)' }}
             >
               <iframe
                 src={mod.video}
@@ -134,8 +134,8 @@ export default function ModulePage(props: { params: Promise<{ orgslug: string; c
 
         {/* IN THIS LESSON — a read-only outline of the chapters inside the video */}
         {mod.chapters?.length > 0 && (
-          <div className="mt-6 bg-white shadow-sm px-6 py-6" style={{ border: `1px solid ${CARD_BORDER}`, borderRadius: 18 }}>
-            <h2 className="pmhnp-serif text-lg font-semibold" style={{ ...SERIF, color: PLUM }}>In this lesson</h2>
+          <div className="mt-8 bg-white px-7 py-7" style={{ ...CARD_STYLE }}>
+            <h2 className="pmhnp-serif text-[22px] font-semibold" style={{ ...SERIF, color: PLUM }}>In this lesson</h2>
             <ol className="mt-4 space-y-3">
               {mod.chapters.map((c) => {
                 const cai = c.ai ? aiKindMeta(c.ai.kind) : null
@@ -161,13 +161,13 @@ export default function ModulePage(props: { params: Promise<{ orgslug: string; c
         )}
 
         {/* KNOWLEDGE CHECK */}
-        <div className="mt-6 bg-white shadow-sm px-6 py-6" style={{ border: `1px solid ${CARD_BORDER}`, borderRadius: 18 }}>
-          <div className="flex items-center gap-2">
-            <span className="flex items-center justify-center w-9 h-9 rounded-xl" style={{ backgroundColor: tile.bg }}>
-              <ClipboardCheck size={18} style={{ color: tile.fg }} />
+        <div className="mt-6 bg-white px-7 py-7" style={{ ...CARD_STYLE }}>
+          <div className="flex items-center gap-2.5">
+            <span className="flex items-center justify-center w-10 h-10 rounded-xl" style={{ backgroundColor: tile.bg }}>
+              <ClipboardCheck size={19} style={{ color: tile.fg }} />
             </span>
             <div>
-              <h2 className="pmhnp-serif text-lg font-semibold" style={{ ...SERIF, color: PLUM }}>Knowledge check</h2>
+              <h2 className="pmhnp-serif text-[22px] font-semibold" style={{ ...SERIF, color: PLUM }}>Knowledge check</h2>
               <p className="text-[12px]" style={{ color: MUTED }}>Score {PASS_MARK}% or higher to unlock the next module.</p>
             </div>
           </div>

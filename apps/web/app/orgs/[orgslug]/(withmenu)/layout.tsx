@@ -80,7 +80,7 @@ function PmhnpSidebar({ orgslug }: { orgslug: string }) {
   }
 
   const navList = (
-    <ul className="space-y-1">
+    <ul className="space-y-1.5">
       {NAV_ITEMS.map((item) => {
         const active = isActive(item.path)
         const Icon = item.icon
@@ -113,12 +113,13 @@ function PmhnpSidebar({ orgslug }: { orgslug: string }) {
               href={getUriWithOrg(orgslug, item.path)}
               onClick={() => setMobileOpen(false)}
               className={
-                'flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-[14px] transition-all ' +
+                'flex items-center gap-3 px-3.5 py-3 rounded-xl text-[14px] transition-all ' +
                 (active ? 'font-semibold' : 'font-medium')
               }
               style={{
-                backgroundColor: active ? 'rgba(124,159,214,0.18)' : undefined,
+                backgroundColor: active ? 'rgba(124,159,214,0.20)' : undefined,
                 color: active ? '#ffffff' : 'rgba(246,243,251,0.72)',
+                boxShadow: active ? 'inset 3px 0 0 ' + PERI : undefined,
               }}
               onMouseEnter={(e) => { if (!active) e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.06)' }}
               onMouseLeave={(e) => { if (!active) e.currentTarget.style.backgroundColor = 'transparent' }}

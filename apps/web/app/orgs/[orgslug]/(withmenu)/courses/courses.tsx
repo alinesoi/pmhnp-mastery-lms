@@ -5,7 +5,7 @@ import { getUriWithOrg } from '@services/config/config'
 import { ArrowRight, Award, BadgeCheck, BookOpen, Sparkles } from 'lucide-react'
 import {
   SERIF, PLUM, PURPLE, MAGENTA, GOLD, LILAC, CARD_BORDER, INK, MUTED,
-  CATALOG, TILE, TAGLINE,
+  CATALOG, TILE, TAGLINE, CARD_STYLE, SHADOW,
 } from '../_pmhnp/theme'
 import { useCourses } from '../_pmhnp/CoursesContext'
 
@@ -13,12 +13,12 @@ export default function Courses({ orgslug }: { orgslug: string }) {
   const { courseBySlug } = useCourses()
   return (
     <div className="min-h-[calc(100vh-56px)]" style={{ backgroundColor: LILAC }}>
-      <div className="max-w-5xl mx-auto px-6 sm:px-10 py-10">
-        <p className="text-sm font-medium" style={{ color: PURPLE }}>Course Catalog</p>
-        <h1 className="pmhnp-serif mt-1 text-3xl sm:text-4xl leading-tight font-semibold" style={{ ...SERIF, color: PLUM }}>
+      <div className="mx-auto px-6 sm:px-10 py-12" style={{ maxWidth: 1040 }}>
+        <p className="text-[13px] font-semibold uppercase tracking-wide" style={{ color: PURPLE }}>Course Catalog</p>
+        <h1 className="pmhnp-serif mt-2 text-4xl sm:text-[42px] leading-[1.1] font-semibold" style={{ ...SERIF, color: PLUM }}>
           PMHNP Mastery Academy
         </h1>
-        <p className="mt-3 text-base max-w-2xl" style={{ color: INK }}>
+        <p className="mt-3 text-base max-w-2xl leading-relaxed" style={{ color: INK }}>
           Two flagship blueprints and a focused mini course, built on structured, evidence-based
           frameworks for psychiatric assessment, treatment, and safe deprescribing.
         </p>
@@ -26,18 +26,20 @@ export default function Courses({ orgslug }: { orgslug: string }) {
           {TAGLINE}
         </p>
 
-        <div className="mt-8 space-y-4">
+        <div className="mt-10 space-y-4">
           {CATALOG.map((cat) => {
             const course = courseBySlug(cat.slug)
             const tile = TILE[cat.color]
             const isMini = cat.badge === 'MINI COURSE'
             return (
               <Link key={cat.slug} href={getUriWithOrg(orgslug, `/course/${cat.slug}`)}
-                className="block bg-white shadow-sm transition-all hover:shadow-md"
-                style={{ border: `1px solid ${CARD_BORDER}`, borderRadius: 18 }}>
+                className="block bg-white transition-all"
+                style={{ ...CARD_STYLE }}
+                onMouseEnter={(e) => { e.currentTarget.style.boxShadow = SHADOW.cardHover }}
+                onMouseLeave={(e) => { e.currentTarget.style.boxShadow = SHADOW.card }}>
                 <div className="flex items-stretch">
-                  <div className="w-2 rounded-l-[18px]" style={{ backgroundColor: tile.fg }} />
-                  <div className="flex-1 px-6 py-5">
+                  <div className="w-2 rounded-l-[20px]" style={{ backgroundColor: tile.fg }} />
+                  <div className="flex-1 px-7 py-6">
                     <div className="flex items-start justify-between gap-4">
                       <div className="flex items-start gap-4">
                         <div className="flex items-center justify-center w-14 h-14 rounded-2xl shrink-0 font-bold text-[15px]"
@@ -75,7 +77,8 @@ export default function Courses({ orgslug }: { orgslug: string }) {
                           </div>
                         </div>
                       </div>
-                      <span className="hidden sm:inline-flex items-center gap-1.5 text-sm font-medium shrink-0 self-center" style={{ color: PURPLE }}>
+                      <span className="hidden sm:inline-flex items-center gap-1.5 text-sm font-semibold shrink-0 self-center rounded-xl px-4 py-2.5"
+                        style={{ background: PURPLE, color: '#fff', boxShadow: '0 6px 16px rgba(91,61,140,0.24)' }}>
                         Open <ArrowRight size={15} />
                       </span>
                     </div>
@@ -86,7 +89,7 @@ export default function Courses({ orgslug }: { orgslug: string }) {
           })}
         </div>
 
-        <p className="mt-8 text-xs" style={{ color: MUTED }}>
+        <p className="mt-10 text-xs" style={{ color: MUTED }}>
           Accreditation is pending Pinnacle Education review of the full courses. Every module is built
           exportable (video, deck, script, audio) and carries learning objectives, outcomes, and an
           evaluation form.

@@ -7,7 +7,7 @@ import { getMyProgress, ProgressResponse } from '@services/progress/progress'
 import { ArrowLeft, ArrowRight, Lock, Check, Award, BadgeCheck, BrainCircuit, Sparkles } from 'lucide-react'
 import {
   SERIF, PLUM, PLUM_DEEP, PURPLE, PERI, MAGENTA, GOLD, LILAC, CARD_BORDER, INK, MUTED,
-  catalogBySlug, CLARITY, TILE,
+  catalogBySlug, CLARITY, TILE, CARD_STYLE,
 } from '../../_pmhnp/theme'
 import { useCourses } from '../../_pmhnp/CoursesContext'
 
@@ -53,7 +53,7 @@ export default function CoursePage(props: { params: Promise<{ orgslug: string; c
 
   return (
     <div className="min-h-[calc(100vh-56px)]" style={{ backgroundColor: LILAC }}>
-      <div className="max-w-3xl mx-auto px-6 sm:px-10 py-10">
+      <div className="mx-auto px-6 sm:px-10 py-12" style={{ maxWidth: 780 }}>
         <Link href={getUriWithOrg(orgslug, '/courses')} className="inline-flex items-center gap-1.5 text-sm" style={{ color: MUTED }}>
           <ArrowLeft size={15} /> Course catalog
         </Link>
@@ -81,7 +81,7 @@ export default function CoursePage(props: { params: Promise<{ orgslug: string; c
 
         {/* CLARITY spine — the signature DAB course map */}
         {isDAB && (
-          <div className="mt-7 rounded-2xl px-6 py-6 relative overflow-hidden" style={{ backgroundColor: PLUM }}>
+          <div className="mt-8 rounded-2xl px-7 py-7 relative overflow-hidden" style={{ backgroundColor: PLUM, boxShadow: '0 10px 30px rgba(31,24,48,0.14)' }}>
             <div className="flex items-center gap-2 text-xs font-medium tracking-wide uppercase" style={{ color: PERI }}>
               <BrainCircuit size={15} /> The CLARITY Method
             </div>
@@ -109,8 +109,8 @@ export default function CoursePage(props: { params: Promise<{ orgslug: string; c
         )}
 
         {/* Module list with sequential unlock */}
-        <h2 className="pmhnp-serif mt-9 text-lg font-semibold" style={{ ...SERIF, color: PLUM }}>Modules</h2>
-        <div className="mt-4 relative">
+        <h2 className="pmhnp-serif mt-11 text-[22px] font-semibold" style={{ ...SERIF, color: PLUM }}>Modules</h2>
+        <div className="mt-5 relative">
           <div className="absolute left-[23px] top-4 bottom-4 w-[3px] rounded-full"
             style={{ background: `linear-gradient(${tile.fg},#e0d7f0)` }} />
           <ol className="space-y-3">
@@ -133,7 +133,7 @@ export default function CoursePage(props: { params: Promise<{ orgslug: string; c
                       )}
                     </div>
                   </div>
-                  <div className="flex-1 bg-white shadow-sm px-5 py-4" style={{ border: `1px solid ${CARD_BORDER}`, borderRadius: 16 }}>
+                  <div className="flex-1 bg-white px-6 py-5" style={{ ...CARD_STYLE }}>
                     <div className="flex items-center justify-between gap-3">
                       <span className="text-[11px] font-semibold uppercase tracking-wide" style={{ color: st === 'locked' ? MUTED : PURPLE }}>
                         {m.tag || `Module ${m.index}`}
@@ -160,9 +160,15 @@ export default function CoursePage(props: { params: Promise<{ orgslug: string; c
                     <p className="mt-0.5 text-[13px]" style={{ color: MUTED }}>
                       {m.chapters.length} lessons · 70% knowledge check
                     </p>
-                    {clickable && (
+                    {st === 'current' && (
+                      <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold rounded-xl px-4 py-2.5"
+                        style={{ background: PURPLE, color: '#fff', boxShadow: '0 6px 16px rgba(91,61,140,0.24)' }}>
+                        Start module <ArrowRight size={14} />
+                      </span>
+                    )}
+                    {st === 'passed' && (
                       <span className="mt-2 inline-flex items-center gap-1.5 text-sm font-medium" style={{ color: PURPLE }}>
-                        {st === 'passed' ? 'Review module' : 'Start module'} <ArrowRight size={14} />
+                        Review module <ArrowRight size={14} />
                       </span>
                     )}
                     {st === 'locked' && (

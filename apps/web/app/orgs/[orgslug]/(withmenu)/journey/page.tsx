@@ -7,7 +7,7 @@ import { getAllProgress, ProgressSummary, AllProgressResponse } from '@services/
 import { ArrowRight, Check, Lock, Waypoints, Award } from 'lucide-react'
 import {
   SERIF, PLUM, PURPLE, MAGENTA, GOLD, LILAC, CARD_BORDER, INK, MUTED,
-  CATALOG, TILE,
+  CATALOG, TILE, CARD_STYLE,
 } from '../_pmhnp/theme'
 import { useCourses } from '../_pmhnp/CoursesContext'
 
@@ -30,19 +30,19 @@ export default function JourneyPage(props: { params: Promise<{ orgslug: string }
 
   return (
     <div className="min-h-[calc(100vh-56px)]" style={{ backgroundColor: LILAC }}>
-      <div className="max-w-3xl mx-auto px-6 sm:px-10 py-10">
-        <p className="text-sm font-medium inline-flex items-center gap-1.5" style={{ color: PURPLE }}>
+      <div className="mx-auto px-6 sm:px-10 py-12" style={{ maxWidth: 780 }}>
+        <p className="text-[13px] font-semibold uppercase tracking-wide inline-flex items-center gap-1.5" style={{ color: PURPLE }}>
           <Waypoints size={15} /> My Learning
         </p>
-        <h1 className="pmhnp-serif mt-1 text-3xl sm:text-4xl leading-tight font-semibold" style={{ ...SERIF, color: PLUM }}>
+        <h1 className="pmhnp-serif mt-2 text-4xl sm:text-[42px] leading-[1.1] font-semibold" style={{ ...SERIF, color: PLUM }}>
           Your path through the Academy
         </h1>
-        <p className="mt-3 text-base max-w-2xl" style={{ color: INK }}>
+        <p className="mt-3 text-base max-w-2xl leading-relaxed" style={{ color: INK }}>
           Three courses, each a sequence of modules. Pass a module&rsquo;s knowledge check and the next
           one unlocks. Your CE contact hours accrue as you go.
         </p>
 
-        <div className="mt-9 space-y-7">
+        <div className="mt-10 space-y-8">
           {CATALOG.map((cat) => {
             const course = courseBySlug(cat.slug)!
             const s: ProgressSummary | undefined = byCourse.get(cat.slug)
@@ -108,7 +108,7 @@ export default function JourneyPage(props: { params: Promise<{ orgslug: string }
           })}
         </div>
 
-        <div className="mt-10 rounded-2xl px-6 py-5 flex items-center gap-4" style={{ backgroundColor: '#fff', border: `1px solid ${CARD_BORDER}` }}>
+        <div className="mt-12 px-7 py-6 flex items-center gap-4" style={{ ...CARD_STYLE }}>
           <div className="flex items-center justify-center w-11 h-11 rounded-full shrink-0" style={{ backgroundColor: TILE.gold.bg }}>
             <Award size={20} style={{ color: TILE.gold.fg }} />
           </div>

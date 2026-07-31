@@ -29,8 +29,63 @@ export const LILAC_ALT = '#e7dff5'
 export const CARD = '#ffffff'
 export const CARD_BORDER = '#e5ddf1'
 export const INK = '#1f1830'        // body text
-export const MUTED = '#6b6280'
+// Concept A: darkened from #6b6280 toward WCAG AA on white/lilac (~6.5:1).
+export const MUTED = '#585065'
 export const CREAM = LILAC          // alias so shared page code reads naturally
+
+// ---- Concept A ("Refined & airy") shared design language ------------------
+// One spacing / type / card system applied across every learner screen so the
+// pages share a single rhythm. Purely additive: nothing above changes meaning,
+// only MUTED was darkened for contrast. Import these where a screen needs them.
+
+// Spacing scale (px): section gaps, card padding, stack gaps.
+export const SPACE = { xs: 8, sm: 12, md: 16, lg: 24, xl: 32, xxl: 48 } as const
+
+// Corner radii — one soft family everywhere.
+export const RADIUS = { sm: 12, md: 16, lg: 20, pill: 999 } as const
+
+// Elevation — subtle and layered, never heavy.
+export const SHADOW = {
+  card: '0 1px 2px rgba(31,24,48,0.04), 0 6px 20px rgba(31,24,48,0.06)',
+  cardHover: '0 2px 6px rgba(31,24,48,0.06), 0 14px 34px rgba(31,24,48,0.10)',
+  focus: '0 0 0 3px rgba(91,61,140,0.30)',
+} as const
+
+// Comfortable reading column so pages breathe.
+export const CONTENT_MAX = 1040
+
+// One card style everywhere (softer radius, subtle shadow, consistent border).
+export const CARD_STYLE: React.CSSProperties = {
+  background: CARD,
+  border: `1px solid ${CARD_BORDER}`,
+  borderRadius: RADIUS.lg,
+  boxShadow: SHADOW.card,
+}
+
+// Airy page shell for learner routes.
+export const PAGE_STYLE: React.CSSProperties = {
+  maxWidth: CONTENT_MAX,
+  margin: '0 auto',
+  padding: '44px 40px 64px',
+}
+
+// Serif heading helpers — a stronger, consistent type scale.
+export const H1: React.CSSProperties = { ...SERIF, color: PLUM, fontWeight: 600, fontSize: 36, lineHeight: 1.12 }
+export const H2: React.CSSProperties = { ...SERIF, color: PLUM, fontWeight: 600, fontSize: 22, lineHeight: 1.25 }
+export const EYEBROW: React.CSSProperties = { color: PURPLE, fontWeight: 600, fontSize: 12, letterSpacing: '0.06em', textTransform: 'uppercase' }
+
+// Actions — one obvious primary per screen; secondary is quieter.
+export const BTN_PRIMARY: React.CSSProperties = {
+  background: PURPLE, color: '#fff', fontWeight: 600, fontSize: 15,
+  borderRadius: RADIUS.md, padding: '12px 22px', border: 'none', cursor: 'pointer',
+  boxShadow: '0 6px 16px rgba(91,61,140,0.28)', display: 'inline-flex',
+  alignItems: 'center', gap: 8, transition: 'filter .15s, box-shadow .15s',
+}
+export const BTN_SECONDARY: React.CSSProperties = {
+  background: '#fff', color: PURPLE, fontWeight: 600, fontSize: 15,
+  borderRadius: RADIUS.md, padding: '11px 20px', border: `1px solid ${CARD_BORDER}`,
+  cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: 8,
+}
 
 // LuAnn's tagline — she asked for this across all materials + the login page.
 export const TAGLINE = 'Think Critically. Diagnose Confidently. Prescribe with Purpose.'
