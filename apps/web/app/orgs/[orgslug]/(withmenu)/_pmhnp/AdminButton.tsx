@@ -2,27 +2,28 @@
 import Link from 'next/link'
 import { ShieldCheck } from 'lucide-react'
 import useAdminStatus from '@components/Hooks/useAdminStatus'
-import { PURPLE, PERI } from './theme'
 
-/* Top-right shortcut into the org admin dashboard (/dash).
-   NOT /admin: that route is the LearnHouse superadmin dashboard, which is
-   disabled in OSS deployments ("Not Available in OSS Mode"). /dash is the real
-   org management portal (courses, users, org settings, analytics).
-   Rendered for admins only — useAdminStatus returns isAdmin=false for learners,
-   so the button never mounts for them. */
-export default function AdminButton() {
+/* Sidebar entry into the org admin dashboard (/dash), rendered just above the
+   Account tab. NOT /admin: that route is the LearnHouse superadmin dashboard,
+   disabled in OSS deployments. /dash is the real org management portal.
+   Admins only — useAdminStatus returns isAdmin=false for learners, so this
+   never mounts for them. */
+export default function AdminButton({ onNavigate }: { onNavigate?: () => void }) {
   const { isAdmin } = useAdminStatus()
   if (!isAdmin) return null
 
   return (
     <Link
       href="/dash"
-      className="fixed z-[65] flex items-center gap-2 rounded-full px-3.5 py-2 text-[13px] font-semibold text-white shadow-md transition-transform hover:scale-[1.03] top-2.5 right-16 md:top-4 md:right-6"
-      style={{ background: `linear-gradient(135deg, ${PURPLE}, ${PERI})` }}
+      onClick={onNavigate}
+      className="flex items-center gap-3 px-3.5 py-2 rounded-xl text-[13.5px] font-medium transition-colors"
+      style={{ color: 'rgba(246,243,251,0.6)' }}
+      onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.06)')}
+      onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'transparent')}
       title="Admin Dashboard"
     >
-      <ShieldCheck size={16} strokeWidth={2} />
-      <span className="hidden sm:inline">Admin Dashboard</span>
+      <ShieldCheck size={17} strokeWidth={1.8} />
+      <span>Admin Dashboard</span>
     </Link>
   )
 }

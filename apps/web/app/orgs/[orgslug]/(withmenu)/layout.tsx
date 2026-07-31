@@ -144,6 +144,7 @@ function PmhnpSidebar({ orgslug }: { orgslug: string }) {
         </p>
       </div>
       <div className="space-y-1">
+        <AdminButton onNavigate={() => setMobileOpen(false)} />
         <Link
           href={getUriWithOrg(orgslug, '/account')}
           onClick={() => setMobileOpen(false)}
@@ -309,7 +310,6 @@ function LayoutContent({ children, orgslug }: { children: React.ReactNode; orgsl
       style={{ backgroundColor: LILAC }}
     >
       <PageViewTracker />
-      <AdminButton />
       <PmhnpSidebar orgslug={orgslug} />
       <div className="md:ml-[236px] flex-1 flex flex-col">
         <div className="h-14 md:hidden" />
