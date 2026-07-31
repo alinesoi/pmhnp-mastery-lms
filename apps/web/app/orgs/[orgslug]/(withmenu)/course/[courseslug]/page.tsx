@@ -128,7 +128,7 @@ export default function CoursePage(props: { params: Promise<{ orgslug: string; c
                       {m.title}
                     </p>
                     <p className="mt-0.5 text-[13px]" style={{ color: MUTED }}>
-                      {m.chapters.length} lessons · 70% knowledge check
+                      {m.chapters.length} lessons
                     </p>
                     {st === 'current' && (
                       <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold rounded-xl px-4 py-2.5"

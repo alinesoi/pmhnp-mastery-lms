@@ -5,11 +5,11 @@ import { useLHSession } from '@components/Contexts/LHSessionContext'
 import { getUriWithOrg } from '@services/config/config'
 import { getMyProgress, saveModuleProgress } from '@services/progress/progress'
 import {
-  ArrowLeft, ArrowRight, Lock, PlayCircle, ClipboardCheck, Check, Bot,
+  ArrowLeft, ArrowRight, Lock, PlayCircle, Check, Bot,
 } from 'lucide-react'
 import {
   SERIF, PLUM, PURPLE, GOLD, LILAC, CARD_BORDER, INK, MUTED,
-  catalogBySlug, aiKindMeta, TILE, PASS_MARK, CARD_STYLE,
+  catalogBySlug, aiKindMeta, TILE, CARD_STYLE,
 } from '../../../_pmhnp/theme'
 import { useCourses } from '../../../_pmhnp/CoursesContext'
 
@@ -65,7 +65,7 @@ export default function ModulePage(props: { params: Promise<{ orgslug: string; c
           </div>
           <h1 className="pmhnp-serif mt-4 text-xl font-semibold" style={{ ...SERIF, color: PLUM }}>Module {index} is locked</h1>
           <p className="mt-2 text-sm" style={{ color: INK }}>
-            Pass the knowledge check for module {index - 1} to unlock this one.
+            Complete module {index - 1} to unlock this one.
           </p>
           <Link href={getUriWithOrg(orgslug, `/course/${courseslug}`)}
             className="mt-5 inline-flex items-center gap-1.5 rounded-full px-5 py-2.5 text-sm font-semibold text-white"
@@ -77,11 +77,9 @@ export default function ModulePage(props: { params: Promise<{ orgslug: string; c
     )
   }
 
-  const submitCheck = async () => {
+  const markComplete = async () => {
     if (submitting || !accessToken) return
     setSubmitting(true)
-    // Placeholder scoring: the graded quiz is in production. Submitting records a
-    // passing score so the sequential module unlock works end to end.
     const res: any = await saveModuleProgress(courseslug, index, mod.slug, 100, true, accessToken)
     setSubmitting(false)
     if (res?.status === 200) setPassed(true)
@@ -121,7 +119,7 @@ export default function ModulePage(props: { params: Promise<{ orgslug: string; c
               />
             </div>
             <p className="mt-2.5 text-[12px] inline-flex items-center gap-1.5" style={{ color: MUTED }}>
-              <PlayCircle size={13} style={{ color: PURPLE }} /> Interactive lesson, narrated in LuAnn&rsquo;s voice with the AI moments built in. Watch it through, then take the knowledge check below.
+              <PlayCircle size={13} style={{ color: PURPLE }} /> Interactive lesson, narrated in LuAnn&rsquo;s voice with the AI moments built in. Watch it through, then mark the module complete below.
             </p>
           </div>
         ) : (
@@ -160,39 +158,31 @@ export default function ModulePage(props: { params: Promise<{ orgslug: string; c
           </div>
         )}
 
-        {/* KNOWLEDGE CHECK */}
+        {/* MODULE COMPLETION */}
         <div className="mt-6 bg-white px-7 py-7" style={{ ...CARD_STYLE }}>
           <div className="flex items-center gap-2.5">
             <span className="flex items-center justify-center w-10 h-10 rounded-xl" style={{ backgroundColor: tile.bg }}>
-              <ClipboardCheck size={19} style={{ color: tile.fg }} />
+              <Check size={19} style={{ color: tile.fg }} strokeWidth={3} />
             </span>
             <div>
-              <h2 className="pmhnp-serif text-[22px] font-semibold" style={{ ...SERIF, color: PLUM }}>Knowledge check</h2>
-              <p className="text-[12px]" style={{ color: MUTED }}>Score {PASS_MARK}% or higher to unlock the next module.</p>
+              <h2 className="pmhnp-serif text-[22px] font-semibold" style={{ ...SERIF, color: PLUM }}>
+                {passed ? 'Module complete' : 'Finish this module'}
+              </h2>
+              <p className="text-[12px]" style={{ color: MUTED }}>
+                {passed
+                  ? (hasNext ? `Module ${nextIndex} is now unlocked.` : 'You have completed this course.')
+                  : 'Watched the lesson? Mark this module complete to unlock the next one.'}
+              </p>
             </div>
           </div>
-
-          <span className="mt-4 inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-[11px] font-semibold" style={{ backgroundColor: TILE.gold.bg, color: TILE.gold.fg }}>
-            In production: graded quiz
-          </span>
-
-          <ol className="mt-4 space-y-3">
-            {mod.knowledge_check.questions.map((q, i) => (
-              <li key={i} className="rounded-xl px-4 py-3.5" style={{ backgroundColor: '#f3eefb' }}>
-                <p className="text-sm leading-relaxed" style={{ color: INK }}>
-                  <span className="font-semibold" style={{ color: PLUM }}>{i + 1}.</span> {q}
-                </p>
-              </li>
-            ))}
-          </ol>
 
           {passed ? (
             <div className="mt-5 rounded-xl px-4 py-4 flex items-start gap-3" style={{ backgroundColor: TILE.green.bg }}>
               <Check size={18} style={{ color: TILE.green.fg }} className="mt-0.5" strokeWidth={3} />
               <div>
-                <p className="text-sm font-semibold" style={{ color: TILE.green.fg }}>Module passed</p>
+                <p className="text-sm font-semibold" style={{ color: TILE.green.fg }}>Marked complete</p>
                 <p className="text-[13px]" style={{ color: INK }}>
-                  {hasNext ? `Module ${nextIndex} is now unlocked.` : 'You have completed this course. Head to Progress for your certificate.'}
+                  {hasNext ? `Continue to module ${nextIndex}.` : 'You have completed this course. Head to Progress for your certificate.'}
                 </p>
                 <div className="mt-3 flex flex-wrap gap-2">
                   {hasNext && (
@@ -215,14 +205,10 @@ export default function ModulePage(props: { params: Promise<{ orgslug: string; c
               </div>
             </div>
           ) : (
-            <div className="mt-5 flex flex-wrap items-center justify-between gap-3">
-              <p className="text-[12px] max-w-md" style={{ color: MUTED }}>
-                Scoring is a placeholder for now. Submitting records a passing score so the sequential
-                unlock is demonstrable end to end; the graded quiz replaces this.
-              </p>
-              <button type="button" onClick={submitCheck} disabled={submitting}
+            <div className="mt-5 flex justify-end">
+              <button type="button" onClick={markComplete} disabled={submitting}
                 className="inline-flex items-center gap-1.5 rounded-full px-5 py-2.5 text-sm font-semibold text-white disabled:opacity-60" style={{ backgroundColor: TILE.green.fg }}>
-                {submitting ? 'Submitting...' : 'Submit knowledge check'} <Check size={15} strokeWidth={3} />
+                {submitting ? 'Saving...' : 'Mark as complete'} <Check size={15} strokeWidth={3} />
               </button>
             </div>
           )}
