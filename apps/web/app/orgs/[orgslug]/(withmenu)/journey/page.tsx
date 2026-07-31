@@ -42,7 +42,7 @@ export default function JourneyPage(props: { params: Promise<{ orgslug: string }
           one unlocks. Your CE contact hours accrue as you go.
         </p>
 
-        <div className="mt-10 space-y-8">
+        <div className="mt-10 space-y-4">
           {CATALOG.map((cat) => {
             const course = courseBySlug(cat.slug)!
             const s: ProgressSummary | undefined = byCourse.get(cat.slug)
@@ -51,7 +51,7 @@ export default function JourneyPage(props: { params: Promise<{ orgslug: string }
             const passedCount = s?.passed_count ?? 0
             const tile = TILE[cat.color]
             return (
-              <div key={cat.slug}>
+              <div key={cat.slug} className="bg-white px-6 py-5" style={{ ...CARD_STYLE }}>
                 <div className="flex items-center justify-between gap-3 mb-3">
                   <div className="flex items-center gap-3">
                     <div className="flex items-center justify-center w-9 h-9 rounded-xl shrink-0 font-bold text-[12px]"
